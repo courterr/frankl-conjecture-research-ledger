@@ -1,0 +1,126 @@
+{
+  "version": "0.2",
+  "date": "2026-10-22",
+  "scope": "partial reconstruction; not a complete chronological audit",
+  "new_literature_search": false,
+  "mathematical_search_resumed": false,
+  "documented_established_method_families": 4,
+  "count_of_redundant_historical_approaches": null,
+  "all_novelty_gates_demonstrably_enforced": null,
+  "source_details": "HISTORICAL-AUDIT.md",
+  "entries": [
+    {
+      "id": "M1",
+      "route_or_claim": "Weighted surplus certificates",
+      "established_overlap": "established machinery",
+      "specific_contribution_under_consideration": "restricted capped-fibre application",
+      "check_record": "S3 retrospective; earliest historical clearance not documented",
+      "present_decision": "retain as cited tool",
+      "historical_first_proposal_date": null,
+      "pre_attempt_clearance_documented": false,
+      "novelty": "generic machinery established"
+    },
+    {
+      "id": "M2",
+      "route_or_claim": "Cutting planes and exact feasibility",
+      "established_overlap": "established machinery",
+      "specific_contribution_under_consideration": "specific inequalities and witnesses",
+      "check_record": "S3 retrospective; complete historical gate record missing",
+      "present_decision": "no generic-method novelty claim",
+      "historical_first_proposal_date": null,
+      "pre_attempt_clearance_documented": false,
+      "novelty": "generic machinery established"
+    },
+    {
+      "id": "M3",
+      "route_or_claim": "Forced injections, matching, Hall obstructions",
+      "established_overlap": "established machinery",
+      "specific_contribution_under_consideration": "specific maps, joint exclusion, quantitative range",
+      "check_record": "S2 proofs; no session literature search; S3 retrospective",
+      "present_decision": "retain narrow proofs; priority unconfirmed",
+      "historical_first_proposal_date": null,
+      "pre_attempt_clearance_documented": false,
+      "novelty": "generic machinery established"
+    },
+    {
+      "id": "M4",
+      "route_or_claim": "Coordinate cloning",
+      "established_overlap": "established machinery",
+      "specific_contribution_under_consideration": "literal top-k support obstruction",
+      "check_record": "S1 related seed; S3 application; first clearance not documented",
+      "present_decision": "no technique invention claim",
+      "historical_first_proposal_date": null,
+      "pre_attempt_clearance_documented": false,
+      "novelty": "generic machinery established"
+    },
+    {
+      "id": "R1",
+      "route_or_claim": "Positive-global-e-maximizer selector",
+      "established_overlap": "exact prior-art status unresolved",
+      "specific_contribution_under_consideration": "precise abundance selector statement",
+      "check_record": "S1 unresolved; S3 limited retrospective search",
+      "present_decision": "unresolved within project",
+      "historical_first_proposal_date": null,
+      "pre_attempt_clearance_documented": false,
+      "novelty": "unconfirmed"
+    },
+    {
+      "id": "R2",
+      "route_or_claim": "Adjusted fibre cost cap",
+      "established_overlap": "related established framework",
+      "specific_contribution_under_consideration": "necessary adjusted bound for proper-decomposition mode",
+      "check_record": "S1 corrected cap; S3 retrospective; first clearance not documented",
+      "present_decision": "derivation retained; priority unconfirmed",
+      "historical_first_proposal_date": null,
+      "pre_attempt_clearance_documented": false,
+      "novelty": "unconfirmed"
+    },
+    {
+      "id": "R3",
+      "route_or_claim": "G38 exact 17/4 support classification",
+      "established_overlap": "established certificate machinery",
+      "specific_contribution_under_consideration": "explicit core partition and forced equal weights",
+      "check_record": "S2 computation with no session literature search; S3 finite checks",
+      "present_decision": "retain verified instance; priority unconfirmed",
+      "historical_first_proposal_date": null,
+      "pre_attempt_clearance_documented": false,
+      "novelty": "unconfirmed"
+    },
+    {
+      "id": "R4",
+      "route_or_claim": "Sharp negative pair-fibre cost609",
+      "established_overlap": "established closure/matching/case-splitting machinery",
+      "specific_contribution_under_consideration": "exact minimum for one core and pair",
+      "check_record": "S2 proof with no session literature search; S3 checks",
+      "present_decision": "retain exact scoped result; priority unconfirmed",
+      "historical_first_proposal_date": null,
+      "pre_attempt_clearance_documented": false,
+      "novelty": "unconfirmed"
+    },
+    {
+      "id": "R5",
+      "route_or_claim": "Four-certificate protection through q629",
+      "established_overlap": "established monotonicity/incidence tools",
+      "specific_contribution_under_consideration": "uniform barrier for extensions of G37",
+      "check_record": "S2 proof with no session literature search; S3 arithmetic",
+      "present_decision": "retain bounded barrier; priority unconfirmed",
+      "historical_first_proposal_date": null,
+      "pre_attempt_clearance_documented": false,
+      "novelty": "unconfirmed"
+    },
+    {
+      "id": "R6",
+      "route_or_claim": "Frequency-ranked support obstructions",
+      "established_overlap": "established ranking/cloning ideas",
+      "specific_contribution_under_consideration": "distinct-column pair example and top-k recipe failure",
+      "check_record": "S3 checker; S1 related seed; first exact-example check not documented",
+      "present_decision": "retain local-recipe counterexamples; priority unconfirmed",
+      "historical_first_proposal_date": null,
+      "pre_attempt_clearance_documented": false,
+      "novelty": "unconfirmed"
+    }
+  ],
+  "field_note": "pre_attempt_clearance_documented=false means no such clearance established by the inspected sources; it does not assert that none occurred historically.",
+  "package_version": "0.4.1",
+  "audit_content_revision": "0.2"
+}
