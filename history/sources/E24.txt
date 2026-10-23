@@ -1,0 +1,114 @@
+NARRATIVE EXCERPT — HISTORICAL SOURCE, NOT A NEW VERIFICATION
+Original report: Strange-Seed-Frankl-Exploration-24.txt
+Source record: E24; excerpt lines 1-107.
+This excerpt omits reproduction appendices and raw poem texts.
+Historical dates/statuses and claims below retain their original scope.
+Consult ../../SOURCE-COVERAGE.md for the current audit and verification limits.
+
+STRANGE SEED — FRANKL EXPLORATION 24
+22 October 2026 (America/Los_Angeles)
+Truth & Wonder
+
+FEASIBILITY CHECKPOINT
+The bounded pilot gives a WEAK, POSITIVE SIGNAL for this construction recipe, not evidence of broad feasibility. One of three seeds with starting pair obstructions accumulated new obstructions without restoring earlier ones. Two other active seeds made no gains among the selected witness-preserving additions. No case defeated all one- and two-coordinate supports.
+
+The successful lane progressed from14 blocked pair supports to15 and then16, out of21 possible coordinate pairs. These are two sequential improvements in one mathematical lane, not independent statistical successes. Five exact two-coordinate certificates remain in the best core.
+
+Verdict against the frozen criteria: weak rather than broadly promising, because gains occurred in one lane, not multiple lanes. The method has demonstrated that it CAN accumulate obstructions, but has not demonstrated a reliable route to the full target. A narrow mathematical investigation of the five surviving supports is justified; another broad campaign is not yet supported by this pilot alone.
+
+No claim of historical novelty, poetry's causal advantage, general Strange Seed efficacy, or a solution to the abundance conjecture is made. No new poem was drawn.
+
+QUESTION AND MATHEMATICAL FRAMEWORK
+F is finite and union-closed, containing the empty set. q_F(T) counts ordered union pairs producing T, r_F(T) counts members contained in T, and e_F(T)=(q_F(T)-2r_F(T)+1)/2 counts unordered proper union decompositions. The underlying unresolved candidate says every positive global e-maximizer A contains a coordinate occurring in at least half of F.
+
+For an internal core G=F intersect2^A, an exterior trace yields a nonempty, union-closed, G-stable trace family H containing A. If Q(X,Y) counts ordered pairs whose union is A, define C_G(H)=2Q(G,H)+Q(H,H). Global e-modal maximality gives the necessary cap
+ C_G(H)-2|H|<=q_G(A).
+A local weighting certificate uses nonnegative normalized weights w with
+ sum_i w_i*(2*f_K(i)-|K|)>=0
+for K=G and every permitted H. Summing the actual fibres gives abundance in the support. An inability to find such a weighting is not automatically a global counterexample.
+
+All targets in this pilot have seven coordinates, A=127. For a support pair(a,b), write weights(p,1-p). Each family contributes
+ s_b+(s_a-s_b)*p>=0, where s_i=2*f(i)-|K|.
+Intersecting exact rational intervals over0<=p<=1 determines feasibility on that pair. Endpoints include all single-coordinate possibilities. Therefore blocking all21 support pairs would also rule out every unit-coordinate certificate.
+
+FROZEN DESIGN
+Six seeds with different core cardinalities, hence six different core types:
+- The separating frequency-ranking obstruction from Exploration23:20 sets.
+- The archived nonproduct seven-coordinate core:35 sets.
+- A clone lift of a different difficult six-coordinate core:22 sets.
+- The first qualifying previously generated seven-coordinate core, under the fixed selection rule:27 sets.
+- The explicit seven-coatom core:9 sets, a control.
+- The explicit threshold core containing the empty set and every set of size at least4:65 sets, a control.
+
+Full definitions and provenance were saved in seeds.json before enumeration. The generated/archive selections are not independent random draws, and no population success probability is estimated.
+
+For each completed baseline having blocked pairs, build a deterministic witness bank from the fibre rows used in exact support-infeasibility proofs, plus small negative-unit witnesses. A core row is NOT a fibre to preserve; it is updated after every core modification.
+
+Candidate cores adjoin one trace and take union closure. A witness-preserving candidate must retain the bank's G stability, retain its cost admissibility, and keep every previously blocked support exactly infeasible using the bank plus the new core row. Candidate ranking maximizes minimum bank cost slack, then prefers smaller cores and lower trace indices. At most four preserving candidates and four other candidates are enumerated per round. The other additions provide exploratory context; they are not a randomized comparison group.
+
+Continue at most two rounds, only on a strict superset of blocked pairs with no restored prior support. Choose the largest blocked count, then smaller core, then trace index. Incomplete cases cannot establish newly caused gains or surviving full-class certificates. Stop a lane on no monotone progress, no starting obstruction, or budgets. The initial plan allowed at most180seconds of search,500,000 nodes and0.75seconds per primary enumeration, with a5second subprocess timeout.
+
+Search completed in about75.95seconds, within the global limit. The complete investigation also included exact audit, independent enumerations, structural checks and reporting. Per-call limits were meaningful: five primary enumerations remained incomplete.
+
+OBSERVED RESULTS
+38 distinct cores were evaluated:6 baselines and32 modifications.
+33 primary enumerations completed. Five were incomplete; none had a process/error failure.
+Total returned fibre occurrences:1,336,003. This includes partial lists and repeated families relative to different cores; it is not a count of independent problems or creativity trials.
+
+Seed outcome table:
+Seed | Baseline blocked pairs | Accepted path | Outcome
+Separating rank obstruction |6 |6 |No gain in four selected preserving additions
+Nonproduct archive |14 |14 ->15 ->16 |Two monotone gains, stopped at two-round limit
+Cloned different core |11 |11 |No gain in four selected preserving additions
+Generated archive |0 |No treatment |All21 pairs feasible at completed baseline; no starting obstruction
+Coatom control |0 |No treatment |All21 pairs feasible at completed baseline; no starting obstruction
+Threshold control |Undecided |No treatment |Enumeration budget exhausted; no absence-of-obstruction conclusion
+
+The sixteen tested preserving additions all retained the prior obstructions, as the filter was designed to ensure. Four candidate instances gave strict gains: two alternatives for the first new blocked support and two alternatives for the second. They do NOT represent four distinct obstruction mechanisms or four independent successful lanes.
+
+Twelve contextual additions completed, and each restored at least one previously blocked support. Four contextual additions were incomplete. A notable complete contextual candidate blocked16 pairs overall, but restored one old support while adding three new ones; this is not a monotone improvement. Former supports missing from incomplete output are labelled undecided, not restored.
+
+Across the four candidate-generation rounds there were399 internally e-modal candidate-core occurrences:342 failed witness-bank stability and2 more failed bank cost admissibility, leaving55 preserving candidates. Only16 were enumerated under the four-per-round cap. Thus 'stalled' refers to the tested selected additions, not exhaustion of every preserving addition or every alternative bank. These counts are candidate occurrences and may overlap across rounds.
+
+THE SUCCESSFUL LANE, WITH EXACT NEW OBSTRUCTIONS
+Baseline case1 has35 sets, q_G=555, e_G(A)=243, and14 blocked supports.
+Adjoining trace19 gives case14:36 sets, q_G=571, e_G(A)=250. It retains all14 prior obstructions and blocks support(3,6).
+A witness is
+ H=[7,23,31,39,47,55,63,87,95,103,111,119,127].
+It has13 members and pair surpluses(-1,-1), so every normalized nonnegative weighting on(3,6) has negative margin. Under the old core its adjusted cost565 exceeded q=555. Under the new core its adjusted cost569 is below q=571. The witness becomes admissible because q grows faster than its cost; stability is retained. Its actual one-exterior-coordinate extension has49 members and A is the unique global e-maximizer at250.
+
+Adjoining trace27 to case14 gives case23:37 sets, q_G=597, e_G(A)=262. It retains all15 blocked supports and blocks(4,5). Two witness rows prove this exactly:
+ H_a=[69,71,79,87,93,95,101,103,109,111,119,125,127], pair surplus(-1,+1).
+ H_b=[7,15,23,31,47,63,71,79,87,95,103,111,119,127], pair surplus(0,-2).
+H_b forces weight5 to zero, then H_a rules out weight4. Equivalently their average surplus is(-1/2,-1/2).
+H_a was already admissible before this change (adjusted cost561<=571) and remains so afterward(575<=597). H_b previously exceeded the cap(589>571), but becomes admissible exactly at the new cap(597). Each is separately realizable as an actual one-exterior-coordinate extension with A globally e-maximal: the H_a extension has A uniquely maximal at262, and the H_b extension ties A with the exterior top at262. These remain local-certificate obstructions, not counterexamples to abundance.
+
+The accepted37-member core (case23) is:
+[0, 19, 23, 27, 31, 46, 57, 58, 59, 62, 63, 86, 87, 89, 90, 91, 94, 95, 101, 102, 103, 105, 108, 109, 110, 111, 115, 118, 119, 120, 121, 122, 123, 124, 125, 126, 127]
+
+WHAT REMAINS
+Complete enumeration of the best core gives54,536 permitted fibres. Exactly five pair supports remain feasible:
+ (1,4), (3,4), (3,5), (4,6), (5,6).
+Every one requires exactly equal weights, p=1/2; no unequal interval remains. All seven unit-coordinate certificates fail, with minimum surpluses[-3,-3,-3,-2,-2,-2,-2]. The target of defeating all supports is therefore unmet, and at least one abundance certificate still exists.
+
+This sharpens a possible next mathematical task: investigate why those five equal-weight pairs survive and whether a new admissible fibre can have negative combined surplus on one of them while retaining previous obstruction witnesses. It does not show such a fibre or core exists.
+
+VERIFICATION
+Every recorded blocked pair has an exact interval-infeasibility witness checked independently. Every bank fibre was checked for top membership, union closure, G stability and adjusted cost. Every surviving interval was checked by direct integer inequality on every returned fibre and the core; it is labelled a full-class certificate only when enumeration completed. Recorded unit minima were independently recomputed.
+
+All38 cases passed arithmetic audit over1,336,003 returned fibre occurrences. Complete-case gain and restoration sets were recomputed. No claimed monotone gain depends on a partial enumeration.
+
+Independent whole-class enumeration was frozen to all five completed baselines plus every complete candidate that achieved a strict superset gain, giving nine cases in total:0,1,2,3,4,14,15,23,24. The second enumerator uses include/exclude decisions and iterative closure propagation rather than the primary canonical incremental closure. Its uniform-score early exit was disabled, so it was used as a complete enumerator regardless of any score sign. Each call had a2million-node/3second limit.
+
+All nine independent enumerations completed and their entire fibre sets exactly match the primary sets. Together these cover249,618 fibre occurrences. Every emitted fibre in these independently checked cases was explicitly validated structurally and by adjusted cost. Full independent enumeration was not repeated for the other cases; their arithmetic and finite obstruction banks were audited as described.
+
+The primary cardinality bound is |H|<=floor((q_G-2|G|+3)/2). Adjusted cost is monotone on families containing A: each new trace adds at least2 cross-pair contributions with core A and at least2 ordered H-H contributions with A, minus2 for its cardinality. Thus cost pruning is sound. The independent root adjusted cost is2|G|-1 and each insertion subtracts2. Both implementations use the new adjusted cap, not the older q-mode cap.
+
+Report handling was corrected to distinguish undecided from restored supports in partial output and to label the incomplete threshold baseline unresolved. These are reporting corrections; they do not change any complete-case gain, selected path, or feasibility verdict.
+
+FEASIBILITY VERDICT AND LIMITS
+This session establishes two things: the witness-preserving mechanism can accumulate new support obstructions in at least one concrete lane, and the frozen short search does not show that it does so reliably across different seeds. The goal of defeating every support of size one or two was not met. We do not know whether that goal is achievable with this recipe, or whether a universal two-coordinate certificate theorem obstructs it in this domain.
+
+The one-lane result is enough for a focused follow-up, not for a broad efficacy claim. The fixed-bank stability condition excludes most candidate additions, and the search examined only four preserving choices per round. Failure to improve a lane cannot be interpreted as impossibility, while the two sequential gains cannot be extrapolated into inevitable completion. The controls with no starting obstruction are not counted as failed attempts to extend an existing bank; the incomplete control is not counted as a clean negative.
+
+The larger project still has no demonstrated general poetry advantage, no general abundance proof, and no historical novelty finding from this session. No literature check was performed here. All conclusions concern the explicitly defined local-certificate construction and the archived finite data.

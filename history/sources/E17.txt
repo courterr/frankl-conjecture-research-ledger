@@ -1,0 +1,209 @@
+NARRATIVE EXCERPT — HISTORICAL SOURCE, NOT A NEW VERIFICATION
+Original report: Strange-Seed-Frankl-Exploration-17.txt
+Source record: E17; excerpt lines 1-202.
+This excerpt omits reproduction appendices and raw poem texts.
+Historical dates/statuses and claims below retain their original scope.
+Consult ../../SOURCE-COVERAGE.md for the current audit and verification limits.
+
+STRANGE SEED / TRUTH & WONDER
+Frankl exploration 17 — Moonlight and proper union decompositions
+21 October 2026 (America/Los_Angeles)
+
+OUTCOME
+
+A fresh poem draw proposed a falsifiable variant of the earlier modal score:
+count only substantive decompositions A=B union C in which both inputs are
+proper family members below A. The resulting abundance claim passed every
+nontrivial union-closed family containing empty on four labelled coordinates,
+plus 16,000 fixed-seed generated families on five through eight coordinates.
+No counterexample was found in those bounded tests.
+
+There is also a hand proof for targets whose internal core consists of empty,
+the target and some sets missing one target coordinate. This covers arbitrary
+target size in that class and implies the candidate for EVERY target of size
+at most four, even when the ambient family/universe is arbitrarily large.
+
+The general candidate is UNRESOLVED. This is a modification of the earlier
+score, not a fundamentally new proof framework. Its historical novelty and
+poetry's causal advantage are unestablished. The prior q-mode claim is also
+still unresolved; neither claim has been substituted silently for the other.
+
+DRAW AND ASSOCIATION
+
+Uniform draw with replacement from the frozen 100-poem collection:
+ collection SS-POETRY-100-v1;
+ SHA256 48f84b7efe84de1868996c8f2a6f89d108e0a3936979614ccd5d1e59e1d8bad8;
+ index 53 (zero based), poem P054;
+ Henry Wadsworth Longfellow, Moonlight;
+ text SHA256 bdcad093678b3811c0aba042cb0977af22421978835735a96f1cead01b5d2241.
+The first draw was retained without semantic filtering or redraw. Full selected
+text and metadata are preserved in draw.json. The collection's source endpoint
+is https://poetrydb.org/author/.*. No claim about the entire corpus's copyright
+status is needed for this selected historical poem.
+
+The poem changes the appearance of familiar surroundings through illumination,
+then contrasts that appearance with ordinary underlying life. Associations
+considered were probability tilts, hidden versus visible witnesses, and separating
+substantive structure from automatic effects. The third was selected: remove
+the automatic union witnesses involving A itself. This is an analogy that
+GENERATES a conjecture; it does not justify it. The candidate was frozen before
+the mathematical tests, after the poem and before any observed test outcomes.
+
+PRECISE CANDIDATE
+
+Let F be a finite union-closed family of distinct sets, containing empty and
+at least one nonempty member. For A in F put
+ r_F(A)=|{B in F:B subset A}|,
+ q_F(A)=#{(B,C) in F squared:B union C=A}, ordered pairs including equal pairs.
+
+Define e_F(A) as the number of UNORDERED pairs {B,C} of proper members below A
+such that B union C=A. The two members are distinct and incomparable. Exactly
+2r_F(A)-1 ordered pairs involve A itself. Every remaining ordered pair has two
+distinct proper members and occurs in both orders. Consequently
+                    e_F(A)=(q_F(A)-2r_F(A)+1)/2.             (1)
+
+Candidate: if max_A e_F(A)>0, EVERY maximizing A, including ties, contains a
+coordinate occurring in at least half of the GLOBAL family F.
+The conclusion is not that every coordinate in A is abundant.
+
+If max e=0, F is a chain: any incomparable pair would give a positive proper
+decomposition of its union. Conversely a chain has no such pair. In a finite
+nontrivial chain, every coordinate of its least nonempty member occurs in all
+|F|-1 nonempty members, so is abundant. Thus the general candidate, if proved,
+would imply Frankl's conjecture; families omitting empty can first have it added.
+This implication is an observation, not a proof
+of the candidate or of Frankl.
+
+The score is different from q-mode selection. For example, start with the eight
+subsets of {a,b,c}, then append seven successively larger greatest members, each
+adding a fresh coordinate. The old target {a,b,c} has q=27 and e=6. Each new
+greatest member has e=0, since it introduces a coordinate absent below it; the
+last has q=29 and becomes the q-mode. Removing automatic pairs therefore changes
+the selector in a concrete way. No implication between the two general modal
+claims has been established.
+
+LIMITED LITERATURE CHECK BEFORE DIRECT TESTING
+
+Two search engines were used. Queries covered proper union decompositions,
+maximal representation counts, union-closed families and abundance. The first
+engine had poor coverage and many irrelevant results.
+
+Primary material inspected:
+Colbert, Chain Conditions and Optimal Elements in Generalized Union-Closed
+Families of Sets, arXiv:2412.18740v3 (2 December 2025):
+https://arxiv.org/pdf/2412.18740
+Example 3.8 recalls basis sets, characterized by having no decomposition into
+two proper family members. Thus the zero-score notion is established. The
+paper's optimal coordinates use inclusion-maximal incidence families, which
+is a different selector. No exact match for the maximal-e abundance claim was
+identified in this limited inspection. That does not establish novelty.
+
+Gowers, FUNC4 — further variants (22 February 2016):
+https://gowers.wordpress.com/2016/02/22/func4-further-variants/
+The inspected page discusses altered abundance/weighting ideas. Text searches
+found no decomposition or multiplicity occurrence; this is not a comprehensive
+review of all Polymath comments or a priority claim. The subtraction in (1) is
+an elementary identity, not a newly invented mathematical tool.
+
+BOUNDED TESTS
+
+Exhaustive test: examine all families of subsets of four labelled coordinates
+containing empty, discard non-union-closed families and {empty}. There are
+2,479 remaining families. Of these 149 are chains. The other families have
+2,408 positive maximizing-target occurrences including ties. Every such target
+contains a globally abundant coordinate.
+
+Generated test: 16,000 families, 4,000 each on n=5,6,7,8. Within each dimension,
+1,000 cases use each generator type: uniform masks, sparse masks, dense masks,
+and a chain scaffold with added masks. Each generated family contains empty
+and the full universe. A fixed mt19937_64 seed 0x17a05420261021 is recorded in
+sample.cpp. Incremental union closure is computed exactly. This is NOT uniform
+sampling over union-closed families and does not estimate a universal probability.
+
+The generated run has 1,017 chains, 15,129 positive maximizing-target occurrences,
+and no failing target. There are 2,342 proper-subset maximizing-target occurrences
+in 2,299 families. Thus the evidence is not confined to full-universe targets.
+9,765 maximizing-target occurrences contain at least one rare coordinate while
+also containing an abundant one, emphasizing that the claim requires only SOME
+abundant coordinate inside the target.
+
+Distinct labelled generated families, by dimension:
+ n=5: 3,594; n=6: 3,848; n=7: 3,913; n=8: 3,971.
+Total 15,326; duplicates remain in the 16,000-trial count. Isomorphic families
+are not identified. Generated family sizes range from 2 through 209.
+
+C++ computes proper-pair counts directly and checks identity (1). Python then
+independently recomputes every generated family, its closure, scores, all ties
+and global coordinate frequencies. The exhaustive four-coordinate family list
+is separately regenerated to check coverage. Sample summaries matched exactly.
+Raw inputs/outcomes for all generated trials are retained. No failed trial was
+discarded and no candidate modification was made after seeing the outcomes.
+
+HAND PROOF: COATOM-ONLY INTERNAL CORE
+
+Suppose A maximizes a positive e score and its internal core has the form
+ G={empty,A} union {A minus {i}:i in I}, with t=|I|.
+There are exactly binomial(t,2) proper decompositions of A, one for each distinct
+pair of its internal coatoms. Positivity implies t>=2, and
+                         e_F(A)=t(t-1)/2.                   (2)
+
+Take any occurring nonempty exterior trace Z, and its fibre
+ H={B intersect A:B in F and B minus A=Z}.
+It contains A and is G-stable. Let C={j in I:A minus {j} belongs to H}, c=|C|.
+
+For each j in C, the exterior set (A minus {j}) union Z is a proper subset of
+D=A union Z. Its union with the internal member A gives D. So does its union
+with each of the t-1 internal coatoms A minus {i}, i != j. These are t distinct
+proper unordered decomposition pairs for D, one member internal, one exterior.
+Different j give different pairs. Hence e_F(D)>=ct.
+
+Modal maximality and (2) give
+                         ct<=t(t-1)/2,
+so c< t/2. If T in H omits some i in I, G-stability forces
+ (A minus {i}) union T=A minus {i}
+into H. Therefore every omitted i belongs to C. Each T contains at least t-c
+elements of I, strictly more than half of I.
+
+Within the internal core, the total I incidence is t^2: each of t coatoms has
+t-1 members of I, A has t, and empty has zero. Its |G|=t+2 sets therefore have
+surplus 2t^2-t(t+2)=t(t-2)>=0 relative to half of I. Every exterior fibre has
+strictly positive I surplus by the previous paragraph. Summing all disjoint
+fibres gives average global frequency at least half among the coordinates I.
+Thus some coordinate of I, and hence of A, is globally abundant.
+
+This proof permits arbitrary target size, ambient universe and number of
+exterior fibres. It uses e-mode maximality, not q-mode maximality. It resembles
+the earlier coatom argument structurally, but its decisive proper-pair lower
+bound is ct; that bound has been derived explicitly for the new score.
+
+COROLLARY: EVERY TARGET OF SIZE AT MOST FOUR
+
+If F contains a singleton {x} subset A, union with {x} injects sets not containing
+x into those containing x, so x is abundant.
+
+If F contains a two-element set {x,y} subset A, partition F by presence/absence
+of x,y, with counts n00,n10,n01,n11. Union with {x,y} injects the 00 class into
+the 11 class, so n11>=n00. Hence f(x)+f(y)=n10+n01+2n11>=|F|, and at least one
+is abundant. These elementary arguments do not require modal maximality.
+
+For |A|<=4, if no nonempty member of the internal core has size at most two,
+the only possible proper nonempty members are three-element coatoms when
+|A|=4. A positive e score requires at least two such coatoms. The preceding
+lemma applies. For smaller A, a positive score already requires an internal
+singleton or pair. Therefore the candidate holds for every target of size at
+most four, with UNBOUNDED ambient universe. This is stronger than merely
+checking families whose entire universe has size four.
+
+SCOPE AND NEXT STEP
+
+The restricted proof and passing tests leave targets of size at least five
+with genuinely mixed internal structure unresolved. No general success
+probability follows from the generated families. The candidate might still
+fail badly outside the tested frame. Historical novelty is unconfirmed, and
+one poem-conditioned adaptive exploration cannot establish a causal creativity
+advantage. No external review or proof-assistant formalization was performed.
+
+The next substantive target is a counterexample or proof step outside the
+coatom class, beginning with target size five. Do not resume checker optimization
+merely to accumulate passing tests. The main question is whether the adjusted
+score gives a useful restriction not already supplied by the old q-mode route.

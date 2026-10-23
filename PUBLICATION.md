@@ -1,4 +1,13 @@
-# Suggested public home
+# Public repository and expanded update
+
+The initial v0.4.1 package is public at
+https://github.com/courterr/union-closed-proper-decomposition-certificates
+The v0.5 expansion is prepared for review and upload, not already published by
+the assistant. Use RELEASE-CHECKLIST.md for the current upload procedure.
+The earlier venue assessment below is retained as background; its proposed
+repository and first-publication wording describe the preparation stage.
+
+## Earlier venue assessment
 
 Recommendation as of 22 October 2026: a public GitHub repository named
 `union-closed-proper-decomposition-certificates`, with this note, the JSON data and verifier.

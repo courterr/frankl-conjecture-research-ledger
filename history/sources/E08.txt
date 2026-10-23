@@ -1,0 +1,153 @@
+NARRATIVE EXCERPT — HISTORICAL SOURCE, NOT A NEW VERIFICATION
+Original report: Strange-Seed-Frankl-Exploration-08.txt
+Source record: E08; excerpt lines 1-146.
+This excerpt omits reproduction appendices and raw poem texts.
+Historical dates/statuses and claims below retain their original scope.
+Consult ../../SOURCE-COVERAGE.md for the current audit and verification limits.
+
+STRANGE SEED — FRANKL EXPLORATION 08
+Truth & Wonder | 21 October 2026
+A counting proof for modal targets with only one-coordinate omissions below them
+
+RESULT
+The modal-union candidate from Exploration 07 remains unresolved in general. This run proves it for a structural class of targets of arbitrary size, in an arbitrarily large surrounding universe. As a consequence, every modal target of size at most four contains a globally abundant element. These statements have hand proofs below, independent of integer-program infeasibility reports. Historical novelty is unconfirmed.
+
+No new poem was drawn. This is mathematical follow-through on Exploration 07's candidate. The result does not establish a comparative advantage from Strange Seed or solve Frankl's conjecture.
+
+1. DEFINITIONS AND THE UNCHANGED CLAIM
+F is a finite union-closed family of distinct sets, containing the empty set and at least one nonempty member. Its used universe is U=union F, and m=|F|. A coordinate x is globally abundant if it appears in at least m/2 members, and rare if it appears in strictly fewer.
+
+q_F(A) counts ordered pairs (B,C) in F x F with B union C=A. A modal target A maximizes q_F over F; tied maximizers are included. The frozen claim is that every modal target contains a globally abundant coordinate. No reweighting or change of convolution order was made in this run.
+
+A modal target is nonempty: q_F(empty)=1, while a nonempty member receives at least the three pairs involving itself and the empty set. The full universe belongs to F and has q_F(U)>=2m-1.
+
+2. THE GENERAL FIBRE COMPARISON
+Fix a target A in F and its internal family
+ G={B in F:B subset of A}.
+For any nonempty outside trace E subset of U minus A that actually occurs, define
+ H_E={B intersect A:B in F and B minus A=E}.
+This is a family of subsets of A. Each member of F outside G belongs to exactly one such fibre, and different traces give disjoint collections of original members.
+
+Union closure implies that H_E is union-closed and G union H_E is contained in H_E, where this means union of a member of each family. In particular, A belongs to H_E, because union with A completes any member of the fibre to A union E.
+
+For two trace families K,L on A, let Q(K,L) count ordered pairs (B,C) in K x L with B union C=A. Then
+
+ q_F(A union E) >= 2 Q(G,H_E) + Q(H_E,H_E).             (1)
+
+The first term counts ordered pairs from outside traces (empty,E) and (E,empty). The second counts pairs whose two outside traces both equal E. These classes are disjoint. Other outside-trace combinations can add more pairs, so the comparison is a lower bound.
+
+Consequently, if A is modal, every occurring exterior fibre must satisfy
+
+ 2 Q(G,H_E) + Q(H_E,H_E) <= Q(G,G)=q_F(A).             (2)
+
+This local necessary condition is valid for arbitrary target size and arbitrary surrounding universe. It does not alone settle the candidate.
+
+3. THE STRUCTURAL THEOREM
+Suppose the only members of F contained in A are
+
+ G={empty,A} union {A minus {i}:i in I},
+
+where I is a collection of t distinct coordinates of A and the displayed omitted-coordinate sets are nonempty. In other words, every nonempty proper internal member omits exactly one coordinate. Here 'coatom' refers specifically to these subsets missing one coordinate, not an arbitrary coatom of an unrelated lattice.
+
+THEOREM. If A is modal, it contains a globally abundant coordinate. If A is a proper subset of U, then t>=2 and some coordinate of I appears in strictly more than half of F.
+
+Proof for a proper target A:
+There are t+2 internal members. Pairs involving A contribute 2(t+2)-1 to Q(G,G). Distinct omitted-coordinate sets union to A, adding t(t-1). Therefore
+
+ q_F(A)=t^2+t+3.                                     (3)
+
+Take an occurring exterior fibre H=H_E. It contains A. Let
+ C={i in I:A minus {i} belongs to H},  c=|C|.
+
+Within Q(G,H), the second input A contributes t+2 pairs. Each of the c selected omitted-coordinate sets in H contributes t pairs: its union with A and with each of the t-1 other internal omitted-coordinate sets equals A. Hence
+
+ Q(G,H) >= t+2+ct.
+
+Within Q(H,H), restrict to A and these c sets. Pairs involving A and pairs of distinct omitted-coordinate sets give
+
+ Q(H,H) >= c^2+c+1.
+
+By (1),
+
+ q_F(A union E) >= 2(t+2+ct)+c^2+c+1.                 (4)
+
+Subtracting (3), the lower-bound excess is
+
+ D(t,c)=c^2+(2t+1)c-t^2+t+2.
+
+For t>=1, D is increasing in c>=0. At c=t/2 it equals
+
+ t^2/4 + 3t/2 + 2 > 0.
+
+Thus c>=t/2 would contradict modality. Every exterior fibre must have
+
+ c<t/2.                                               (5)
+
+Also, even c=0 gives q_F(A union E)>=2t+5. For t=0 or t=1 this exceeds t^2+t+3, so a proper modal target necessarily has t>=2.
+
+Now take any T in H. If i in I is absent from T, then
+ T union (A minus {i}) = A minus {i}.
+Since G union H is contained in H, this omitted-coordinate set must belong to H, so i belongs to C. Equivalently, every T contains I minus C. By (5), every member in this exterior fibre contains strictly more than t/2 coordinates of I.
+
+Inside G, each i in I occurs in exactly t members: A and the t-1 other omitted-coordinate sets. The total I-incidence in G is t^2, and for t>=2,
+
+ t^2 >= (t/2)(t+2) = (t/2)|G|.
+
+Each exterior member contributes strictly more than t/2 I-incidences. Because A is proper, some exterior member exists. Summing the internal and exterior contributions gives
+
+ sum over i in I of f_F(i) > (t/2)|F|.
+
+At least one i in I therefore appears in strictly more than half of F. This proves the proper-target assertion.
+
+If A=U, then F=G. For t>=2, each i in I has frequency t out of t+2, at least half. For t=0, F={empty,A}, so every coordinate of A appears in half. For t=1, the one nonempty omitted-coordinate set supplies a coordinate occurring in two of the three members. This proves the remaining case and completes the theorem.
+
+4. COROLLARY: TARGETS OF SIZE AT MOST FOUR
+A singleton member {x} makes x abundant: union with it injects members omitting x into members containing x.
+
+A two-element member {x,y} makes at least one of x,y abundant. If n00,n10,n01,n11 count traces on {x,y}, union with {x,y} injects the n00 members into n11, preserving outside coordinates. Hence n11>=n00 and f(x)+f(y)>=m.
+
+Now let A be a modal target with |A|<=4. If it contains a singleton or two-element member of F, the preceding injection gives an abundant coordinate inside A. Otherwise, when |A|=4 its nonempty proper internal members can only have size three; when |A|<=3 there are none. In both cases the structural theorem applies. Thus every such A contains a globally abundant coordinate, regardless of the size of U.
+
+This strengthens Exploration 07's proved target-size-at-most-three case. It is a result about the size of a modal target, not a restriction to universes of four coordinates.
+
+5. PRECISE REMAINING OBSTRUCTION
+Any counterexample to the frozen modal-support claim must now have a modal target A such that:
+ - |A|>=5;
+ - no singleton or two-element member of F is contained in A;
+ - some nonempty proper internal member B has 3<=|B|<=|A|-2.
+
+In particular, the first remaining target size is five, with at least one three-element internal member. The general fibre comparison (1) still applies, but the omitted-coordinate proof cannot simply be reused: union with a set omitting two coordinates can create intermediate sets, rather than forcing one specified coatom into the exterior fibre.
+
+These are necessary conditions for a failure of this particular modal-support claim. They are not a classification of counterexamples to Frankl's conjecture.
+
+6. COMPUTATIONAL DISCOVERY AND VERIFICATION
+An initial local finite computation examined all 16 four-coordinate internal families consisting of the empty set, the full target, and a selection of its four three-element subsets. It enumerated 4,542 nonempty union-closed trace families containing the full target and retained only fibres satisfying G union H subset H and (2). Linear programming suggested weighted abundance certificates, subsequently checked as exact rational inequalities. This computation motivated the symbolic argument; the theorem above does not depend on its numerical output.
+
+The symbolic counts and implications were checked against all 2,479 nontrivial empty-containing union-closed families on four available labelled coordinates. There were 110 modal targets with the specified internal structure. A further 20,000 generated trials on five to eight coordinates supplied 329 such modal targets. No assertion failed. These are counts of generated trials and eligible modal targets, not estimates of real-world efficacy or uniformly sampled families. Repeated families may occur.
+
+The decisive integer polynomial implication was also checked for t up to 200. The algebraic proof, rather than this finite check, covers all t.
+
+Twelve explicit proper-mode examples were checked with target sizes 4,5,7,10 and t=2,3,or the target size. Their family is G plus one member A union {z}, for a new coordinate z. Here
+ q_F(A)=t^2+t+3,
+ q_F(A union {z})=2t+5,
+ |F|=t+3,
+and each i in I occurs t+1 times. For t=2 the two targets tie; for t>=3 A is the unique mode. Thus the theorem applies to actual proper modal targets, including arbitrarily large targets by the same formulas, rather than merely ruling out an empty class. The examples are elementary and carry no novelty claim.
+
+7. LITERATURE STATUS
+The broad union-distribution construction is established in Gilmer's entropy approach:
+ Justin Gilmer, A constant lower bound for the union-closed sets conjecture (2022).
+ https://arxiv.org/pdf/2211.09055
+
+Injection arguments for one- and two-element members, trace/fibre decompositions, and weighted abundance arguments are standard ingredients. None is claimed as a new technique.
+
+Targeted searches combined Frankl/union-closed with modal unions, most frequent union, union multiplicity, coatoms, and pair counts. No exact precedent was located for the modal-target theorem proved here. Search recall was limited by unrelated uses of 'modal' and 'coatom'. Historical novelty remains unconfirmed.
+
+The search returned Abdollahi, Woodroofe, and Zaimi, Frankl's Conjecture for subgroup lattices (2017), whose abstract concerns global lattice hypotheses involving a modular coatom. The journal PDF timed out during access. That paper was not fully inspected, and no theorem from it is used or asserted to be equivalent to the present local Boolean-coatom condition:
+ https://www.combinatorics.org/ojs/index.php/eljc/article/download/v24i3p25/pdf/
+
+The literature check does not certify novelty, exhaust Polymath comments, or exclude an existing stronger result. The hand proof is offered for scrutiny independently of attribution status.
+
+8. NEXT STEP
+Focus on a five-coordinate modal target whose internal family includes a three-element member, allowing arbitrary exterior fibres. The first question is whether the local necessary condition (2), together with G union H subset H, forces a common weighted abundance certificate for G and every allowable H. A negative result in that relaxed local test would identify a precise missing constraint; it would not by itself construct a genuine global family, because interactions between distinct exterior fibres impose further union closure and contribute more union pairs.
+
+No broad Strange Seed efficacy claim follows. The concrete progress is a proved structural class, a four-coordinate-target corollary, and a narrower unresolved case.

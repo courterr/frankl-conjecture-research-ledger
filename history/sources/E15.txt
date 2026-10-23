@@ -1,0 +1,234 @@
+NARRATIVE EXCERPT — HISTORICAL SOURCE, NOT A NEW VERIFICATION
+Original report: Strange-Seed-Frankl-Exploration-15.txt
+Source record: E15; excerpt lines 1-227.
+This excerpt omits reproduction appendices and raw poem texts.
+Historical dates/statuses and claims below retain their original scope.
+Consult ../../SOURCE-COVERAGE.md for the current audit and verification limits.
+
+STRANGE SEED / TRUTH & WONDER
+Frankl exploration 15 — nonproduct stress test and an unbounded clone family
+22 October 2026 (UTC)
+
+RESULT
+
+A deliberately constructed NONPRODUCT core defeats the uniform permissible-
+fibre certificate, and two nonuniform weightings repair it with exact graph
+certificates. The saturated-image split does NOT improve the failing uniform
+weighting on this case. The stronger repair also admits a compact charging
+proof valid for every size of the cloned block, not just the tested size.
+
+The base core has no nontrivial Cartesian coordinate partition and no nonempty
+member smaller than four elements. This moves beyond the previous product
+examples and the easy singleton/two-set cases, but remains one structured
+template. It is not a broad trial of arbitrary hard nonproduct families.
+
+The original modal-support claim remains unresolved. No new poem was drawn,
+no fresh random core was sampled, and no historical novelty or causal poetry
+advantage is claimed. This is continued development of the existing approach.
+
+SETUP
+
+For a finite union-closed family F of distinct sets containing empty, q_F(A)
+counts ordered pairs with union A, including equal pairs. The candidate says
+every maximizer A contains an element in at least half of F. We have not proved
+that statement in general.
+
+For a fixed modal A, let G=F intersect 2^A. Each occurring nonempty exterior
+trace Z gives a fibre H={B intersect A:B in F, B minus A=Z}. It contains A,
+is union-closed, is G-stable, and satisfies the necessary modal bound
+ C_G(H):=2Q_A(G,H)+Q_A(H,H) <= Q_A(G,G),                       (1)
+where Q_A(K,L) counts ordered cross pairs with union A. Individually permissible
+fibres need not coexist globally, so a negative permissible-fibre score is a
+failure of this sufficient certificate and not automatically of the conjecture.
+
+Nonnegative integer coordinate weights p have total W and fibre surplus
+ S_p(H)=sum_{T in H}(2 sum_{i in T}p_i-W).
+Nonnegative surplus in the core and every permissible fibre proves abundance
+inside the positive weight support. The ordinary graph relaxation excludes T
+when its forced image I_T={g union T:g in G} has C_G(I_T)>q_G, and keeps unary
+G-stability implications. It omits binary union closure and the full bound (1).
+The saturation split checks I_T as a complete fibre if C_G(I_T)=q_G, because
+then any permissible H containing T must be exactly I_T. Remaining fibres are
+tested with all saturated traces excluded. Both tests are sufficient, not
+general equivalences to the original modal-support conjecture.
+
+THE NONPRODUCT TEMPLATE
+
+Use the exploration-12 seven-coordinate core, bit positions 0 through 6:
+[0, 23, 31, 46, 57, 58, 59, 62, 63, 86, 87, 89, 90, 91, 94, 95, 101, 102, 103, 105, 108, 109, 110, 111, 115, 118, 119, 120, 121, 122, 123, 124, 125, 126, 127]
+
+It has 35 members, is union-closed, contains empty/full, and its top ordered
+union multiplicity is 555. For each of the 63 unordered nontrivial coordinate
+partitions S, S-complement, the product of the two projection cardinalities is
+strictly greater than 35. Hence the family is not a Cartesian product across
+any nontrivial coordinate partition.
+
+Replace coordinate 0 by a block C of b perfectly correlated coordinates,
+leaving the other six coordinates unchanged. Denote the resulting core G_b.
+Its union table, cardinality and target multiplicity are unchanged. It remains
+nonproduct: a Cartesian partition cannot split C, since the core contains both
+empty and full but never a mixed subset of C. Keeping C on one side would
+induce a forbidden partition of the original seven-coordinate core.
+For every b>=1, the smallest nonempty core set has size four.
+
+ACTUAL FAILURE OF THE UNIFORM FIBRE CERTIFICATE
+
+The earlier COMPLETE fibre archive contains this 13-member permissible H_0:
+[14, 30, 31, 46, 62, 63, 78, 94, 95, 110, 111, 126, 127]
+It has seven-coordinate uniform surplus 41 and coordinate-0 surplus -3.
+Cloning that coordinate into b copies changes uniform surplus to
+                        41-3(b-1)=44-3b.                    (2)
+At b=15 the target has 21 coordinates, and the fibre surplus is -1.
+All pair counts are preserved: q_G=555 and C_G(H)=521.
+
+This is an actual global instance, not only a relaxed fibre witness. Let
+F=G_15 union {h union {z}:h in H}, with one fresh exterior coordinate z.
+Direct counting checks 48 distinct sets, union closure, and a UNIQUE modal
+target A with q_F(A)=555; the full target has q_F(A union {z})=521 and no other
+set has higher multiplicity. Thus the negative fibre genuinely occurs beneath
+a modal target in an extension of this core.
+
+It defeats the uniform FIBRE certificate. It does not make the global family
+a counterexample to abundance: the core's positive contribution can offset
+this single negative fibre. In fact the global target uniform surplus here is
+158. Keep that distinction: we are testing a sufficient local condition.
+
+EXACT WEIGHTED REPAIRS ON ALL PARTIAL-BLOCK TRACES
+
+For b=15 the following ordinary and saturated-split results were checked:
+
+Weighting                  ordinary min  split min  core surplus  min sat.image
+Uniform on 21 coords       -1,204,444    -1,204,444      159           210
+Clone copies 1; others 15        105          105      1335           630
+Clone copies 0; others 1           6            6        84            30
+
+The first weighted repair gives equal TOTAL weight 15 to each of the seven
+original coordinate signatures. The second ignores C and weights the remaining
+six coordinates equally. Both certify ALL permissible fibres, not just sampled
+ones. The total weights W are 105 and 6 respectively, so both positive minima
+are 1 after normalizing total weight to 1.
+
+All 2^21 possible traces, including arbitrary partial subsets of C, are included
+via the exact orbit quotient. There are 16*2^6=1,024 trace orbits in this case.
+The quotient objective includes the binomial multiplicity of each orbit.
+It does not assume future fibres preserve the core's clone correlations.
+The proof of exactness is the unary-relaxation symmetry argument from the prior
+session: feasible families are closed under union/intersection; a modular
+objective therefore has an invariant optimum under within-block permutations.
+
+The uniform negative relaxed optimum selects 397,984 traces. It was NOT expanded
+for a quadratic union-closure/cost audit: that classification remains unchecked.
+No claim is made that its enormous negative score is a permissible-fibre score.
+The independently verified 13-member H already establishes a real uniform
+failure, with score -1. Saturation leaves the negative graph optimum unchanged,
+so it neither repairs this weighting nor explains that particular graph gap.
+
+AN UNBOUNDED NONPRODUCT CLASS: ZERO WEIGHT ON THE CLONE BLOCK
+
+The zero-on-C repair works for EVERY positive integer b, with the same core
+surplus 84 and every permissible fibre surplus at least 6. This is established
+by a finite checked certificate plus the following argument, rather than by
+extrapolating the b=15 run.
+
+Use unnormalized weights 1 on the six unchanged coordinates, 0 on C. A trace
+with r of those six coordinates has coefficient 2r-6, regardless of which
+copies of C it contains. Split a permissible H into its traces containing all
+of C (H_full) and its other traces (H_partial).
+
+PARTIAL C. If T does not contain all of C and has at most two of the other six
+coordinates, its forced-image cost is one of 22 finite costs. Their minimum is
+745, exceeding the modal budget 555. These 22 cases are the six-coordinate
+patterns of sizes 0,1,2 with original coordinate 0 absent. Their costs are
+unchanged by which proper subset of C is present: image collisions and whether
+a union fills C depend only on whether C is wholly present, since every core
+set contains either all of C or none. Therefore every allowed H_partial trace
+has r>=3 and nonnegative coefficient. All partial-clone choices are covered.
+
+FULL C. Map a full-C trace to its subset U of the remaining six coordinates,
+encoded by a mask 0..63. H_full contains mask 63 (the full target), and is closed
+under U -> U union (g shifted right by 1), for g in the base core. Full-C masks
+of sizes zero or one are forbidden: their seven costs range from 717 to 1039,
+all above 555. Masks of size three have coefficient zero. The only possible
+negative coefficients are the fifteen two-element masks, each contributing -2.
+
+The following assignments charge every such pair to a forced four- or five-
+element mask. Each row includes an actual core member g verifying the force:
+ ((U shifted left by 1) union {0}) union g
+             = ((V shifted left by 1) union {0}).
+
+  pair mask  3 -> positive mask 31, forced by core mask 57
+  pair mask  5 -> positive mask 15, forced by core mask 23
+  pair mask  6 -> positive mask 30, forced by core mask 57
+  pair mask  9 -> positive mask 31, forced by core mask 46
+  pair mask 10 -> positive mask 46, forced by core mask 89
+  pair mask 12 -> positive mask 29, forced by core mask 58
+  pair mask 17 -> positive mask 57, forced by core mask 115
+  pair mask 18 -> positive mask 23, forced by core mask 46
+  pair mask 20 -> positive mask 54, forced by core mask 101
+  pair mask 24 -> positive mask 27, forced by core mask 23
+  pair mask 33 -> positive mask 53, forced by core mask 105
+  pair mask 34 -> positive mask 43, forced by core mask 23
+  pair mask 36 -> positive mask 60, forced by core mask 57
+  pair mask 40 -> positive mask 45, forced by core mask 90
+  pair mask 48 -> positive mask 51, forced by core mask 102
+
+There are fourteen distinct positive targets. Every four-element target receives
+at most one -2 charge, covered by its +2 coefficient. The five-element target
+31 receives two charges, covered by its +4. No charge uses mask 63, whose +6
+coefficient is therefore left over. All other terms are nonnegative or already
+forbidden. Hence S(H_full)>=6. With S(H_partial)>=0, every H has surplus >=6.
+
+Core surplus is independent of b because the cloned coordinates have weight
+zero. Direct count gives S(G_b)=84. For any global extension whose exact internal
+core is G_b and whose target A is modal, summing all fibres gives total surplus
+at least 84+6 times the number of exterior fibres, which is strictly positive.
+Thus SOME ONE OF THE SIX UNCHANGED COORDINATES IS STRICTLY ABUNDANT, for every
+b>=1 and for any number of exterior coordinates/sets satisfying the hypotheses.
+This does not identify one fixed coordinate that works in every extension.
+
+The charging construction initially matched fourteen pairs when using only
+four-element positive targets. Allowing the two capacity slots of a five-element
+target produced the displayed fifteen-pair certificate. Both the final matching
+and each forcing core member are checked directly; no optimizer is needed to
+verify this proof. A separate 64-vertex flow/cut certificate also verifies the
+same full-C minimum 6, with flow=cut=66.
+
+VALIDATION AND DEVELOPMENT ORDER
+
+All six large orbit flow/cut certificates were verified by independent graph
+reconstruction, including actual representative trace costs and saturated image
+scores. The small full-C flow certificate is verified separately. The charging
+certificate checks all fifteen pairs, capacities of positive targets, the seven
+full-C and twenty-two partial-C forbidden cases, and core surplus 84.
+
+Nine additional full-trace versus orbit-graph comparisons passed: clone sizes
+1,2,3 and the uniform/equal-total/zero-clone weightings. The respective uniform
+minima are 7,8,9; equal-total minima are 7,14,21; zero-clone minima are 6,6,6.
+These are implementation controls, not evidence for the unbounded statement;
+that statement follows from the charging and partial-trace argument above.
+
+The base nonproduct assertion was checked across all 63 coordinate partitions.
+The actual global counterexample to the uniform fibre test was checked for union
+closure, cost, unique modal maximality, cardinalities and score. No counterexample
+guided LP rounds were needed: both proposed nonuniform candidates succeeded.
+
+The b=15 failure was deliberately constructed from an existing exact negative
+coordinate margin, not discovered in a blind trial. The lifting explanation and
+charging certificate were developed after observing the successful weighting.
+This is adaptive mathematical investigation, not a preregistered efficacy study.
+
+LIMITS AND NEXT STEP
+
+This establishes one nonproduct TEMPLATE with arbitrarily large clone blocks.
+It does not show success on arbitrary nonproduct cores, prove the original
+modal-support conjecture, establish historical novelty, or isolate poetry's
+causal contribution. All checks are within this investigation, without external
+mathematical review or proof-assistant formalization. Standard weighted proofs,
+matching/charging and symmetry/min-cut tools are not claimed as inventions.
+
+The saturation split did not help this case. The useful outcome is the weighted
+repair and the explanation of why it survives arbitrary partial clone traces.
+Next seek a nonproduct core with genuinely different structure: negative relaxed
+optima caused by joint cost conflicts beyond exact saturation, or weight repairs
+that cannot be explained by this one-signature clone template. Keep that work
+bounded rather than accumulating more copies of this success.

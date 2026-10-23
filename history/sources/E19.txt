@@ -1,0 +1,59 @@
+NARRATIVE EXCERPT — HISTORICAL SOURCE, NOT A NEW VERIFICATION
+Original report: Strange-Seed-Frankl-Exploration-19.txt
+Source record: E19; excerpt lines 1-52.
+This excerpt omits reproduction appendices and raw poem texts.
+Historical dates/statuses and claims below retain their original scope.
+Consult ../../SOURCE-COVERAGE.md for the current audit and verification limits.
+
+STRANGE SEED — FRANKL EXPLORATION 19
+21 October 2026 (America/Los_Angeles)
+Truth & Wonder
+
+RESULT
+The known six-coordinate core that defeats every single-coordinate local certificate still admits a two-coordinate certificate for the new proper-decomposition score. All 427 permitted exterior fibres satisfy the equal-weight certificate on coordinates 4 and 5 (zero-based bit indices). The previous q-score permitted only 316 of them. The 111 extra fibres introduce no failure of these weights.
+
+This is a computer-assisted restricted theorem for this fixed internal core and arbitrary ambient size, not a proof of the general conjecture. It does not measure whether poetry improves discovery, nor establish historical novelty. No new poem was drawn in this continuation.
+
+DEFINITIONS AND FIXED INSTANCE
+F is a finite union-closed family containing the empty set. For T in F, q_F(T) counts ordered pairs with union T, and r_F(T) counts family members contained in T. Define e_F(T)=(q_F(T)-2r_F(T)+1)/2. Equivalently, e counts unordered pairs of proper subsets in F whose union is T.
+The candidate under investigation is: every positive global maximizer A of e contains a coordinate belonging to at least half of F.
+
+Identify A with the six-bit set 63. The fixed internal core is
+G=[0,19,22,23,27,31,42,43,44,45,46,47,51,55,59,60,61,62,63].
+It has 19 members, q_G(A)=189, e_G(A)=76, and coordinate frequencies [12,14,12,13,12,13]. Bits 4 and 5 therefore have combined core surplus (2*12-19)+(2*13-19)=12.
+
+Each occurring nonempty exterior trace Z gives H={B intersect A:B in F and B outside A=Z}. H is nonempty, contains A, is union-closed, and is stable under union with G. Put Q(X,Y)=number of ordered pairs (x,y) in X times Y with x union y=A, and C(H)=2Q(G,H)+Q(H,H).
+The correct necessary cap for an e-maximizing A is C(H)-2|H| <=189. It is not the older stronger cap C(H)<=189.
+
+WHY THE CAP IS NECESSARY
+For D=A union Z, restrict attention to the subfamily G together with the Z-fibre. The ordered union pairs producing D are precisely the two cross orders plus the H-H pairs, totaling C(H). Among them, exactly 2(19+|H|)-1 involve D itself. Thus this subfamily already contributes [C(H)-2(19+|H|)+1]/2 proper decompositions of D. Full F can only add more. Since e_F(A)=76 and A maximizes e_F, the claimed adjusted cap follows.
+
+EXACT CERTIFICATE AND GLOBAL CONSEQUENCE
+For every one of the 427 admissible H, verified exactly:
+  (2*f_H(4)-|H|)+(2*f_H(5)-|H|) >=0.
+The minimum is zero. In the core, the same expression is 12. Summing over the core and every exterior fibre gives
+  2*f_F(4)+2*f_F(5)-2*|F| >=12,
+so
+  f_F(4)+f_F(5) >= |F|+6.
+In particular, at least one of these two coordinates has frequency at least ceil((|F|+6)/2). Thus the candidate holds whenever the internal core of the target is a coordinate permutation of this G. The result permits any number of exterior coordinates and fibres; it does not require independently permitted fibres to coexist.
+
+WHY A SINGLE COORDINATE WAS INSUFFICIENT
+For each coordinate j there is an individually permitted H with negative surplus in that coordinate. Examples, ordered j=0,...,5:
+[14,30,31,46,47,62,63]
+[13,29,31,45,47,61,63]
+[11,27,31,43,47,59,63]
+[7,23,31,39,47,55,63]
+[13,15,31,45,47,61,63]
+[7,15,23,31,47,55,63]
+These show why the common-single-coordinate proof used for size five cannot simply be copied here. They are not counterexamples to the abundance candidate. Combining coordinates succeeds for this core.
+
+ENUMERATION AND VERIFICATION
+First enumeration: canonical closure traversal in C++, starting at {63}, adding a trace and closing under unions with the existing family and G. Canonical lower-bit checks suppress duplicates. The adjusted cost is monotone during additions to a family containing 63: adding h !=63 adds at least 2 from cross pairs with g=63, at least 2 ordered H-H pairs with 63, and subtracts 2 for cardinality, for a net increase of at least 2. Cost pruning is therefore sound. The finite closure traversal completed at 2,838 visited nodes, below the frozen five-million-node budget, returning 427 distinct fibres. The outer 20-second process limit was not reached.
+Second enumeration: Python include/exclude traversal over all 64 possible traces, iterative union closure, exact integer adjusted-cost checks and a five-million-node budget. It completed at 5,675 nodes. Its entire set of 427 family masks exactly equals the first enumerator's output, not merely its count.
+Every emitted family was separately checked for containing 63, union closure, G stability, and the adjusted bound. The original C++ unrestricted four-coordinate control still returns 4,542 families containing the top.
+All 427 actual one-exterior-coordinate extensions F=G union {h union {6}:h in H} were also checked directly. In every case A remains a global e-maximizer, and none has every target coordinate rare. This is supplementary verification of a finite family class; the certificate above is what establishes the unrestricted exterior-size conclusion.
+
+An optional linear program also found the different rational weights [0,0,1/10,0,4/5,1/10], verified exactly after reconstruction. These are unnecessary for the principal result: the simpler old weights [0,0,0,0,1,1] already work. No claim rests on floating-point feasibility alone.
+
+LIMITS AND NEXT DECISION
+We have a complete restricted certificate for one previously obstructive six-coordinate core. We have not classified all six-coordinate cores, ruled out a general counterexample, or proved that a common weighting always exists. The size-five result from Exploration 18 stands separately. A substantive next challenge would be a different six-coordinate core whose adjusted-cap fibres defeat simple weightings, with the same distinction between a failed certificate and a failed mathematical claim. There is no need to redraw a poem just to verify the current branch.

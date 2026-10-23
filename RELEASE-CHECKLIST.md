@@ -1,54 +1,49 @@
-# Before uploading this draft
+# Uploading the expanded v0.5 handoff
 
-Suggested repository name: `union-closed-proper-decomposition-certificates`.
-Suggested description: **Exploratory AI-assisted research on union-closed
-families, with explicit certificates and reproducible checks; novelty unconfirmed.**
+The existing public repository is:
+https://github.com/courterr/union-closed-proper-decomposition-certificates
 
-1. **Retain project attribution.** This release credits Strange Seed / Truth &
-   Wonder project. You may add your preferred personal attribution before
-   posting. Keep the AI-use disclosure; the AI tool is not a human author.
-2. **Keep the adopted licenses.** Software is MIT, documentation is CC BY 4.0,
-   and data/metadata are CC0 1.0. LICENSE.md specifies the exact scope and full
-   terms are included. The project owner's authorization is quoted in
-   OPEN-RELEASE-AUTHORIZATION.md. No further license choice is required for
-   this package. Keep the copyright and license notices when required.
-3. **Review the qualifications.** Keep novelty unconfirmed, the audit partial,
-   and AI involvement visible. Passing finite checks is not peer review. These
-   are not counterexamples to Frankl's conjecture or a proof of the selector.
-4. **Upload extracted files.** Unzip this archive, then upload the contents of
-   its `union-closed-proper-decomposition-certificates` folder to the repository
-   root. Upload README.md, NOTE.md, code and data as individual files; publishing
-   only the ZIP makes the contents less convenient to inspect. Keep relative
-   paths intact. Do not upload the private source conversation.
-5. **Run the two checks.** From the repository root, run `python3 verify.py` and
-   `python3 test_verifier.py`. Preserve the outputs and note any environment
-   differences. An incomplete optional enumeration is not a completed proof.
-6. **Record the release.** After upload, fill `repository_url`, `publication_date`
-   and `release_tag` in release-details.json with actual values. Update the
-   matching fields in claims.json if applicable. A tag such as v0.4 identifies
-   a reviewed snapshot; do not invent a DOI. Retain the draft label until a
-   human has reviewed what is being released.
-7. **Invite corrections.** Enable issues if desired, and use FEEDBACK.md to
-   request prior-art matches, equivalent formulations, proof gaps and reproduction
-   reports. The initial literature-search record is incomplete; do not claim
-   that every approach was cleared before investigation.
+1. Extract the v0.5 ZIP. Open its inner
+   `union-closed-proper-decomposition-certificates` folder until README.md,
+   NOTE.md, verify.py, history/, data/ and LICENSES/ are visible together.
+2. On the repository's MAIN page choose Add file -> Upload files. Upload all
+   those inner contents. Keep internal paths intact; upload files/folders rather
+   than the ZIP or an enclosing download folder. Existing names are updated,
+   and the new history/catalog files are added. No repository rename is needed.
+3. Review the uploaded draft and commit with a message such as
+   `Expand handoff with poetry-associated failures and source coverage`.
+4. Confirm the homepage shows the new navigation table and the catalog/coverage
+   links work. The package checksums already reflect this update; no manual
+   hash edits are required unless you change additional content.
 
-If you edit any files, regenerate SHA256SUMS. From the repository root:
+For a local verification before or after upload:
 
 ```sh
-python3 - <<'PY'
-from pathlib import Path
-from hashlib import sha256
-root = Path('.')
-files = sorted(p for p in root.rglob('*') if p.is_file()
-               and p.name != 'SHA256SUMS'
-               and '__pycache__' not in p.parts
-               and not any(part.startswith('.') for part in p.parts))
-Path('SHA256SUMS').write_text(''.join(
-    sha256(p.read_bytes()).hexdigest() + '  ' + p.as_posix() + '\n'
-    for p in files))
-PY
+python3 verify.py
+python3 test_verifier.py
+python3 verify_history.py
+python3 verify_release.py
 ```
 
-This checklist prepares a transparent exploratory release. It does not certify
-novelty, legal ownership, archival eligibility or mathematical correctness.
+After intentional edits, including release metadata:
+
+```sh
+python3 refresh_checksums.py
+python3 verify_release.py
+```
+
+Regenerate once after all changes. SHA256SUMS does not checksum itself.
+The source-excerpt hashes in history/source-coverage.json are separate provenance
+fields; if you deliberately edit a source excerpt, update its recorded hash
+and document the change before refreshing the outer manifest. Do not silently
+alter historical claims while calling the result an unchanged excerpt.
+
+Licenses are already selected and included: MIT software, CC BY 4.0 documentation,
+CC0 1.0 data/metadata. Retain LICENSE.md's scope and the AI-use disclosure. The
+general claims remain unresolved, novelty unconfirmed, and historical appendix
+coverage incomplete even though all 29 narrative records are mapped.
+
+The repository URL and initial-publication date are already recorded. The v0.5
+upload date and any release tag may be filled when actually assigned, followed
+by regenerating checksums. No DOI has been assigned. Creating a tagged release
+is optional. This preparation does not itself upload or publish the update.

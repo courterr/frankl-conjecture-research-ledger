@@ -1,0 +1,120 @@
+NARRATIVE EXCERPT — HISTORICAL SOURCE, NOT A NEW VERIFICATION
+Original report: Strange-Seed-Frankl-Exploration-09.txt
+Source record: E09; excerpt lines 1-113.
+This excerpt omits reproduction appendices and raw poem texts.
+Historical dates/statuses and claims below retain their original scope.
+Consult ../../SOURCE-COVERAGE.md for the current audit and verification limits.
+
+STRANGE SEED — FRANKL EXPLORATION 09
+Truth & Wonder | 21 October 2026
+Exact finite certificates for modal targets of size at most five
+
+RESULT AND SCOPE
+The unchanged modal-support claim is established for targets containing at most five coordinates, using an exact computer-assisted finite argument. The surrounding universe may have arbitrarily many coordinates. The general claim remains unresolved. Historical novelty is unconfirmed. The programs are supplied for scrutiny; they have not been formalized in a proof assistant or externally reviewed.
+
+The decisive computation uses only integer and Boolean operations. Two different enumerators agree on all permitted fibres. Linear programming was used initially for discovery, but neither floating-point feasibility nor a solver's infeasibility report is required by the final certificate argument.
+
+No new poem was drawn. This is follow-through on Exploration 07's Blake 'Spring' association and the fibre inequality proved in Exploration 08. No controlled poetry-versus-baseline comparison was performed, and no causal creativity advantage is claimed.
+
+1. PRECISE CLAIM
+Let F be a finite union-closed family of distinct sets, containing the empty set and some nonempty member. Define
+ m=|F|,
+ f_F(i)=|{B in F:i in B}|,
+ q_F(A)=|{(B,C) in F x F:B union C=A}|.
+Ordered pairs include equal inputs. A modal target is any member maximizing q_F, including ties. An abundant coordinate appears in at least m/2 members.
+
+THEOREM (computer-assisted, restricted target size).
+Every modal target A with |A|<=5 contains a globally abundant coordinate.
+
+This is a restriction on the size of the target, not the size of the whole universe U=union F. It is not a proof for arbitrary modal targets or a resolution of Frankl's conjecture.
+
+2. REDUCTION TO LOCAL FINITE FAMILIES
+Fix a five-coordinate modal target A, identified with {0,1,2,3,4}. Let
+ G={B in F:B subset of A}.
+For each nonempty outside trace E that occurs among members of F, define
+ H_E={B intersect A:B in F, B minus A=E}.
+Each H_E is nonempty and union-closed, contains A, and satisfies G union H_E subset H_E (pairwise union of members of the two families). The members of G and the original members represented by all these exterior fibres partition F.
+
+For families K,L on A let
+ Q(K,L)=|{(B,C) in K x L:B union C=A}|.
+All pairs producing A lie in G, so q_F(A)=Q(G,G). Pairing an internal member with a member of fibre E, in either order, and pairing two members of fibre E gives disjoint contributions to A union E. Therefore
+
+ q_F(A union E) >= 2 Q(G,H_E)+Q(H_E,H_E).
+
+Modality forces the necessary condition
+
+ 2 Q(G,H_E)+Q(H_E,H_E) <= Q(G,G).                    (1)
+
+Call a nonempty trace family H permissible for G if it is union-closed, contains A, is stable under union with G, and satisfies (1). It is enough to find ONE coordinate i, depending only on G, such that
+
+ 2 f_G(i)>=|G|,
+ 2 f_H(i)>=|H| for EVERY permissible H.              (2)
+
+Indeed, the same coordinate works for every actual exterior fibre. Summing its nonnegative surpluses over G and all exterior fibres gives 2 f_F(i)>=m. This summation places no bound on the number of outside traces or the number of outside coordinates.
+
+Permissible fibres form a relaxation: separate fibres passing (1) need not fit into any single global family. That is harmless here, because the certificate is valid for every fibre in the larger relaxed class.
+
+3. SMALL MEMBERS ARE HANDLED WITHOUT ENUMERATION
+If a singleton {i} belongs to G, union with it injects members of F omitting i into members containing i. Thus i is globally abundant.
+
+If a pair {i,j} belongs to G, partition F by its trace on that pair. Union with {i,j} injects the empty-trace class into the full-trace class, preserving the outside coordinates. If their four counts are n00,n10,n01,n11, then n11>=n00 and
+ f_F(i)+f_F(j)=n10+n01+2 n11>=m.
+At least one of i,j is abundant.
+
+It remains to consider G with no one- or two-element member. Such a G consists of the empty set, A, and a selection of the ten triples and five four-element subsets of A. There are only 2^15 selections to inspect for union closure.
+
+4. EXACT COVERAGE AND CERTIFICATES
+The first core scan finds 4,945 labelled union-closed cores of this form. Quotienting by the 120 coordinate permutations leaves 119 representative types.
+
+Of these, 4,913 labelled cores (113 representative types) contain a triple and form the remaining case specified at the start of this run. The other 32 labelled cores (six types) contain no triple and were added as controls. Including those controls makes this finite argument independent of the earlier coatom-only theorem.
+
+For the 119 representative cores, the two enumerators find exactly 1,483 permissible core/fibre combinations in total. The same fibre can appear with different cores; 1,483 is a count across cores, not a count of globally distinct trace families.
+
+For EVERY representative G, the exact checker finds a coordinate satisfying (2). The stored certificate includes the chosen coordinate, its integer surplus in G, and the minimum surplus across the permissible fibres. An empty permissible-fibre list is allowed: in that case no exterior trace can occur when A is modal, and the core inequality alone suffices.
+
+A stronger finite observation also holds in all 119 cases: EVERY coordinate maximizing f_G is abundant in G and in every permissible H. The verifier checks this using integer inequalities. This is a checked five-coordinate statement, not a general theorem in arbitrary dimensions.
+
+Relabelling transports the chosen coordinate and all the inequalities, covering all 4,945 labelled cores. Together with the singleton/pair arguments, this proves the exact-five-coordinate case.
+
+5. WHY THIS COVERS TARGETS SMALLER THAN FIVE
+A modal target cannot be empty: the empty target has one producing pair, while any nonempty family member has at least three.
+
+If a nonempty modal target has k<5 coordinates, select one coordinate x inside it and introduce 5-k new copies of x. In every family member, include each copy exactly when x is present. This operation is injective on family members and preserves unions. Every pair count and every modal status is preserved under the resulting bijection of members. The selected target now has five coordinates.
+
+An abundant coordinate supplied by the exact-five theorem is either an original target coordinate or a copy of x. Each copy has exactly x's frequency. In either case an original coordinate of the original target is abundant. This proves the stated at-most-five result.
+
+6. HOW THE FINITE SEARCH IS CHECKED
+First enumerator: C++ closure enumeration.
+Families of trace sets are represented as bit masks on the 32 subsets of A. Start with H={A}. When adding a trace T to an already closed G-stable H, its closure is
+ H union {T union g:g in G}
+   union {h union T union g:h in H,g in G}.
+This formula is closed under unions and stable under G, because G and H are union-closed and the empty set lies in G. A canonical lower-index test prevents duplicate branches. The cost 2 Q(G,H)+Q(H,H) is nondecreasing when traces are added, so branches exceeding Q(G,G) can be pruned.
+
+Control: with four coordinates, G={empty,A}, and an effectively unlimited cost cap, this enumerator returns 4,542 nonempty union-closed trace families containing A, agreeing with the direct 2^16 scan used in Exploration 08.
+
+Second enumerator: independent Python binary membership decisions.
+For each of the 32 possible traces, branch on absence or presence. Forced presence is deduced by repeatedly closing the current family under its own unions and unions with G. A branch is rejected only if a forced trace was declared absent or its exact current cost already exceeds the cap. Remaining undecided membership bits are then split recursively. This covers every permissible family: the membership choices are exhaustive, the forced implications are necessary, and all pruning uses a monotone lower bound.
+
+For each core, the Python result agrees exactly, as a SET OF FAMILY MASKS, with the C++ output. Thus matching total counts alone are not being used as validation. The binary verifier visits 20,035 nodes across the 119 cases.
+
+The independent checker also rescans all 2^15 possible cores using repeated union closure and verifies that all valid labelled cores lie in the permutation orbits of the supplied representatives. It checks orbit coverage equals 4,945, core abundance, and every certificate inequality. No numeric tolerance, floating-point comparison, random trial, or optimization infeasibility result appears in these final checks.
+
+This is still a computer-assisted proof. It depends on the mathematical reduction, enumeration completeness, and program correctness. It is reproducible and cross-checked, but not proof-assistant formalized or externally reviewed.
+
+7. LITERATURE AND NOVELTY
+The surrounding methods have substantial precedent. Gilmer studies unions of independent uniform samples from union-closed families; the pair-union distribution itself is established:
+ Justin Gilmer, A constant lower bound for the union-closed sets conjecture (2022).
+ https://arxiv.org/pdf/2211.09055
+
+Weighted abundance certificates for union-stable trace families are standard in Poonen's framework. Pulaj's dissertation discusses Poonen's theorem, exact weight certificates, and computational verification. In particular, its Corollary 4 describes the unrestricted union-stable-family weighting criterion. This run adds a modal pair-count restriction to the permissible fibres; it does not invent the general certificate strategy:
+ Jonad Pulaj, Cutting Planes for Union-Closed Families (2017), abstract and Corollary 4.
+ https://d-nb.info/1156012813/34
+
+Targeted searches included union-closed/Frankl with modal union, most frequent union, union distribution mode, convolution, common abundant elements, and frequency in subfamilies. Many hits were unrelated, so search recall is weak. No exact precedent for the restricted modal-target result was located. Status: no exact precedent located; novelty unconfirmed. No exhaustive review of all Polymath comments or equivalent historical formulations has been completed.
+
+The record distinguishes validity from priority and efficacy: a finite certificate can be valid even if known, and a valid result does not establish that the poem was necessary or useful relative to baseline.
+
+8. NEXT USEFUL QUESTION
+The unresolved modal-support claim now begins with targets of size at least six. The more informative follow-up is to investigate the observed transfer of core-frequency maximizers, rather than blindly expanding the enumeration table. For larger cores, do coordinates of maximum core frequency still remain abundant in every fibre satisfying (1)? A counterexample to that local strengthening would expose a limitation of this proof route, while leaving the main modal-support claim open.
+
+No larger-target transfer theorem is asserted here. The all-dimensions modal-support claim still implies Frankl and remains unproved.

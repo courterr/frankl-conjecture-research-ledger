@@ -1,6 +1,6 @@
 {
-  "version": "0.4.1",
-  "date": "2026-10-22",
+  "version": "0.5",
+  "date": "2026-10-23",
   "status": "draft; novelty unconfirmed; not peer reviewed",
   "scope": "Finite union-closed families; local sufficient certificates for a proper-decomposition selector",
   "claims": [
@@ -50,7 +50,7 @@
     "minimality of examples",
     "global impossibility of weighted certificates"
   ],
-  "public_repository": null,
+  "public_repository": "https://github.com/courterr/union-closed-proper-decomposition-certificates",
   "doi": null,
   "license": {
     "software": "MIT",
@@ -61,9 +61,11 @@
   "human_author_attribution": "Strange Seed / Truth & Wonder project",
   "audit": {
     "file": "audit-ledger.json",
-    "scope": "partial evidence-bounded historical reconstruction",
+    "scope": "all29 saved narrative sources mapped;41 catalog entries; computational appendices not all reissued",
     "exact_historical_retread_count": null,
     "priority_established": false
   },
-  "release_details": "release-details.json"
+  "release_details": "release-details.json",
+  "history_catalog": "history/attempts.json",
+  "verification_scope": "VERIFICATION-SCOPE.md"
 }

@@ -1,0 +1,95 @@
+NARRATIVE EXCERPT — HISTORICAL SOURCE, NOT A NEW VERIFICATION
+Original report: Strange-Seed-Frankl-Exploration-03.txt
+Source record: E03; excerpt lines 1-88.
+This excerpt omits reproduction appendices and raw poem texts.
+Historical dates/statuses and claims below retain their original scope.
+Consult ../../SOURCE-COVERAGE.md for the current audit and verification limits.
+
+STRANGE SEED — FRANKL EXPLORATION 03: BOUNDED TRANSFER PASS
+Truth & Wonder | 2026-10-21
+
+DECISION
+Park this branch and return to a fresh poetry seed. This pass found neither a counterexample nor a general proof of simultaneous dilution. It does not strengthen the earlier mathematical conclusions. Small computational exclusions are solver reports, and one larger search ended unresolved. No causal efficacy claim or global novelty claim is made.
+
+PRECISE QUESTION TESTED
+Let F be finite and union-closed, S a three-element member, and Y the union of members disjoint from S. Let G={A in F:A subset S union Y}, H=F minus G, I=|G| and O=|H|. Let
+ K={y in Y:2f_G(y)>=I}.
+The survivor claim P is:
+ If all three elements of S are globally below half and K is nonempty, then some y in K has 2f_F(y)>=|F|.
+A counterexample must make every core-abundant Y candidate globally deficient while retaining global deficiency of all S elements. It may still have abundant Y elements that were not core-abundant, or abundant elements outside S union Y. Therefore it need not contradict Frankl.
+
+Do not confuse P with the different statement Q that global deficiency of S always forces some globally abundant element somewhere in Y. P makes a claim about survival of the particular core candidates; Q allows new abundant Y elements. The computational runs below tested failures of P, not necessarily failures of Q.
+
+BOUND AND COMPUTATIONAL MODELS
+One bounded pass: three integer-program searches, each with a requested25-second solver limit, followed by one analytic proof attempt and a targeted precedent check. No workers, new poems, or comparative trials.
+
+The ground set in each model consists of S, k anchor coordinates Y, and one exterior coordinate z. Every subset has a binary inclusion variable. Constraints enforce union-closure; membership of S and all eight Y union R for R subset S; absence of exterior members disjoint from S; core abundance of exactly a prescribed r-element K; core deficiency of every other Y coordinate; and global strict deficiency of S union K. This makes Y the actual disjoint-member anchor and G exactly the z-free slice. The full-cube condition is a previously proved necessary condition in the all-S-deficient branch.
+
+The model only covers one exterior coordinate and the specified k,r values. It does not cover larger anchor sizes, more exterior coordinates, other candidate counts, or arbitrary set families.
+
+RESULTS
+[
+  {
+    "k": 4,
+    "r": 1,
+    "mode": "exactK",
+    "status": 2,
+    "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+    "seconds": 12.71319580078125
+  },
+  {
+    "k": 4,
+    "r": 2,
+    "mode": "exactK",
+    "status": 2,
+    "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+    "seconds": 9.5407133102417
+  },
+  {
+    "k": 5,
+    "r": 2,
+    "mode": "exactK",
+    "status": 1,
+    "message": "Time limit reached. (HiGHS Status 13: model_status is Time limit reached; primal_status is None)",
+    "seconds": 27.06631326675415
+  }
+]
+
+Interpretation: k=4,r=1 and k=4,r=2 were reported infeasible by HiGHS. No independently checked infeasibility certificates were produced, so these are computational reports rather than standalone mathematical proofs. The k=5,r=2 run hit its time limit with no candidate; it did not establish infeasibility. The requested25-second limit is a solver parameter, not a strict end-to-end wall-clock deadline; the larger run reported about27 seconds inside the timed call. No search is reported as an exhaustive exclusion of the general claim.
+
+ANALYTIC ATTEMPT
+For y in K, write g_y=2f_G(y)-I>=0 and let M_y count exterior members omitting y. Exact bookkeeping gives
+ 2f_F(y)-|F|=g_y+O-2M_y.
+Simultaneous dilution requires
+ 2M_y>g_y+O for every y in K,
+and hence
+ 2 sum over y in K of M_y>sum over y in K of g_y+|K|O.
+This makes the required omission budget explicit. It does not contradict union-closure without a further structural upper bound on those simultaneous omissions. The depth-at-most-two theorem from Exploration02 supplies such a bound in a restricted case; its depth-three counterexample shows that it cannot simply be extended unchanged. That counterexample has abundant S-elements, so it does not answer P.
+
+Trying to derive the missing bound using only the relation between G and H leads to a known transfer framework. Both G and H are union-closed, and G vee H subset H, where vee means all pairwise set unions. If every S element is deficient, the Exploration01 localization result gives I>9|F|/16, hence I>O. But a size advantage and compatibility alone did not yield a proved common-abundance statement in this pass.
+
+A useful guard against vacuous tiny cases: if |Y|<=3 and F has no singleton or pair member, there are at most two disjoint-from-S members (empty and possibly the full three-element Y). The earlier disjoint-member/fibre balance argument already yields abundance in S. If a singleton or pair is present instead, standard small-set arguments yield a globally abundant element. This guard does not prove P in general, and was not used as a substitute for the tested k=4 and5 cases.
+
+LITERATURE FINDING
+Tom Eccles posed a closely related common-abundance conjecture in a Polymath11 comment on February11,2016,7:42am. It asks whether two nonempty union-closed families A,B, with A vee B subset B and |A|>|B|, must share an abundant element. This is an old transfer direction, not an approach first introduced here.
+https://gowers.wordpress.com/2016/02/08/func2-more-examples/
+Relevant passage: the comment containing Conjecture1 and Conjecture2, following the February10 discussion of coordinate-slice induction. Gowers's surrounding discussion explicitly emphasizes preserving the mixed-union compatibility between slices.
+
+Our inference: if that general common-abundance assertion held for G,H here, a common abundant element would be globally abundant. It cannot lie outside S union Y because it is core-abundant, and cannot lie in S because those are assumed globally deficient. It would therefore lie in K and establish P. This explains the connection; it is not a proof, equivalence, or claim that the literature has resolved P. We did not establish the current status of Eccles's weaker common-abundance conjecture.
+
+A stronger assertion, that every abundant element of the larger family stays abundant in the smaller compatible family, was explicitly refuted by Eccles on February24,2016,9:57pm:
+https://gowers.wordpress.com/2016/02/22/func4-further-variants/
+His example uses
+ A={{1,2,3} union T:T subset {4,5,6}}, |A|=8,
+ B={{4,5,6} union T:T subset {1,2}} union {{1,2,3,4,5,6}}, |B|=5.
+Every cross union is the full ground set, which is in B. Coordinate3 has frequency8 in A and1 in B. Some coordinates remain abundant in both, so this does not refute the weaker common-abundance statement or P.
+
+The broad framework is also covered by Poonen's classic local-configuration theorem, although its exact hypotheses and conclusion differ from P:
+B. Poonen, Union-closed families, JCTA59(2),1992,253–268.
+https://doi.org/10.1016/0097-3165(92)90068-6
+This source was checked at its abstract for the general local-configuration scope; no additional theorem was imported without verification.
+
+Targeted searches included union-closed with common abundant, abundant in both, subfamily extension, size advantage, and Tom Eccles conjecture. They located historical overlap rather than a resolution of our precise claim. No close-match absence is treated as certified novelty.
+
+STOPPING POINT AND NEXT ACTION
+The branch has yielded valid restricted lemmas and explicit counterexamples to tempting extensions. This bounded follow-up has not removed the remaining simultaneous-dilution gap. Continue the project with a fresh seed aimed at a materially different mathematical object, rather than keep renaming first-moment bookkeeping as new approaches. Preserve this claim and all earlier results for future reference. No new seed was drawn in this pass.

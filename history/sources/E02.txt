@@ -1,0 +1,113 @@
+NARRATIVE EXCERPT — HISTORICAL SOURCE, NOT A NEW VERIFICATION
+Original report: Strange-Seed-Frankl-Exploration-02.txt
+Source record: E02; excerpt lines 1-106.
+This excerpt omits reproduction appendices and raw poem texts.
+Historical dates/statuses and claims below retain their original scope.
+Consult ../../SOURCE-COVERAGE.md for the current audit and verification limits.
+
+STRANGE SEED — FRANKL EXPLORATION 02
+Truth & Wonder | 2026-10-21
+
+PURPOSE AND STATUS
+This installment preserves the prior turn's unsaved 55-set construction and transfer inequality, then develops the question of whether exterior omissions can dilute all core candidates at once. It continues the previous poem-associated branch; no new poem, blind-worker run, or comparative efficacy experiment was used.
+
+Outcomes: a precise omission identity; an elementary sufficient certificate; a proved transfer theorem when exterior sets omit at most two anchor elements; and a 49-set counterexample to extending that transfer unchanged to three omissions. None resolves Frankl. Novelty is not established; the method is elementary incidence counting and completion pairing, within familiar local-configuration territory.
+
+DEFINITIONS
+F is a finite union-closed family, S a three-element member, and Y the union of its members disjoint from S. We focus on nonempty Y, which is then a member of F. Let
+ G={A in F:A subset S union Y}, I=|G|;
+ H=F minus G, O=|H|;
+ B={A in H:Y is not a subset of A}; C=H minus B.
+For any subfamily K, f_K(x) is the number of its members containing x. Abundant means frequency at least half, throughout this report.
+
+RECOVERED PREVIOUS RESULT: A SHARP TRANSFER INEQUALITY
+Assume Y union R belongs to F for every R subset S, as forced in our branch where all S-elements are deficient. For each x in S,
+ f_F(x)>=f_G(x)+|C|/2+|B|/4.
+Thus f_G(x)-I/2>=|B|/4 suffices for global abundance of x.
+
+Proof: adding x pairs sets omitting x in C injectively with sets containing it, because A union (Y union {x})=A union {x}. Partition B by outside base A minus S. Each nonempty fibre contains S and lacks the empty trace. There are at most three possible traces omitting x; at least one contains x, so frequency of x in the fibre is at least one quarter of its size. Sum the bounds. The selection of B depends only on the outside base, so no fibre is split by this argument.
+
+The quarter constant is attained by traces {b,c,{b,c},S} for x=a (singleton braces suppressed in this shorthand).
+
+EXPLICIT 55-SET FAILURE OF NAIVE CORE LIFTING
+Take S={a,b,c}, disjoint X={x_1,...,x_12}, and new z. Label six indices a, three b, three c; take labels in that order. Put T_i=X minus {x_i}.
+G consists of S; T_i, T_i union {label_i}, T_i union S for each i; and X union R for all R subset S.
+It has 45 members; frequencies in S are (23,20,20). Every X-coordinate occurs 41 times.
+Choose i=7, whose label is b. Add four sets
+ T_7 union {z} union R, R in {{b},{c},{b,c},S},
+and six sets
+ X union {z} union R, R in {{b},{c},{a,b},{a,c},{b,c},S}.
+The result F is union-closed: distinct lower bases unite to X; at the repeated base T_7, adjoining its core label b preserves the four allowed traces; mixed unions at the upper base have one of the six specified traces. Union with S gives S-trace sets already present.
+Y=X, the core is exactly G, and the exterior splits into B of size4 and C of size6.
+                    sets    a    b    c
+ G                    45   23   20   20
+ B                     4    1    3    3
+ C                     6    3    4    4
+ F                    55   27   27   27
+The bound is exact for a. Other coordinates are abundant: x_7 has frequency47 and the other X-coordinates51. This is not a counterexample to Frankl.
+
+FOLLOW-UP 1: EXACT OMISSION BOOKKEEPING
+Choose any nonempty K subset Y of size r. Define
+ sigma_K=sum over y in K of (2f_G(y)-I),
+ M_K=sum over A in H of |K minus A|.
+Then exactly
+ sum over y in K of (2f_F(y)-|F|)=sigma_K+rO-2M_K.
+Proof: f_H(y)=O-number of exterior sets omitting y; sum and rearrange.
+If sigma_K+rO>=2M_K, at least one member of K is globally abundant.
+In particular, suppose all r elements of K are core-abundant and each exterior set misses at most d elements of Y. Only B contributes omissions, so M_K<=d|B|. Therefore
+ rO>=2d|B|
+is sufficient for at least one of these core candidates to survive.
+
+This identity and certificate do not require union-closure. They are useful bookkeeping, not an original structural method. The exact identity needs essentially the incidence information it describes; it is not by itself an efficient way around the conjecture. The coarse bound deliberately loses information.
+
+FOLLOW-UP 2: TRANSFER WITH AT MOST TWO OMISSIONS
+The following stronger structural statement uses union with the actual member Y.
+Assume every A in H satisfies |Y minus A|<=2. For every distinct u,v in Y,
+ f_H(u)+f_H(v)>=O.
+Consequently, if f_G(u)+f_G(v)>=I, then one of u,v is globally abundant. In particular, two distinct core-abundant Y-elements suffice.
+
+Complete proof. Partition H by W=A minus Y. Since each A extends beyond S union Y, W has an element outside S union Y; thus unioning with Y stays in H. In each nonempty part, its full completion W union Y belongs to the part by union-closure and Y in F. Represent the part by its distinct holes D=Y minus A. It contains the empty hole, and all holes have size at most2.
+Fix u,v. A hole containing both must be exactly {u,v}, so there is at most one such member of the part. Balance that member against the full completion, which contains both u,v. Every other member contains at least one of u,v. Thus the combined frequency of u,v is at least the number of members in that part. Sum over parts. Adding the corresponding core pair inequality proves the transfer statement.
+
+The proof actually needs only closure under A maps to A union Y on H, not the complete cube or the three-element size of S. Under at most one omission, the same completion map gives individual abundance of every y in Y within H, so each core-abundant y transfers separately.
+
+FOLLOW-UP 3: THREE OMISSIONS CAN DESTROY TWO CORE CANDIDATES
+Take S={a,b,c}, Y={u,v,w}, and new points z_1,...,z_8. Put
+ G={S} union {Y union R:R subset S},
+so |G|=9 and each y in Y occurs8 times.
+Let D be the intersection-closed five-member collection of holes
+ {empty,{u},{v},{u,v},Y}.
+For j=1,...,8 let Z_j={z_1,...,z_j}. Append
+ H_j={Z_j union S union (Y minus D):D in the hole collection}.
+Let F=G union H_1 union ... union H_8.
+Each H_j has5 members; the levels have distinct nested outside supports. The hole collection is intersection-closed, so unions within and between exterior levels stay in a level. Union with any Y union R from G gives the full completion of that exterior level; union with S leaves it unchanged. Therefore F is union-closed.
+The union of members disjoint from S is exactly Y, and G is exactly the core. There are49 members total. The Y-frequencies are
+             u     v     w
+ G (9)       8     8     8
+ H (40)     16    16    32
+ F (49)     24    24    40
+Both u and v were core-abundant but are globally deficient. The maximum exterior omission size is3. Hence the two-candidate transfer theorem cannot be extended unchanged from2 to3 omissions.
+
+S-elements are abundant in this counterexample. It refutes the general transfer extension, not the stronger claim restricted to families with all S-elements deficient. That additional coupling remains relevant and unproved. The example does not refute Frankl or the earlier 9/16 theorem.
+
+TWO AUXILIARY COMPUTATIONAL PROBES — DO NOT CONFUSE WITH PROOFS
+A proposed shortcut that the six-coordinate core always has average size at least3 is false. An optimization search found, and a direct construction verifies,
+ G=2^S times {empty,{w},Y}, with |S|=|Y|=3.
+It has24 members and frequencies (12,12,12,8,8,16), total incidence68<72. It contains S and all Y union R, yet average size is17/6<3. The counterexample is exact; no solver optimality claim is needed for the refutation.
+
+Two other finite six-coordinate feasibility probes reported infeasibility: a core with negative total S-surplus and all three Y-pair sums below its size; and a core with both S and Y having negative total block surplus. These are solver reports, not independently certified mathematical proofs, and are not used in the proved results. Moreover, focusing on |Y|=3 in the all-S-deficient branch is already unhelpful: absent singleton and pair members, the disjoint subfamily can only be empty and Y, so the previous elementary disjoint-member bound already guarantees abundance. No new theorem is credited for these infeasibility probes.
+
+LITERATURE CHECK AND CREDIT
+Primary sources inspected:
+- Pulaj and Wood, Local Configurations in Union-Closed Families, arXiv:2301.01331v2, especially Section5. https://arxiv.org/html/2301.01331v2
+It establishes restricted-fibre methods and generalized local configurations. We are continuing within that broad area, not introducing it.
+- Kabela, Polak and Teska, The number of abundant elements in union-closed families without small sets, arXiv:2212.09279v2, especially Section2.
+https://arxiv.org/pdf/2212.09279
+It studies how minimum member size forces multiple abundant elements, using complements, bounded ranks, and double counting. This is a close conceptual precedent for treating small omission sets. We inspected its proof framework as well as its statement. It uses strict abundance in an empty-set-free formulation; our transfer uses at-least-half abundance, so these conventions must not be conflated.
+
+Targeted searches combined union-closed or intersection-closed with omissions, two abundant elements, subfamilies, boundary, core surplus, pair frequencies and abundance transfer. No exact statement of our core/exterior transfer or the specific49-set construction was located. This is limited search coverage, not certification of novelty. Because the local proof is elementary and its ingredients familiar, an unfamiliar formulation is especially weak evidence of originality. No independent specialist review has occurred.
+
+HOW THIS CHANGES THE NEXT STEP
+We have a proved sufficient transfer rule and an explicit failure at the next omission size. Generic omission totals alone do not exploit enough of union-closure. The next substantive question is whether the exterior arrangements capable of diluting core candidates are compatible with all three S-elements being deficient as well. The49-set example does not achieve that. A useful next approach must exploit this simultaneous constraint or the unions between different exterior parts; simply repeating the omission identity is not progress toward a general proof.
+
+Verification was implementation checking, not a resumed comparative poetry trial. We independently reconstructed the55-set example; checked both its closure and exact counts; exhausted all90 triple fibres for the quarter bound; checked32768 arbitrary hole collections of maximum size2 on five available points for the local pair inequality; and directly checked closure, anchor, core and exact counts of the49-set example. In500 constructed random closed families with nonempty exterior and core-Y candidates, the coarse omission certificate triggered242 times and never failed. This percentage is not a success rate for Strange Seed, not representative of arbitrary families, and not evidence of novelty.

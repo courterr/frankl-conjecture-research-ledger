@@ -1,0 +1,56 @@
+NARRATIVE EXCERPT — HISTORICAL SOURCE, NOT A NEW VERIFICATION
+Original report: Strange-Seed-Frankl-Pilot-01-Full-Record.txt
+Source record: P01; excerpt lines 1-50.
+This excerpt omits reproduction appendices and raw poem texts.
+Historical dates/statuses and claims below retain their original scope.
+Consult ../../SOURCE-COVERAGE.md for the current audit and verification limits.
+
+STRANGE SEED — FRANKL PILOT 01: FULL TRIAL RECORD
+Truth & Wonder
+21 October 2026
+
+RESULT
+The pilot produced valid, inspectable mathematical developments in all three conditions. No full solution was produced. There is no clear poetry advantage in this run.
+All three independently classified exactly the same negative-balance fibres over a three-element member. That shared development cannot be credited specifically to poetry. The seeded condition did translate the randomly selected poem into concrete, checkable claims, but the controls also made progress.
+This is one problem, one poem draw, and one response per condition. It is not an estimate of an effect size, a general efficacy result, or a test covering all poetry.
+
+DRAW
+P023: Edgar Allan Poe, To Frances S. Osgood. Eight nonblank lines, 50 words. Selected by one operating-system random index from the previously frozen 100-poem collection. No redraw.
+Poetry data from PoetryDB (https://poetrydb.org), curated by The Combed Thunderclap, CC BY 4.0. PoetryDB identifies these texts as coming from public-domain editions.
+
+CONDITION SUMMARY
+A — Ordinary continuation: proved the negative triple-fibre classification and a 4m/9 frequency bound for some element of a three-element member. Constructed a 33-member union-closed family with all three chosen elements below half. Refuted a universal choice of fixed weights making every triple fibre nonnegative.
+B — Structured continuation: independently proved the classification and an abundance criterion allowing up to two negative fibres. Constructed a 34-member family refuting simultaneous fibre-by-fibre weighted certification, including weights on outside elements. Proved a Hall-type characterization for inclusion-respecting matchings; existence of a suitable coordinate in every family remained unresolved.
+C — Poetry-seeded continuation: independently proved the same classification. Proved parity-sensitive sufficient conditions for abundance in the chosen triple, including an allowance of five negative fibres when family size is even. Proved an obstruction to a nontrivial union coupling preserving the full input law, with a total-variation lower bound. No stronger universal frequency bound followed from that coupling observation.
+
+WHAT THE POEM CONTRIBUTED, AS REPORTED
+C associated the poem's injunction to be what one is with exact classification, retaining integer frequencies, and testing exact distribution preservation. This is a concrete trace from text to mathematical proposals. It is the worker's attribution, not independent evidence that the poem caused those ideas. Classification also appeared in both controls, and integer rounding appeared in B.
+
+MATHEMATICAL REVIEW
+Review was performed by the parent with condition labels visible, not by an independent blinded assessor. The assessments below are provisional mathematical review, supported by explicit finite checks. Literature novelty was not searched or established for any result.
+
+Shared classification: verified. In a union-closed H within a three-element cube, containing the top, the signed balance D=sum_R(2|R|-3) is negative only for {empty,{a},S} and {empty,{a},{b},{a,b},S}, up to relabelling. All six labeled negative cases have D=-1.
+A1: valid. The number N of negative fibres is at most m/3, giving max f(x)>=m/2-N/6>=4m/9 for x in S. This is beyond the written checkpoint, not claimed new mathematics.
+A2: valid. Its 33-member construction is closed under union, has frequencies (16,16,16,21,21,21), and refutes abundance restricted to that particular member. It is not a counterexample to Frankl.
+A3: valid obstruction. The three singleton-trace fibres would each require w_i>=W/2, incompatible with three nonnegative weights totaling W>0. This rejects the universal fibrewise weighting requirement, not general weighted methods.
+B1: valid. Integrality turns total balance >=-2 into abundance of some member of S. The additional disjoint-member sufficient condition correctly bounds the number of negative fibres.
+B2: valid. Its 34-member construction has frequencies 16 on the chosen triple and 21 on each of the nine outside coordinates, and minimum nonempty member size three. The fibre at the empty outside part forces all certificate weight onto S; the three other constraints then contradict normalization. It refutes the stated stronger certificate, not Frankl.
+B3: the Hall criterion is valid. Its universal existence claim remains open within this attempt; an equivalent obstruction test is not a solution. No general matching construction was supplied.
+C1: valid and duplicates the central development in A and B.
+C2: valid. For b negative fibres and positive balance p, the exact total is p-b. If all three frequencies are below half, it is at most -3 for odd m and -6 for even m. The stated strict thresholds follow. This is an arithmetic refinement of the shared balance identity, not an independently demonstrated new broad approach.
+C3: valid in the finite-universe setting of the problem. Equal input laws imply E|A union B|-E|A|=E|A symmetric-difference B|/2. A bounded cardinality statistic gives the claimed total-variation bound, and equality of union and input laws forces A=B almost surely. Technical scope note: the worker's first sentence mentions arbitrary random finite sets; its expectation argument is justified as written for a fixed finite universe (or integrable sizes). For unbounded finite sizes with infinite means, use a bounded strictly increasing function of cardinality instead. This qualification does not affect the application here.
+
+CROSS-CONDITION CHECK, NOT AN EXTRA SCORED WORKER RESULT
+A's 33-member construction has b=6 and p=3, so b-p=3 with odd m=33. It lies exactly at the boundary excluded by C's strict odd-size criterion. The constructions and criterion are consistent; the strict threshold cannot simply be relaxed to <=3. This observation arose during comparison, after the scored outputs were complete.
+
+VALIDATION AND LIMITS
+The common input was byte-for-byte identical across conditions. Only C received the selected poem. Each worker began with no inherited conversation turns and loaded only its designated prompt. Isolation relied on instructions and fresh contexts, not a secure filesystem sandbox or time-locked vault. The workers shared the same underlying filesystem.
+Each condition was permitted at most 1,200 output words and three candidate proposals. All three returned three proposals and remained under the word cap. They used reasoning only after their administrative input read. No extra solving or rescue turn was provided. No protocol violation was observed; tool-access restrictions were instruction-based, not a security audit.
+Actual input words: A 3,605; B 3,604; C 3,690. Output words are recorded below. These are whitespace counts, not tokenizer counts or compute measurements. Hidden reasoning tokens, exact backend model version, and per-worker compute were unavailable. All workers inherited the parent defaults without model or effort overrides. Equal output ceilings do not imply equal actual effort or total token cost.
+Post-response verification checked all 128 candidate three-coordinate families containing the top, finding 90 union-closed ones and six negative fibres; directly checked both larger counterexample constructions; and checked the relevant inequalities on all 3,150 union-closed families on four labeled coordinates containing the fixed triple. These verification programs ran only after the workers returned. They did not generate approaches for any scored condition. Finite verification supplements the proofs and is not itself a proof for unbounded universe size.
+
+INTERPRETATION
+Supported: a random poem can be translated into testable proposals under this procedure; an unproductive or duplicate result can be recorded without redrawing; the comparison and recordkeeping are workable.
+Not established: poetry improves over ordinary or structured continuation, these ideas are new to the literature, or this method will solve the full conjecture. The common starting decomposition strongly guided all three continuations toward the same small case.
+No numerical winner or statistical significance is assigned. The distinct lemma counts are not interchangeable units of progress, and no scoring weights were specified for ranking their importance.
+A useful next comparison would place all validated shared developments in a new common checkpoint, then use a new recorded poem draw and fresh condition contexts. That would avoid awarding repeated credit for classifying the same small fibres. No second trial was launched here.

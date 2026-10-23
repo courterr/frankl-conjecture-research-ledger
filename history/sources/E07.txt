@@ -1,0 +1,98 @@
+NARRATIVE EXCERPT — HISTORICAL SOURCE, NOT A NEW VERIFICATION
+Original report: Strange-Seed-Frankl-Exploration-07.txt
+Source record: E07; excerpt lines 1-91.
+This excerpt omits reproduction appendices and raw poem texts.
+Historical dates/statuses and claims below retain their original scope.
+Consult ../../SOURCE-COVERAGE.md for the current audit and verification limits.
+
+STRANGE SEED — FRANKL EXPLORATION 07
+Truth & Wonder | 21 October 2026
+Modal unions: an unresolved restriction with a small proven case
+
+OUTCOME
+The frozen candidate survived the stated tests. No general proof was found. No exact precedent was located in the limited literature check; novelty remains unconfirmed. This is a candidate worth further mathematical scrutiny, not a solution to Frankl's conjecture or evidence that poetry improves performance.
+
+1. THE DRAW AND THE CHANGE OF MECHANISM
+The collection SS-POETRY-100-v1 was sampled uniformly at random with replacement using secrets.randbelow(100). Index 96 selected P097, William Blake's 'Spring', again. The repeat was accepted without redrawing. The collection's SHA-256 was
+48f84b7efe84de1868996c8f2a6f89d108e0a3936979614ccd5d1e59e1d8bad8.
+
+The association used here was many individual voices joining a common refrain: count how many pairs of sets produce the same union. This is a declared interpretive association, not evidence of a causal contribution from poetry. It uses neither irreducible-generator credits nor minimal-representation private witnesses. Exploration 06's rejected selector remains rejected.
+
+The frozen collection has a known attribution problem elsewhere (P026); it must not be represented as an audited public-domain corpus. This report does not reproduce its poems. No claim about corpus-wide quality or representativeness follows from this draw.
+
+2. FROZEN CANDIDATE
+Let F be a finite union-closed family of distinct sets containing the empty set and at least one nonempty member. Write m=|F|, U=union F, and f(x)=|{B in F:x in B}|. Abundant means 2f(x)>=m; rare means 2f(x)<m.
+
+For A in F define
+ q(A)=|{(B,C) in F x F:B union C=A}|,
+counting ordered pairs, including pairs with repeated members. For independent uniform samples B,C from F, q(A)/m^2 is exactly the probability of their union being A.
+
+A modal union is any A maximizing q(A).
+
+CANDIDATE: Every modal union contains at least one globally abundant element.
+
+Thus a single modal target consisting entirely of globally rare elements refutes the candidate, even if another modal target contains an abundant element. Ties are included in the claim. There was no adjustment to convolution order, weighting, or tie handling during the run.
+
+The intended use is to restrict the coordinates searched for an abundant element. If the only mode is U, the restriction provides no narrowing. Moreover, proving this candidate for all such families would already prove Frankl for the empty-containing case: a modal target exists and cannot be empty. For a family without the empty set, adjoin it; abundance in the enlarged family implies abundance in the original. This is a strong conjectural statement, not an easy reduction that bypasses Frankl's central difficulty.
+
+3. A SIMPLE EXAMPLE OF ACTUAL NARROWING
+Let F be all eight subsets of {a,b,c}, together with {a,b,c,d}. Then m=9. Each of a,b,c occurs five times, while d occurs once.
+
+For a target A subset of {a,b,c}, q(A)=3^|A|: each included coordinate may lie in the first set, the second set, or both. Thus q({a,b,c})=27. Any pair producing {a,b,c,d} must contain that full set, giving q({a,b,c,d})=2*9-1=17. The unique mode is therefore {a,b,c}.
+
+Here the restriction removes rare coordinate d and retains three abundant coordinates. This illustrates the mechanism. It is a deliberately transparent example, not a benchmark win or a novel theorem claim.
+
+4. A PROVEN SMALL CASE
+Lemma: Every modal union A of size at most three contains a globally abundant element.
+
+First, if a singleton {x} belongs to F, the map B -> B union {x} injects members omitting x into members containing x. Hence x is abundant.
+
+Second, suppose a two-element set {x,y} belongs to F. Partition F by its intersection with {x,y}, with counts n00,n10,n01,n11. Union with {x,y} injects the n00 members into the n11 members, preserving the outside coordinates, so n11>=n00. Consequently
+ f(x)+f(y)=n10+n01+2*n11 >= m.
+At least one of x,y is abundant.
+
+Now suppose A is modal, |A|<=3, and no singleton or two-element member of F is contained in A. The only members of F contained in A are the empty set and A itself (a modal A is nonempty). Exactly three ordered pairs produce A, so q(A)=3.
+
+Because U belongs to F, pairs (U,B) and (B,U), over all B in F, give q(U)>=2m-1. Modality gives 3>=2m-1, hence m<=2. Nontriviality and the empty-set assumption force F={empty set,A}, and every element of A is abundant. This proves the lemma.
+
+These are elementary arguments using standard injection and pair-counting ideas. No historical novelty is claimed for the lemma.
+
+A second elementary constraint: a proper modal target cannot be irreducible. If r=|{B in F:B subset of A}| and A is irreducible, every pair producing A has A as one input, so q(A)=2r-1. A proper A has r<m, giving q(A)<2m-1<=q(U), a contradiction. Thus any counterexample mode must be reducible and have at least four coordinates.
+
+5. COMPUTATIONAL CHECKS
+(a) Exhaustive four-coordinate screen: all 2,479 nontrivial union-closed families containing the empty set on four available labelled coordinates were checked. None refuted the claim. Unused coordinates are allowed; the count excludes the family containing only the empty set.
+
+(b) Generated-family screen: 12,000 families on five to eight available coordinates were generated by taking union closures of random generator lists. The reproducible RNG seed was 2026102107. No counterexample occurred. In 299 trials the full used universe U was not a mode, so all modes were proper subsets. These are trial counts; duplicate families can occur, and this is not uniform sampling over union-closed families or an estimate of a universal success probability.
+
+(c) Regression examples: Exploration 06's 25-set counterexample to normalized private scoring passes the modal-union claim, with its full universe as the mode. The earlier 55-set example from Exploration 02, after adjoining the empty set, has 56 members and makes its three distinguished S-coordinates rare (27 occurrences each). It also passes the claim; its mode includes abundant coordinates outside S. These examples show resistance to two known traps, not new positive efficacy evidence.
+
+(d) Adversarial integer programs: Boolean variables encode membership of each subset; Boolean product variables encode joint membership of unordered pairs. Union closure, modal dominance, and strict rarity of every coordinate in a specified target are imposed simultaneously. The target and the full universe are forced present, as is the empty set. By relabelling symmetry one target of each prescribed size suffices for that universe/size pair. The following searches each had a 15-second limit:
+
+ universe size   proper target size   HiGHS result       elapsed seconds
+       5                  4           infeasible             0.262
+       6                  4           infeasible             6.410
+       6                  5           infeasible             5.981
+
+All three terminated with scipy/HiGHS status 2 (infeasible), rather than timing out. The binary formulation is supplied in the code appendix. No independently checkable formal infeasibility certificates were exported; these are numerical solver reports, not a machine-independent proof. They do not cover arbitrary universe sizes, or replace a general argument.
+
+Pair-count cross-check: the targeted examples and a randomly encountered proper-mode example were independently checked using the subset zeta transform, squaring the down-set counts, and applying Mobius inversion. These counts agree with direct ordered-pair enumeration and sum to m^2. The nine-set example was separately asserted to have frequencies [5,5,5,1] and counts 27 and 17 for the two relevant targets.
+
+6. LITERATURE CHECK
+The underlying probability construction is established. Gilmer explicitly studies the union of two independent uniform samples from a union-closed family, comparing its entropy with uniform entropy. We do not claim union convolution or sampling pairs as a new method:
+ Justin Gilmer, A constant lower bound for the union-closed sets conjecture (2022), especially introduction and Section 5.
+ https://arxiv.org/pdf/2211.09055
+
+Sawin develops that entropy framework and refutes a proposed general-distribution entropy/KL strengthening. This cautions against treating a related probability reformulation as automatically sufficient. The present candidate concerns the locations of modes for a uniform input on an exactly union-closed support; it is not identified here with that refuted entropy claim:
+ Will Sawin, An improved lower bound for the union-closed sets conjecture, version 3 (2023), especially Proposition 6.
+ https://arxiv.org/pdf/2211.11504
+
+Integer programming for union-closed problems is also established, not a project novelty:
+ Jonad Pulaj, Annie Raymond, Dirk Theis, New Conjectures for Union-Closed Families (2015; revised 2016), abstract consulted.
+ https://arxiv.org/abs/1512.00083
+
+Searches included union-closed/Frankl with modal union, most likely union, most frequent/common union, most popular union, maximum union representations, pairs, convolution, mode distribution, and min-entropy. Several returned unrelated material, limiting recall. No exact precedent for the frozen modal-support restriction was located in this search. Status: no exact precedent located; novelty unconfirmed. This is not an exhaustive review of Polymath comments or all historical terminology.
+
+7. NEXT MATHEMATICAL QUESTION
+Retain the frozen claim for a focused follow-up, rather than drawing more poems immediately. The first unresolved shape is a proper reducible modal target with at least four coordinates in a larger universe. A useful next move is to seek an inequality comparing q(A) with q(A union B) under the assumption that every coordinate of A is globally rare. The desired contradiction would be some target with strictly larger q. We have not proved that inequality, and the reduction must not be presented as a solution.
+
+There is no demonstrated Strange Seed advantage here: no blinded baseline comparison was performed, and literature novelty is unresolved. The concrete output is one unrefuted precise candidate, two elementary structural constraints, reproducible search results, and an explicit narrowing example.

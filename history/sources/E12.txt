@@ -1,0 +1,177 @@
+NARRATIVE EXCERPT — HISTORICAL SOURCE, NOT A NEW VERIFICATION
+Original report: Strange-Seed-Frankl-Exploration-12.txt
+Source record: E12; excerpt lines 1-170.
+This excerpt omits reproduction appendices and raw poem texts.
+Historical dates/statuses and claims below retain their original scope.
+Consult ../../SOURCE-COVERAGE.md for the current audit and verification limits.
+
+STRANGE SEED / TRUTH & WONDER
+Frankl exploration 12 — checkpoint session 2 of 3
+Prepared 22 October 2026 (UTC)
+
+RESULT
+
+Three previously selected internal cores, on seven, eight and nine coordinates,
+now have exact, independently checked uniform-weight certificates. These establish
+the modal-support claim for any union-closed extension with one of these EXACT
+internal cores and with the target modal. They do not establish the claim for
+every core of any of these dimensions, or solve Frankl's conjecture.
+
+The substantive development is a sufficient condition using forced trace
+inclusions and exclusions, certified by an integer flow and a matching cut.
+It avoids enumerating every permissible fibre on the eight- and nine-coordinate
+cases. No new poem was drawn; this develops the existing modal-support approach.
+Poetry's causal advantage and historical novelty remain unestablished.
+
+SETUP AND ORIGINAL QUESTION
+
+F is a finite family of distinct sets, closed under union, containing empty.
+For A in F, q_F(A) counts ORDERED pairs (B,C) in F squared with B union C=A,
+including equal pairs. The original candidate says that every maximizer A of
+q_F, including ties, contains a coordinate in at least half of F. We have not
+proved this general statement. The previously verified at-most-five target
+result is unchanged.
+
+Fix A, n=|A|. Write G={B in F: B subset A}. For any occurring nonempty exterior
+trace E, put H_E={B intersect A: B in F and B minus A=E}. Each H contains A,
+is union-closed, and is stable under union with G. Define Q(K,L) as the number
+of ordered pairs from K times L whose union is A, and q=Q(G,G).
+
+If A is modal, every such H satisfies
+                  2 Q(G,H) + Q(H,H) <= q.                     (1)
+Indeed these are disjoint contributions to q_F(A union E), whereas q_F(A)=q.
+Permissible H means a nonempty family satisfying these necessary conditions.
+Different permissible fibres need not coexist in one global family: the test
+is deliberately a relaxation, and proving it sufficient is safe.
+
+For nonnegative integer weights p_i, W=sum p_i, define
+ c_T=2 sum_{i in T}p_i-W, and S_p(H)=sum_{T in H} c_T.
+If S_p(G)>=0 and S_p(H)>=0 for every permissible H, summing over the disjoint
+fibres gives some abundant coordinate in A. Uniform p_i=1 makes
+ S(H)=2 sum_{T in H}|T|-n|H|.
+
+ADVERSARIAL SEPARATION AND HONEST BUDGET OUTCOMES
+
+The initial plan froze three cores from exploration 11's samples; no new core
+draws were made. For each proposed rational weighting, an integer separator
+searched directly for a permissible H with negative weighted surplus.
+It distinguishes witness, completed absence search, and unresolved budget stop.
+Each call was limited to 500,000 nodes and three seconds, with at most eight
+refinement rounds per core. A termination at the limit is not an absence proof.
+
+The separator matched exhaustive answers for 42 weight vectors on the earlier
+six-coordinate / 372-fibre control: 6 violations and 36 completed absence results.
+A forced zero-node-budget call correctly returned unresolved.
+
+Selected core         |G|      q       Original separator outcome
+7 coordinates         35      555      Four negative fibres, then complete
+8 coordinates         62     1405      Node budget reached: unresolved
+9 coordinates         95     3269      Node budget reached: unresolved
+
+For the seven-coordinate core, four successive weight choices failed on exact
+witnesses. The fifth, with integer weights (0,1,0,14,0,0,1), completed with no
+violation. These failures are retained in refinement-results.json, not discarded.
+The eight- and nine-coordinate ORIGINAL NONUNIFORM searches remain unresolved.
+The later uniform flow certificates below answer a different question: whether
+some valid weighting exists for those cores. They do not retrospectively turn
+those timed searches into completed searches.
+
+INDEPENDENT SEVEN-COORDINATE ENUMERATION
+
+A separate binary inclusion/exclusion implementation, using queue closure and
+no weight-based objective pruning, enumerated 25,822 permissible fibres. A
+canonical closure enumerator produced EXACTLY the same set of 25,822 masks,
+with no duplicates. Every listed family was checked for union closure,
+G-stability, presence of A, the modal cost bound, and uniform surplus.
+
+Fibre sizes range from 1 to 14. The minimum uniform surplus is 7. The core's
+uniform surplus is 89. The minimum individual-coordinate surpluses across all
+fibres are (-3,-3,-3,-1,-1,-1,-1): no single fixed coordinate works in every
+permissible fibre, although averaging all seven coordinates does.
+
+SHA256 of the sorted newline-terminated 32-character masks:
+475e973d94d4cd70a420dd61f2c407963a26340bc375318fe833a983595022ce
+
+PROOF COMPRESSION: FORCED INCLUSIONS AND A CLOSURE FLOW
+
+For each possible trace T subset A, G-stability forces its principal image
+                    I_T={T union g: g in G}
+into H whenever T is in H. Therefore T is forbidden if
+                    2Q(G,I_T)+Q(I_T,I_T)>q.                   (2)
+This uses monotonicity of pair counts under inclusion of families.
+
+Now enlarge the class of permissible fibres to all R subset 2^A satisfying:
+ (a) A in R;
+ (b) no forbidden trace in R;
+ (c) T in R implies T union g in R for each g in G.
+Do NOT impose binary union closure on R, or the full cost bound (1). Every
+permissible H is still in this larger class. A nonnegative minimum of S_p(R)
+therefore proves a nonnegative minimum for all permissible H.
+
+Build a directed network with one vertex per trace, source s and sink t.
+For c_T<0 add s->T of capacity -c_T; for c_T>0 add T->t of capacity c_T.
+For each nontrivial implication T->T union g add an edge of capacity M.
+Force A by s->A of capacity M, and exclude forbidden T by T->t of capacity M.
+Take M=1+sum_T |c_T|. When A is not forbidden, the family {A} is a feasible
+finite cut, so an optimal cut cannot cross an M-edge.
+
+The source-side trace set of any such cut is a feasible R, and its capacity is
+                 sum_{c_T<0}(-c_T) + S_p(R).                  (3)
+A feasible integer flow and a cut with the SAME capacity certify optimality:
+every cut is at least the flow value, and this cut attains that value.
+Thus verification needs no trust in the optimizing program's termination claim.
+If A itself is forbidden, there can be no exterior fibre, and that case can
+instead be handled directly; the present flow implementation assumes it is not.
+
+EXACT FLOW CERTIFICATES, ALL WITH UNIFORM WEIGHTS
+
+n  |G|   q     forbidden traces  network edges  flow=cut  min S(R)  S(G)
+7   35   555         31             1432           147        7       89
+8   62  1405         63             4098           288        8      168
+9   95  3269        107            11682           639        9      307
+
+The minimum is attained by {A}. Some individually negative traces remain
+allowed: the certificate works through compensation by forced traces, rather
+than merely banning every trace with negative coefficient.
+
+Consequently, for any global extension satisfying the assumptions, the total
+uniform surplus over F is at least S(G)+n times the number of exterior fibres,
+which is strictly positive. Some coordinate of A therefore occurs in STRICTLY
+more than half of F for each of these three exact cores.
+
+VERIFICATION AND LIMITS
+
+verify_flow.py reconstructs each network independently from G and the weights,
+recomputes the forbidden traces by direct pair counting, checks every nonzero
+flow against capacity, checks flow conservation, computes the cut directly,
+and checks the objective identity. It does not call the optimizer to verify the
+three exported certificates. All three passed.
+
+For the encoding controls, the optimizer was separately compared against brute
+force over every relaxed family R for every eligible three-coordinate core,
+under two weightings: 58 comparisons, all matching exactly. Seven additional
+single-coordinate weight controls on the selected seven-coordinate core all
+returned negative relaxed optima; each exported flow/cut was checked. These
+confirm that the method can report failure of a certificate. A negative relaxed
+optimum need not be a permissible fibre or disprove the underlying modal claim.
+
+The enumeration and flow implementations are independent in their algorithms,
+but were written within this same investigation. This is not external review
+or a proof-assistant formalization. The graph-cut reduction and weighted
+certificate/cutting-plane methods are established optimization tools. This
+report claims neither their invention nor historical novelty of this particular
+modal application. Pulaj's 2017 dissertation documents the established weighted
+and cutting-plane framework:
+https://d-nb.info/1156012813/34
+
+No new general seven-, eight-, or nine-coordinate theorem has been obtained.
+The general modal-support candidate remains unresolved. These cores were
+selected from prior samples and are not a random efficacy trial of poetry.
+
+NEXT CHECKPOINT SESSION
+
+Two sessions of the agreed three-session checkpoint are complete. One remains.
+Use the new sufficient condition on harder already available cases, identify
+where it fails, and check whether the modal exclusions are doing essential
+work. Seek a structural proof or an informative obstruction rather than simply
+accumulating easy certificates. Then review the branch's prospects honestly.

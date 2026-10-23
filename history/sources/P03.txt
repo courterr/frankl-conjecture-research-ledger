@@ -1,0 +1,72 @@
+NARRATIVE EXCERPT — HISTORICAL SOURCE, NOT A NEW VERIFICATION
+Original report: Strange-Seed-Frankl-Pilot-03-Full-Record.txt
+Source record: P03; excerpt lines 1-66.
+This excerpt omits reproduction appendices and raw poem texts.
+Historical dates/statuses and claims below retain their original scope.
+Consult ../../SOURCE-COVERAGE.md for the current audit and verification limits.
+
+STRANGE SEED — FRANKL PILOT 03: FULL TRIAL RECORD
+Truth & Wonder
+21 October 2026
+
+RESULT
+All three conditions made valid mathematical progress beyond the shared checkpoint. This round showed no clear additional benefit from poetry. The structured and seeded workers independently proved the same largest-disjoint-member criterion and refuted the same outstanding terminal-fibre claim. The ordinary worker also refuted that claim, generalized its counterexample, and obtained an exact matching calculation for the earlier projective-plane construction.
+No proof or counterexample to the original Frankl conjecture was produced. All results described as proved below concern the stated restricted criteria, stronger conjectures, or explicit construction families. Literature novelty remains unassessed.
+
+DESIGN
+Third adaptive comparison on the same problem. The shared checkpoint included all validated prior developments, including the previous seeded matching obstruction and the strict/sharp prescribed-triple bound. Earlier results and the existing broad method suggestions could not earn repeat credit.
+A=ordinary continuation; B=structured continuation; C=poetry-seeded continuation. Each began with no inherited conversation turns and one designated input file. They received byte-identical common mathematical material and the same encouragement. Only C received the drawn poem. No model/effort overrides were used; exact backend identifiers and hidden reasoning usage were unavailable.
+Budget: one response, at most 1,200 whitespace-delimited output words and three concrete proposals. Solving used own reasoning after administrative input loading. No follow-up rescue, cross-condition consultation, browsing, code, or external candidate generation was permitted. All returned two proposals and stayed within the cap. No protocol violation was observed. Isolation was instruction-based on a shared filesystem, not a security boundary.
+This compares the incremental contribution of a NEW poem from a shared accumulated state. The ordinary control therefore already had access to prior seeded discoveries as mathematical facts. It is not a comparison of an entire tool-free research trajectory against an entire seeded research trajectory.
+
+DRAW
+P043 — Gerard Manley Hopkins, Moonless darkness stands between.
+Nine nonblank lines, 55 words. One operating-system random index from the same frozen 100-poem collection, with replacement between rounds. No redraw or filter by relevance, tone, or appeal.
+Poetry data from PoetryDB (https://poetrydb.org), curated by The Combed Thunderclap, CC BY 4.0. The source identifies its poem texts as public domain.
+
+CONDITION RESULTS
+A — ORDINARY
+1. Refuted the outstanding claim that a proper terminal fibre, without the outside-universe member hypothesis, forces abundance in the chosen triple. Used a 37-member top-extension construction. Generalized to realize EVERY nonempty upward-closed triple trace family as a terminal fibre while all triple elements are below half.
+2. Proved that the previous projective-plane matching-deficit LOWER BOUND is exact, constructing a maximum matching of size q*2^(q-1)+q+1 for every coordinate, leaving exactly 2^q-q-1 sources unmatched.
+
+B — STRUCTURED
+1. Proved that if all elements of a triple S are below half, the union Y of all family members disjoint from S exists in F and has full trace cube H_Y=2^S. This replaces the checkpoint's reliance on the whole outside universe X belonging to F.
+2. Refuted the outstanding terminal-fibre claim by adding a new greatest set with a fresh coordinate to F34, obtaining 35 members, triple frequencies 17, and an incomplete new terminal fibre {S}.
+
+C — POETRY-SEEDED
+1. Proved the same largest-disjoint-member criterion as B, stated as a sufficient abundance criterion when H_Z is incomplete and its contrapositive when all triple frequencies are below half.
+2. Refuted the same outstanding terminal-fibre claim using the same 37-member construction as A: append a fresh greatest member to a sharpness example.
+
+WHAT IS SHARED AND WHAT IS DISTINCT
+All three counterexamples settle the SAME proposed strengthening; they are not three independent new theorems. A and C used identical-sized versions of the same top-extension operation, while B used a smaller base family and obtained 35 rather than 37 members.
+B's and C's largest-disjoint-member results are mathematically equivalent. C's presentation includes the no-disjoint-member case explicitly, and B proves it within the same argument.
+A's arbitrary-upward-terminal-pattern realization and its general exact matching count were additional outputs not present in B or C this round.
+Different response lengths and distinct lemma counts are not interchangeable units of usefulness. No numerical ranking weights or significance claim are introduced after the results.
+
+POEM-TO-MOVE TRACE
+C associated the poem's star with a persistent anchor, leading to the union Z of actually occurring disjoint members. It associated the disappearing past with the possibility that appending a new greatest member makes the terminal fibre uninformative.
+These interpretations produced precise testable mathematics. Both mathematical developments were also obtained without a poem in this comparison. The attribution is the worker's self-report, not evidence that the poem was necessary or caused the discoveries.
+
+MATHEMATICAL REVIEW
+Parent assessment with condition labels visible, supported by post-response computational checks. No independent blinded adjudication or literature novelty audit was performed.
+
+Common new criterion: valid. For a pair P=S minus {c}, a fibre's pair-balance is 2(1-e-t_c+t_P), where e,t_c,t_P indicate its empty trace, the omitted singleton, and the pair P. If no family member is disjoint from S, e=0 and every pair-balance is nonnegative. Otherwise their union Y belongs to F. If {c} is missing in H_Y, a fibre containing an empty trace cannot also contain {c}, since its outside part is contained in Y and unioning with Y would contradict the missing singleton. All pair-balances are then nonnegative, giving an abundant element of P. When all triple elements are below half, every singleton must occur at Y, hence H_Y is full. This proves both B1 and C1.
+
+Common terminal-fibre refutation: valid. A new greatest member containing a fresh coordinate preserves union-closure and contributes exactly one occurrence to each original coordinate. Starting from a triple-deficient example with sufficient margin keeps the triple deficient, but the only member at the enlarged outside-universe fibre has trace S. The examples have sizes/frequencies 37/18 (A,C) and 35/17 (B). Outside coordinates remain abundant. These are not counterexamples to Frankl.
+
+A's general terminal-pattern construction: valid. A nonempty upward-closed H on S is closed under union with any old trace. Appending the corresponding new outside layer therefore preserves closure. With h=|H| and q>=h+2, the calculated gap m'-2f'(x)=q-1+h-2h_x is positive for each x in S. This covers every such H, including the full cube. It does not classify all possible non-upward terminal patterns.
+
+A's exact projective-plane matching: valid with the source partition made explicit. The singleton {x} is assigned only to its own centered line L_x. On each other incident line, use the sources generated by that line, which contain both x and its assigned center. Removing x gives a valid target retaining that center. These nonempty targets are distinct across lines and avoid the separately matched empty/singleton targets on L_x. The matching size is q*2^(q-1)+q+1, attaining the earlier Hall upper bound.
+The response's phrase 'source supported on this line' is read in that generating-line sense; treating the singleton {x} as a source of every incident line would duplicate it. The verifier initially made that duplication, then was corrected to require the nonassigned line's center. This is a validation-code correction/partition clarification, not an additional scored worker proposal. The completed matching was checked explicitly.
+
+POST-RESPONSE VERIFICATION
+Checked both the 37-member and 35-member constructions, their closure, counts, deficient triple frequencies, and terminal traces. Verified A's construction on all 19 nonempty upward-closed trace families of a triple, using its stated parameter rule.
+Checked the common largest-disjoint-member criterion on all 3,150 union-closed four-coordinate families containing a fixed triple; 1,998 had at least one disjoint member and 1,889 had an incomplete H_Y. There were ZERO all-triple-deficient cases at this small universe size, so that contrapositive subcase receives no nonvacuous support from this finite sweep. The explicit 35-/37-member examples do have deficient triples and full H_Y, as checked separately. The general conclusion rests on the supplied proof, not the finite sweep.
+Instantiated projective planes over prime fields q=2,3,5, and checked both the explicit matching construction and maximum matching algorithms at every coordinate: exact matching sizes 7,16,86 from source counts 8,20,112, leaving deficits 1,4,26.
+All verification programs ran after all scored responses had returned. They checked claims already supplied by the workers; they did not supply approaches to a scored condition. Finite checks supplement, rather than replace, the general proofs.
+
+LIMITS AND INTERPRETATION
+The new poem led to valid work, but its two developments were duplicated by controls. This round therefore provides no clear incremental poetry advantage. It does not erase the distinct seeded construction recorded in round two, and it does not establish a general absence of benefit.
+All three rounds are adaptive steps on one mathematical problem with changing common checkpoints, not independent repetitions of a fixed experiment. Do not pool them as a success-rate estimate or infer a general effect across problems or poems.
+The word ceilings matched; actual response lengths and hidden computation did not necessarily match. Counts below are whitespace counts, not tokenizer counts. Exact backend/version and hidden reasoning-token usage were not exposed.
+The original conjecture remains unresolved. A future checkpoint should include the largest-disjoint-member criterion, the arbitrary-upward-terminal-pattern obstruction, and the exact projective-plane matching deficit. No fourth trial was launched here.

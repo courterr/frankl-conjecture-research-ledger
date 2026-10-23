@@ -1,4 +1,11 @@
-# Priority assessment — limited check, 22 October 2026
+# Prior art: earlier assessment plus the v0.5 reconstruction
+
+The original assessment below concerned mainly the later branch. For the
+newly recovered early routes and check timing, see HISTORICAL-AUDIT.md,
+SOURCE-COVERAGE.md and the linked source excerpts. No fresh comprehensive
+literature search was conducted for this expansion.
+
+## Original limited assessment,22 October 2026
 
 **No claim of established novelty is made.** A failure to locate an exact match
 in web searches does not establish priority, especially for a reformulation of
@@ -81,3 +88,35 @@ Many returned irrelevant or incomplete results. No exact match was identified;
 this is a search limitation, not a novelty certificate. Suggested expert question:
 “Is this capped fibre formulation or selector already known, and are these
 explicit support obstructions subsumed by an existing result?”
+
+## Earlier-branch references recovered from the source reports
+
+These are historical leads and attribution records, not newly re-inspected
+papers in this release. Exact inspection scopes are in the linked source texts.
+
+- Pulaj and Wood, *Local Configurations in Union-Closed Families*:
+  https://arxiv.org/html/2301.01331v2 — sourceE01/E02, restricted fibres and missing traces.
+- Gao and Yu, *Note on the Union-Closed Sets Conjecture* (1998):
+  https://combinatorialpress.com/article/ars/Volume%20049/volume-49-paper-24.pdf
+  — sourceE01 reports inspecting the disjoint-member/trace framework with OCR limits.
+- Kabela, Polak and Teska, *The number of abundant elements in union-closed
+  families without small sets*: https://arxiv.org/abs/2212.09279 — sourceE02,
+  related bounded-omission and counting ideas, differing abundance conventions.
+- Molchanov, random-set lecture notes, section5.2:
+  https://www.cemmap.ac.uk/wp-content/legacy/resources/molchanov_mc/lectures_sets.pdf
+  — sourceE04's direct match for union-infinite divisibility.
+- Gilmer, *A constant lower bound for the union-closed sets conjecture*:
+  https://arxiv.org/abs/2211.09055 — sourceE07, established independent-union sampling.
+- Sawin, *An improved lower bound for the union-closed sets conjecture*:
+  https://arxiv.org/abs/2211.11504 — sourceE07's related entropy-strengthening warning.
+- Edgington's Polymath2016 matching counterexample, identified in the earlier
+  correction: https://gowers.wordpress.com/2016/02/13/func3-further-strengthenings-and-variants/#comment-154441
+  — the historical failure of universal inclusion-respecting coordinate matching.
+- Eccles's common-abundance transfer direction:
+  https://gowers.wordpress.com/2016/02/08/func2-more-examples/
+  — sourceE03 identifies the 11 February2016 comment and distinguishes weaker
+  common abundance from the already-refuted every-abundant-coordinate transfer.
+
+An exact absent match remains unconfirmed priority, not evidence of certified
+originality. A cited preprint's larger theorems are not endorsed merely because
+a source report inspected a related definition or example.

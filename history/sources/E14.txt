@@ -1,0 +1,265 @@
+NARRATIVE EXCERPT — HISTORICAL SOURCE, NOT A NEW VERIFICATION
+Original report: Strange-Seed-Frankl-Exploration-14.txt
+Source record: E14; excerpt lines 1-258.
+This excerpt omits reproduction appendices and raw poem texts.
+Historical dates/statuses and claims below retain their original scope.
+Consult ../../SOURCE-COVERAGE.md for the current audit and verification limits.
+
+STRANGE SEED / TRUTH & WONDER
+Frankl exploration 14 — balanced weights, partial blocks, and saturated images
+22 October 2026 (UTC)
+
+OUTCOME
+
+The previous 25-coordinate uniform-weight counterexample has a balanced
+certificate covering ALL permissible fibres, including fibres with partial
+coordinate blocks. The example has no singleton or two-element member. Equal
+total weight on two of its three-coordinate blocks works; the other coordinates
+receive zero weight. This is more than a sample-only LP proposal.
+
+There is also a self-contained hand proof for an unbounded product class.
+The proof explains why the weighting works and identifies a numerical condition.
+At equality, the plain graph relaxation can fail even though the weighting is
+valid; a saturated-image argument repairs that gap. Beyond the condition, a
+concrete permissible fibre actually defeats the same weighting.
+
+The original modal-support claim and Frankl's conjecture remain unresolved.
+The product lemma is a local derived result, not a claim of historical novelty.
+No new poem was drawn, and no controlled poetry efficacy trial was performed.
+
+BACKGROUND AND NOTATION
+
+F is a finite union-closed family of distinct sets containing empty.
+q_F(A) counts ORDERED pairs (B,C) in F squared with B union C=A, equal pairs
+included. The original candidate says every maximizer A, including ties, contains
+an element occurring in at least half of F. This investigation has not proved it.
+
+Fix a modal A. Its internal core is G={B in F:B subset A}.
+For each occurring nonempty exterior trace Z, let
+ H_Z={B intersect A:B in F and B minus A=Z}.
+Each H contains A, is union-closed and G-stable: g union h belongs to H for
+every g in G and h in H. Write Q_A(K,L) for the ordered union-to-A count.
+Every actual H satisfies
+          C_G(H):=2Q_A(G,H)+Q_A(H,H) <= Q_A(G,G).              (1)
+These are disjoint contributions to q_F(A union Z), whereas q_F(A)=Q_A(G,G).
+
+For nonnegative coordinate weights p_i, total W>0, set
+ S_p(H)=sum_{T in H}(2 sum_{i in T}p_i-W).
+If S_p(G)>=0 and every permissible H has S_p(H)>=0, summing over disjoint
+fibres proves an abundant coordinate within the positive weight support.
+Permissible means satisfying the necessary conditions above; different such
+fibres need not coexist globally, so a failure in this relaxed class need not
+be a counterexample to the original modal claim.
+
+For T in H, the principal image I_T={g union T:g in G} is contained in H.
+Hence T is forbidden if C_G(I_T)>Q_A(G,G). The ordinary graph method keeps
+these forbidden traces and unary implications T -> T union g, but drops binary
+union closure and the full nonlinear bound (1). A negative graph optimum can
+therefore be a false alarm about the weighting's true fibre validity.
+
+PRODUCT LEMMA — PRECISE STATEMENT
+
+Let B,D,E be pairwise disjoint finite coordinate blocks, with D,E nonempty.
+Let K subset 2^B be union-closed, containing empty and B. Put r=|K|,
+q=Q_B(K,K), and
+ G={k union d union e:k in K, d in {empty,D}, e in {empty,E}},
+ A=B union D union E.
+Suppose G is EXACTLY the internal core of A in F, and A maximizes q_F.
+If
+                         q <= 2r+1,                          (2)
+then the coordinate weights
+ p_i=1/(2|D|) for i in D,
+ p_i=1/(2|E|) for i in E,
+ p_i=0 for i in B
+have nonnegative surplus in G and in every permissible fibre H.
+Consequently some coordinate of D union E occurs in at least half of F.
+
+If q<2r+1 and F has any member outside A, this abundance is STRICT. At equality
+the proof guarantees at least half, and does not in general guarantee strictness.
+The lemma is conditional on the exact internal core and modal target; containing
+some related product subfamily alone is not the same hypothesis.
+
+HAND PROOF, INCLUDING ALL PARTIAL BLOCKS
+
+The core has 4r members and Q_A(G,G)=9q. Every coordinate of D or E occurs in
+exactly half the core, so its balanced surplus is zero.
+
+Take any trace T in a permissible H. If T contains D wholly or E wholly, its
+balanced weight is at least 1/2 and its individual surplus coefficient is
+nonnegative. This observation does not assume the rest of T consists of whole
+blocks; every possible partial subset of D,E or B is allowed.
+
+It remains to consider a T that contains neither D nor E wholly. Let
+ T_B=T intersect B, T_D=T intersect D, T_E=T intersect E,
+ I_B={k union T_B:k in K}, u=Q_B(K,I_B), v=Q_B(I_B,I_B).
+Then I_T is the product of I_B with {T_D,D} and {T_E,E}. Because T_D and T_E
+are proper subsets, each two-state factor has ordered cross-union count 3,
+both against {empty,full block} and against itself. Thus
+                   C_G(I_T)=9(2u+v).                        (3)
+B belongs to I_B, so u>=r and v>=1. Therefore
+                   C_G(I_T)>=9(2r+1).                       (4)
+If q<2r+1, this exceeds the modal budget 9q. Such a T cannot occur. Every
+trace in every H consequently has nonnegative coefficient. Since A belongs
+to H and has coefficient 1, each exterior fibre has surplus at least 1.
+Together with the zero core surplus, this proves the strict case.
+
+At q=2r+1, a bad T can occur only at equality throughout (3)-(4). In particular
+v=1. Since B belongs to I_B, v>=2|I_B|-1, forcing I_B={B}. As empty is in K,
+T_B belongs to I_B, so T_B=B. Moreover C_G(I_T)=9q exactly.
+
+If H contained any trace outside I_T, that additional trace would strictly increase
+the cost: union with the full member A of G contributes at least one additional
+cross pair, and union with A in I_T contributes two self-family ordered pairs.
+Hence the cost increases by at least four. Thus H=I_T, a family of four traces.
+Every coordinate of D or E occurs in at least two of those four traces, so its
+balanced surplus is nonnegative. This handles all equality cases with a bad T.
+Fibres with no bad T were already handled pointwise. Summing completes the proof.
+
+BALANCED REPAIR OF THE PREVIOUS NO-SMALL-SETS EXAMPLE
+
+Take disjoint blocks P,Q,R,D,E of sizes (3,3,13,3,3), with
+ K={empty,P,Q,P union Q,P union Q union R}.
+Here r=5, q=9<11, |G|=20 and |A|=25. The minimum size of a nonempty core member
+is 3. Integer weights 1 on each of the six coordinates of D union E, 0 elsewhere,
+are a scaled version of the lemma's balanced weights.
+
+The exact graph-relaxation minimum is 6; core surplus is 0. The ordinary
+uniform-on-all-25 weighting has relaxed minimum -45,764 and core surplus -132.
+The previous explicit five-set fibre H={k union D union E:k in K} has uniform
+surplus -3 and modal cost 81, but balanced integer surplus +30. This is an
+actual repair of that failure, not merely a different graph output.
+
+Five representative single-coordinate weightings, one per core-signature block,
+all have negative graph minima. Within each signature block, the coordinates
+are symmetric, so every individual-coordinate weighting fails THIS graph test.
+This does not establish that each has an actual negative permissible fibre;
+those negative minima may exploit the relaxation's missing constraints.
+
+An unequal-block check uses sizes (3,3,13,3,4), |A|=26. Use per-coordinate integer
+weights 4 on D and 3 on E, equalizing total weight 12 on each block. Its exact
+graph minimum is 24, core surplus 0. Uniform weights again fail. Equal block
+TOTALS, rather than equal per-coordinate weights, express the proof.
+
+EXACT SYMMETRY QUOTIENT — NO INDEPENDENT-PARTIAL-TRACE OMISSION
+
+A naive graph has one vertex for every trace T subset A: 2^25=33,554,432 vertices
+in the larger example. Group coordinates by identical membership signatures in
+G AND identical coordinate weight. Permuting coordinates within a group
+preserves G, exclusions, the unary closure implications, and the objective.
+
+For groups of sizes b_j, a trace orbit is its vector k_j=|T intersect block_j|.
+It represents m(k)=product_j binomial(b_j,k_j) distinct traces. Its objective
+coefficient is
+ m(k) times [2 sum_j p_j*k_j - W],
+where p_j is the PER-COORDINATE weight in the group. Union with g either fills
+an entire group or leaves its count unchanged. The quotient adds exactly those
+implications. Forbidden status is computed from a representative's actual
+principal image; the separate verifier recomputes it using the actual bitmask.
+For whole-group cores, image collisions and union-to-top counts depend only on
+which groups are already wholly present. Partial counts still affect orbit
+multiplicity and the weighted objective and are never discarded.
+
+Why this gives the EXACT minimum of the unary relaxation: its feasible trace
+families are closed under union and intersection. The objective is modular, so
+the union and intersection of two optimal families are also optimal. The union
+of all symmetry translates of an optimum is therefore an invariant optimum.
+Invariant families correspond exactly to unions of complete orbits. The quotient
+graph represents those families with their full multiplicities. This argument
+applies to the unary relaxation, not to the original nonlinear feasible class:
+unions of actual permissible fibres need not preserve the modal budget.
+
+The 25-coordinate balanced graph has 3,584 trace-orbit vertices and represents
+ALL 33,554,432 traces. The 26-coordinate graph has 4,480 orbit vertices and
+represents ALL 67,108,864 traces. Unequal point weights split a signature block
+further so the invariance argument remains valid.
+
+WHEN GRAPH FAILURE IS A RELAXATION GAP: SATURATED IMAGES
+
+For ANY core, if C_G(I_T)=q_G and T occurs in a permissible H, the strict
+monotonicity argument in the hand proof gives H=I_T. This yields an exact split:
+ (a) Check every saturated principal image I_T as a complete candidate fibre.
+ (b) For all remaining fibres exclude saturated traces as well as over-budget
+     traces, and run the graph relaxation on this residual class.
+If every saturated image has nonnegative surplus and the residual minimum is
+nonnegative, the weighting is certified for all permissible fibres. If the full
+trace A is itself saturated, all fibres are the singleton {A}; the current graph
+implementation assumes the residual class still contains A and would instead
+need that case handled directly. Current split tests satisfy this assumption.
+
+Symmetry reduces checking saturated images to one representative per trace
+orbit. Its weighted score is unchanged by the within-group permutations. Each
+actual representative image, exact cost and score are exported for verification.
+
+Concrete equality case: K=2^{a,b}, r=4, q=9=2r+1, and |D|=|E|=3. Here |A|=8.
+The ordinary balanced graph minimum is -30. It does not disprove the weighting:
+the saturated-image split checks image scores with minimum 0, and its residual
+graph has minimum +6. The weighting is valid, as the hand proof predicts.
+
+Thus this session distinguishes both kinds of failure: a bad weighting can
+produce a real negative permissible fibre, while a valid weighting can produce
+a negative graph optimum because the relaxation omits joint cost constraints.
+
+OUTSIDE THE LEMMA CONDITION: A REAL NEGATIVE FIBRE
+
+Let B have three singleton coordinates, K=2^B, r=8, q=27>17=2r+1.
+Let |D|=|E|=3 and choose one coordinate d0 in D. Use the same product core G.
+Define
+ H={B union d union e:d in {empty,{d0},D}, e in {empty,E}}.
+It is union-closed, G-stable, contains A, and has six members. Exact counts give
+ |G|=32, Q_A(G,G)=243, C_G(H)=207, S_balanced_integer(G)=0,
+                         S_balanced_integer(H)=-2.
+Taking F=G union {h union {z}:h in H} gives 38 sets. Direct counting confirms
+A is globally modal with q_F(A)=max q_F=243. Thus this is an actual extension,
+not only a permissible-fibre relaxation witness. The same balanced weighting
+fails here. Some coordinates can still be abundant; it is not a counterexample
+to the original modal-support claim. It shows the lemma's numerical hypothesis
+cannot simply be discarded, NOT that it is an optimal necessary condition for
+all possible abundance conclusions or all possible certificates.
+
+VALIDATION
+
+13 saved flow/cut certificates were independently checked by reconstruction:
+9 large-case certificates (two weightings on each of 25/26 coordinates, plus
+five point-weight representatives on the 25-coordinate core), one small boundary
+control, two ordinary/split strong boundary certificates, and one outside-
+threshold certificate. Verifiers check all capacities, conservation, matching
+cuts, exact objectives, orbit multiplicities, actual representative costs,
+and every exported saturated image. They do not use optimization to establish
+the saved certificates' optimality.
+
+The quotient's output matched the full trace graph in 36 exact comparisons:
+all four two-coordinate cores containing empty/full, three block-size pairs,
+and uniform/balanced/point weights. Both encodings have separate exact checkers.
+
+All three-coordinate cores satisfying q<2r+1 were examined: 16 strict cases,
+including partial D/E traces, with no allowed bad trace. All nine q=2r+1 cases
+passed the saturated-image/balanced check with D/E blocks of size three.
+These finite checks validate implementations and boundary handling; the hand
+proof establishes the statement for unrestricted base and block sizes.
+
+The equality extension and saturation split were developed AFTER observing the
+initial threshold controls. They are adaptive mathematical development, not a
+preregistered efficacy experiment. No fresh random core draw was used.
+
+LITERATURE, SCOPE AND NEXT STEP
+
+A limited two-engine search did not identify an exact match for this particular
+modal product lemma. That is not evidence sufficient to claim novelty. Generic
+weights/cutting planes and symmetry/min-cut reductions are established tools.
+Primary background inspected includes Pulaj's 2017 dissertation:
+https://d-nb.info/1156012813/34
+and Wang's September 2026 preprint:
+https://arxiv.org/html/2609.25101v1
+The latter's disproof concerns admissible weights on SETS, not our coordinate
+weight certificate. Its cloning discussion is related context. We did not
+independently verify that paper's main result. See literature-notes.txt.
+
+This is a structured product class, not arbitrary hard nonproduct cores. The
+balanced repair and conditional lemma are meaningful local progress, while
+their larger relevance is unsettled. There is no external review or formal
+proof-assistant verification. Poetry's causal advantage is untested here.
+
+Next challenge nonproduct cores with the saturated-image split. Classify
+negative graph optima before abandoning a weighting: check actual permissible
+images, joint modal cost, and binary union closure. Prefer a structural
+obstruction or repair to another collection of uniform successes.

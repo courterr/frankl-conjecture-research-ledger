@@ -1,0 +1,126 @@
+NARRATIVE EXCERPT — HISTORICAL SOURCE, NOT A NEW VERIFICATION
+Original report: Strange-Seed-Frankl-Exploration-06.txt
+Source record: E06; excerpt lines 1-119.
+This excerpt omits reproduction appendices and raw poem texts.
+Historical dates/statuses and claims below retain their original scope.
+Consult ../../SOURCE-COVERAGE.md for the current audit and verification limits.
+
+STRANGE SEED — FRANKL EXPLORATION 06
+Truth & Wonder | 21 October 2026
+Normalized private-witness scores: refuted by an infinite family
+
+STATUS
+The new normalized selector is false. It fixes Exploration 05's example but fails on a 25-set family on five coordinates. The failure extends to every member of an explicit infinite family. This does not refute Frankl's conjecture: the examples have abundant elements, but the proposed score ranks other elements higher.
+
+This is exploratory mathematics, not a controlled test of poetry's efficacy. No claim is made that poetry caused this result, that baseline reasoning could not produce it, or that the construction is historically novel.
+
+1. CONTEXT AND FROZEN CLAIM
+Frankl's conjecture asks whether every finite union-closed family F, with at least one nonempty member, has an element appearing in at least half its members. Here F contains the empty set; all members are distinct. Write m=|F| and f(x)=|{A in F: x in A}|. An element is abundant when 2f(x)>=m.
+
+This run continues Blake's 'Spring' seed (P097) from Exploration 05. It is not a fresh random draw. The prior raw-score selector was refuted. The present revision was motivated by that failure, and was written to candidate-before-search.txt before the new search. It remains a separate hypothesis; repairing one old example does not validate it.
+
+A nonempty member of F is an irreducible generator if it cannot be expressed as a union of proper members of F. Let J be the collection of these generators. For each nonempty A in F, D(A) is the set of all inclusion-minimal subfamilies of J with union A. Such representations exist. A representation is minimal exactly when each selected generator contains a coordinate occurring in no other selected generator.
+
+For a coordinate x, define
+
+ V(x) = sum over nonempty A in F of
+        |{D in D(A): x belongs to exactly one generator in D}| / |D(A)|.
+
+Each target A contributes a number between zero and one to each coordinate. Coordinates absent from A receive zero. This removes the prior score's repeated weighting of targets that have many representations, while still discounting coordinates supplied redundantly.
+
+Claim tested: at least one coordinate maximizing V is abundant. A tie with an abundant coordinate does not refute the claim. A counterexample requires every maximizer to be rare. No adaptive changes to this formula were made during testing.
+
+2. COMPUTATIONAL FINDINGS
+On the previous 18-set example, the scores in the old coordinate order a,b,c,d,e,f become
+ [9, 8, 19/2, 7, 19/2, 21/2].
+The unique maximizer is f, which appears in 12 of 18 sets. Thus normalization fixes that particular example.
+
+All 2,479 nontrivial union-closed families containing the empty set on four available labelled coordinates were checked without a counterexample. A deterministic randomized generator-closure search then found a failure after 1,505 checked families on five to seven available coordinates. There were no generator-cap skips in that search before the failure. These counts describe the search, not a representative success-rate estimate. The use of exact rational arithmetic avoids rounding ambiguities in maxima and ties.
+
+The discovered family simplifies to the following explicit construction.
+
+3. THE FIVE-COORDINATE COUNTEREXAMPLE
+Take two distinguished coordinates u,v and three others x1,x2,x3. Let
+
+ F = {empty set} union {A subset of {u,v,x1,x2,x3}: A meets {u,v}}.
+
+In words, include the empty set and every subset containing at least one of u or v. The union of two nonempty members still contains an anchor; unions with the empty set change nothing. Thus F is union-closed. It has 1+3*8=25 members.
+
+Coordinate group       Frequency       Normalized score
+u,v                    16/25           43/4 = 10.75
+each x1,x2,x3          12/25           35/3 = 11.666...
+
+Every score-maximizing coordinate appears in only 12 of the 25 members, strictly below half. The abundant coordinates u,v both score lower. This refutes the frozen claim.
+
+The irreducible generators are
+ {u}, {v}, {u,x1}, {u,x2}, {u,x3}, {v,x1}, {v,x2}, {v,x3}.
+The independent checker verifies union closure, verifies these are exactly the irreducible generators, and enumerates minimal representations by removing each generator in turn. It finds 46 nonempty minimal representations across the nonempty targets and reproduces the scores exactly.
+
+4. INFINITE COUNTEREXAMPLE FAMILY AND PROOF
+For each integer k>=3, take coordinates u,v,x1,...,xk and set
+
+ F_k = {empty set} union {A: A meets {u,v}}.
+
+There are m=1+3*2^k members. Each anchor has frequency 2^(k+1), which is above m/2. Each other coordinate has frequency 3*2^(k-1)=(m-1)/2, which is strictly below m/2.
+
+The irreducible generators are exactly the anchor singletons and the pairs {u,xi},{v,xi}. Each pair cannot be generated by proper family members, since {xi} is absent. Every larger member can be generated by these singletons and pairs, so it is reducible.
+
+Classify minimal representations according to the target's anchors and its t other coordinates:
+
+(a) A target with just anchor u and t=0 has representation {{u}}. For t>=1 it has the unique representation consisting of all {u,xi} for included xi. Each xi is private in this representation. The anchor u is private precisely when t=1 (and also for t=0). Hence all one-anchor targets together contribute k+1 to V(u). The analogous statement holds for v.
+
+(b) A target with both anchors and t=0 has the unique representation {{u},{v}}.
+
+(c) With both anchors and t=1, say xi, there are exactly three minimal representations:
+ {{u,xi},{v}}, {{u},{v,xi}}, {{u,xi},{v,xi}}.
+Both anchors are private in all three. The coordinate xi is private in two of the three.
+
+(d) With both anchors and t>=2, there are exactly 2^t minimal representations. Assign each included xi to one anchor and use that anchor's pair with xi. Add an anchor singleton precisely if that anchor has no assigned coordinates.
+
+To justify exhaustiveness, a minimal representation cannot include both {u,xi} and {v,xi} when another xj is present: for both pairs to be indispensable, each would have to be the sole supplier of its anchor, leaving no generator able to supply xj. Thus each xi has exactly one assigned pair. An unnecessary singleton would violate minimality. Conversely every stated assignment gives a minimal representation, since each pair has its own private xi and any singleton is its anchor's sole supplier.
+
+Every xi is private in all representations of case (d). Anchor u is private exactly when zero or one coordinates are assigned to it. Its average credit is therefore (t+1)/2^t. This formula also gives the correct anchor credit for t=0 and t=1.
+
+Consequently each other coordinate has score
+
+ B_k = V(xi) = 3*2^(k-1) - 1/3.
+
+It receives full credit on every target containing it, except {u,v,xi}, where its credit is 2/3.
+
+Each anchor has score
+
+ A_k = V(u) = V(v)
+     = k+1 + sum from t=0 to k of binomial(k,t)*(t+1)/2^t
+     = k+1 + ((k+3)/2)*(3/2)^(k-1).
+
+At k=3, B_3=35/3 exceeds A_3=43/4 by 11/12. For all k>=3,
+
+ 2*A_k - A_(k+1) = k + (k/4)*(3/2)^(k-1) > 0,
+ B_(k+1) = 2*B_k + 1/3.
+
+Thus B_k>A_k implies B_(k+1)>A_(k+1), proving that every k>=3 is a counterexample. All maximizers are the rare xi coordinates.
+
+Exact enumeration additionally matched these formulas at k=3,4,5,6:
+ k   |F_k|   anchor frequency   other frequency   A_k       B_k
+ 3    25          16                 12          43/4      35/3
+ 4    49          32                 24          269/16    71/3
+ 5    97          64                 48          105/4     143/3
+ 6   193         128                 96          2635/64   287/3
+
+5. WHAT THIS EXPOSES
+Normalization removes the previous repeated-target-credit bias but leaves a different mismatch. The anchors occur frequently, yet larger representations supply them through many necessary generators. The score treats that redundancy as a reason to withhold private credit. The xi coordinates occur less often, but usually retain full private credit.
+
+Private responsibility inside a representation is therefore not a reliable ranking proxy for frequency across this family. This is a precise failure of the stated max-V selector. It does not prove that all generator scores, all responsibility measures, or all poetry-inspired approaches fail.
+
+Decision: reject this selector and park this private-witness scoring branch. Do not add another post-hoc adjustment merely to repair this example. If exploration continues, use a substantially different mechanism, retaining this infinite family as a regression test for future proposals of this kind.
+
+6. LITERATURE STATUS AND LIMITS
+Private coordinates in minimal covers and irreducible-generator representations are established mathematical ingredients. Previous exploration consulted Chenxiao Tian, 'Frankl's Union-Closed Sets Conjecture: Height Four and Structural Reductions at Height Five' (2026), particularly its discussion of private critical coordinates in minimal covers:
+ https://arxiv.org/pdf/2608.25147
+
+Targeted searches in this run combined union-closed/Frankl with private witnesses, normalized scoring, minimal representations, decompositions, and weights. No exact precedent for the frozen V-maximizer claim was located. Coverage was limited and several results were irrelevant; this is not evidence of exhaustive novelty checking. Status: no exact precedent located; novelty unconfirmed. The counterexample also has no certified novelty claim.
+
+A potentially neighboring search result, 'Properties of Solutions for Games on Union-Closed Systems' (Mathematics 11(4),980,2023), concerned value allocation on union-closed systems. Its full page returned HTTP 429 during access; it was not inspected and no result from it is used here.
+ https://www.mdpi.com/2227-7390/11/4/980
+
+The proof and counterexample above stand independently of literature novelty. No solution to Frankl's conjecture and no comparative Strange Seed benefit has been established by this run.

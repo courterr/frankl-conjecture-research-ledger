@@ -1,13 +1,13 @@
 {
-  "version": "0.2",
-  "date": "2026-10-22",
-  "scope": "partial reconstruction; not a complete chronological audit",
+  "version": "0.5",
+  "date": "2026-10-23",
+  "scope": "all29 saved Frankl mathematical narrative records mapped; not complete appendix/transcript reproduction",
   "new_literature_search": false,
   "mathematical_search_resumed": false,
   "documented_established_method_families": 4,
   "count_of_redundant_historical_approaches": null,
   "all_novelty_gates_demonstrably_enforced": null,
-  "source_details": "HISTORICAL-AUDIT.md",
+  "source_details": "HISTORICAL-AUDIT.md; SOURCE-COVERAGE.md",
   "entries": [
     {
       "id": "M1",
@@ -58,11 +58,12 @@
       "route_or_claim": "Positive-global-e-maximizer selector",
       "established_overlap": "exact prior-art status unresolved",
       "specific_contribution_under_consideration": "precise abundance selector statement",
-      "check_record": "S1 unresolved; S3 limited retrospective search",
+      "check_record": "Exploration17 documents a limited literature check before direct testing; no exact match located; priority unconfirmed.",
       "present_decision": "unresolved within project",
       "historical_first_proposal_date": null,
-      "pre_attempt_clearance_documented": false,
-      "novelty": "unconfirmed"
+      "pre_attempt_clearance_documented": null,
+      "novelty": "unconfirmed",
+      "pre_attempt_literature_check_documented": true
     },
     {
       "id": "R2",
@@ -120,7 +121,9 @@
       "novelty": "unconfirmed"
     }
   ],
-  "field_note": "pre_attempt_clearance_documented=false means no such clearance established by the inspected sources; it does not assert that none occurred historically.",
-  "package_version": "0.4.1",
-  "audit_content_revision": "0.2"
+  "field_note": "A documented limited literature check is not a novelty certificate. The earlier v0.2 assessment was partial; recovered checks are described in HISTORICAL-AUDIT.md. Generic machinery and particular claims must be assessed separately.",
+  "package_version": "0.5",
+  "audit_content_revision": "0.5",
+  "catalog": "history/attempts.json",
+  "coverage": "history/source-coverage.json"
 }

@@ -1,0 +1,132 @@
+NARRATIVE EXCERPT — HISTORICAL SOURCE, NOT A NEW VERIFICATION
+Original report: Strange-Seed-Frankl-Baseline-Checkpoint-01.txt
+Source record: BASE; excerpt lines 1-126.
+This excerpt omits reproduction appendices and raw poem texts.
+Historical dates/statuses and claims below retain their original scope.
+Consult ../../SOURCE-COVERAGE.md for the current audit and verification limits.
+
+STRANGE SEED — FIRST BASELINE CHECKPOINT
+Truth & Wonder
+Recorded 21 October 2026
+
+PURPOSE
+Begin the agreed experiment by preserving an actual ordinary-reasoning attempt before selecting a poem. This file records mathematical outputs and explicit gaps, not private internal reasoning or a hypothetical sequence of failures.
+
+STATUS
+Baseline capture completed. Conjecture unresolved. No poem drawn or read for this attempt. No seeded continuation, ordinary continuation control, structured continuation control, or independent assessment has yet been run. No claim of Strange Seed efficacy can be made from this checkpoint.
+
+This is an informed baseline: the assistant has already seen the conversation and the prior-approach ledger. It cannot be described as a naive or literature-unaware baseline. No web research, mathematical solver, automated candidate generator, or exhaustive enumeration was used to obtain the mathematical results below. File tools were used for retrieval and recording.
+
+EXPERIMENTAL LIMITS
+The proposal to use a 100-poem collection has not yet produced a retrieved, frozen collection: two project-file searches returned no matches. That does not establish that older project files do not exist.
+No equal-compute continuation budget has been implemented. The prospective 12-approach list was not an observed baseline attempt and must not be used as evidence that the baseline exhausted those approaches.
+A single continuing conversation cannot supply genuinely independent condition branches after seeing their results. A later controlled comparison needs separate condition contexts with the same starting material and declared budgets.
+The current deliverable is therefore the first required baseline checkpoint, not a completed controlled trial.
+
+PROBLEM
+Let F be a finite family of distinct finite sets, containing a nonempty set, closed under pairwise union. Must there be an element x for which f(x) >= |F|/2, where f(x) is the number of members containing x?
+Take U to be the union of the members, and m=|F|.
+
+MATHEMATICAL OUTPUT 1 — ORDINARY AVERAGING DOES NOT SUFFICE
+The incidence identity is
+  sum over x in U of f(x) = sum over A in F of |A|.
+If the right-hand side is at least |U|m/2, an abundant element follows immediately.
+
+But that sufficient condition is not universal. For
+  F = {empty set, {a}, {b}, {a,b}, {a,b,c}},
+all unions stay in F. Total set size is 7, below |U|m/2 = 7.5.
+The frequencies are f(a)=f(b)=3 and f(c)=1.
+The conjecture holds, while average element frequency is below half.
+Outcome: a valid sufficient condition, with an explicit obstacle to treating it as the full proof.
+Novelty: no novelty claimed; ordinary counting and this type of counterexample are already familiar.
+
+MATHEMATICAL OUTPUT 2 — FIXED-MEMBER FIBRE DECOMPOSITION
+Choose a nonempty S in F, with k=|S|.
+For each T contained in U minus S, define
+  H_T = {R contained in S : T union R belongs to F}.
+Ignore empty H_T.
+
+Facts:
+(a) Every nonempty H_T contains S.
+Proof: if T union R is in F, its union with the family member S is T union S, also in F.
+(b) Each H_T is union-closed.
+Proof: unioning T union R and T union R' produces T union (R union R').
+(c) The fibres partition F by the part outside S.
+(d) Different fibres satisfy an additional compatibility condition:
+  R in H_T and Q in H_V imply R union Q in H_(T union V).
+
+Define the signed incidence balance
+  D(H_T) = sum over R in H_T of (2|R|-k).
+Then
+  sum over T of D(H_T) = 2 sum over x in S of f(x) - k m.
+If that sum is nonnegative, some x in S is abundant.
+These are elementary identities, not a claimed new reduction or solution.
+
+MATHEMATICAL OUTPUT 3 — COMPLETE PROOF OF A RESTRICTED CASE
+Claim: If F contains a member S of size one or two, then some element of S occurs in at least half of F.
+
+For k=1, the possible traces have contributions -1 for the empty trace and +1 for S. Each nonempty fibre contains S; its balance is therefore nonnegative.
+
+For k=2, the empty trace contributes -2, each singleton contributes 0, and S contributes +2.
+Each nonempty fibre contains S, and the empty trace can appear only once. Its balance is again nonnegative.
+
+Summing over all nonempty fibres gives
+  2 sum over x in S of f(x) >= k m.
+At least one x in S consequently satisfies f(x) >= m/2.
+This proof covers arbitrary family size, subject to the one- or two-element member condition.
+
+Outcome: proved special case, known in the existing line of local-configuration arguments. It is baseline progress within this attempt, not new mathematics.
+
+MATHEMATICAL OUTPUT 4 — THE STRONGER FIBRE CLAIM IS FALSE
+Candidate generalization:
+  Every union-closed family H of subsets of S containing S has D(H)>=0.
+This would extend the preceding fibre-by-fibre proof to all k.
+
+Counterexample for k=3:
+  S={a,b,c},
+  H={empty set, {a}, {b}, {a,b}, {a,b,c}}.
+This H is union-closed and contains S, but its contributions are
+  -3, -1, -1, +1, +3,
+whose sum is -1.
+
+Thus nonnegative balance in every individual fibre cannot be assumed beyond the established small cases. This is a counterexample to the proposed strengthening, not to Frankl's conjecture: a and b remain abundant.
+The example was constructed and checked by direct inspection in the reasoning attempt, not found by a search program.
+
+MATHEMATICAL OUTPUT 5 — WHY TWO OTHER STANDARD ROUTES REMAIN INCOMPLETE
+Injection:
+For fixed x, split F into F0 (sets lacking x) and F1 (sets containing x). An injection F0 -> F1 would prove abundance of x. If {x} is a member, the map A -> A union {x} works. For larger S containing x, A -> A union S can identify distinct inputs. Example: with S={a,b,c}, both {a} and {b} map to S in the family above. No general repair was established.
+
+Deletion/induction:
+Deleting a coordinate can merge two distinct original sets. An ordinary induction hypothesis on the projected family counts each image once, while the original family effectively gives images multiplicity one or two. A frequency guarantee in the unweighted projection does not automatically transfer. No general transfer theorem was established.
+
+Outcome: identified gaps, not proofs that every injection or induction strategy is impossible.
+
+UNRESOLVED TARGETS AVAILABLE TO A CONTINUATION
+1. Replace equal weighting inside S with a useful, justified choice of weights.
+2. Use compatibility between different fibres rather than bounding each fibre separately.
+3. Control the loss of information when sets are merged by union or deletion.
+4. Find a condition forcing either a frequent element in S or a frequent element outside S.
+5. Leave this decomposition entirely if another route has a stronger justification.
+
+These are baseline-generated possibilities and must be disclosed equally to all continuation conditions. A seeded continuation cannot claim them as discoveries caused by its poem.
+
+KNOWN OBSTRUCTION TO KEEP VISIBLE
+The earlier ledger records published constructions where every element of the unique smallest member is arbitrarily infrequent. A universal proof that searches only within the smallest member cannot work. The preceding one- and two-element theorem does not contradict this: the published obstruction does not assert such tiny smallest members.
+Reference already supplied in the prior-work ledger:
+Ellis–Ivan–Leader, Small sets in union-closed families.
+https://arxiv.org/abs/2201.11484
+No additional literature was consulted during this baseline attempt.
+
+HANDOFF STATE FOR FUTURE CONDITIONS
+Supply each continuation the identical problem statement, assumptions, mathematical outputs 1–5, unresolved targets, and known obstruction above. Also disclose the existing literature exposure.
+Preserve this checkpoint before any poem is drawn. Do not rewrite its failed claims after observing a seeded result.
+Use ordinary continuation, structured continuation, and poetry-seeded continuation with comparable, prospectively specified budgets. Randomly draw one poem from a frozen collection and do not redraw.
+A poem-inspired proposal must identify its concrete mathematical change and survive a proof check or meaningful falsification attempt. Novelty relative to baseline, novelty relative to literature, mathematical validity, and practical usefulness are separate labels.
+Report duplicates, failures, and unresolved proposals alongside successes.
+
+CURRENT SCORE
+Full solution: no.
+Restricted-case proof: yes, elementary and already known.
+False strengthening exposed: yes, by a five-member example.
+General bridge established: no.
+Poetry contribution: not evaluated.

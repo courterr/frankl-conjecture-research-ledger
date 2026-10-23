@@ -1,4 +1,8 @@
-# Approach ledger: useful constraints on the next attempt
+# Later-branch technical route summary
+
+For the expanded41-entry history, read POETRY-APPROACH-CATALOG.md and
+RESEARCH-STOPPING-POINTS.md. This older compact table mainly covers the later
+branch; it is retained as a technical summary, not the complete inventory.
 
 For the evidence-bounded historical audit, see HISTORICAL-AUDIT.md.
 This file is a technical route summary, not a novelty audit.

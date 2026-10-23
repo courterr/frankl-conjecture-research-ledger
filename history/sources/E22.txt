@@ -1,0 +1,78 @@
+NARRATIVE EXCERPT — HISTORICAL SOURCE, NOT A NEW VERIFICATION
+Original report: Strange-Seed-Frankl-Exploration-22.txt
+Source record: E22; excerpt lines 1-71.
+This excerpt omits reproduction appendices and raw poem texts.
+Historical dates/statuses and claims below retain their original scope.
+Consult ../../SOURCE-COVERAGE.md for the current audit and verification limits.
+
+STRANGE SEED — FRANKL EXPLORATION 22
+22 October 2026 (America/Los_Angeles)
+Truth & Wonder
+
+RESULT
+We did not find the requested obstruction: no tested core defeated every weighting supported on at most two coordinates. All1,533 completed cases admitted exact certificates. After identifying coordinate permutations, these represent748 distinct core types. This is a bounded negative search, not a theorem asserting that two-coordinate certificates always exist.
+
+There were908 qualifying cases from the existing six-coordinate archive and625 newly constructed labelled cores. Of the748 types,294 mutation types were absent from the qualifying archive. The new cases were deliberately nearby alterations of earlier difficult cores, not independent or uniform random draws.
+
+Initial exact feasibility search returned851 unit-coordinate certificates and682 certificates using two coordinates. Across all cases,463,842 permitted fibre occurrences were covered. These are occurrences relative to cores, not necessarily different abstract fibre families.
+
+A subsequent integer-only audit found a simpler alternative in every case: some equally weighted coordinate pair works. More specifically, selecting the two most frequent coordinates INSIDE the core, breaking frequency ties by increasing bit index, worked in all1,533 cases. This rule was noticed after the main search; its success here is exploratory and must not be interpreted as a frozen out-of-sample validation. Tie behavior is recorded separately below.
+
+The general proper-decomposition abundance claim remains unresolved. No historical priority or causal benefit from poetry is established. No new poem was drawn; this is adversarial follow-through on the current poetry-derived branch.
+
+MATHEMATICAL PROBLEM
+Let F be a finite union-closed family containing the empty set. Let q_F(T) count ordered pairs of members whose union is T, and r_F(T) count members contained in T. Define
+ e_F(T)=(q_F(T)-2r_F(T)+1)/2.
+This is the number of unordered proper union decompositions of T. The candidate is that every positive global maximizer A of e_F, including a tied maximizer, contains a coordinate appearing in at least half the members of F.
+
+For a six-coordinate target A=63, its internal core is G=F intersect2^A. Each occurring nonempty exterior trace Z gives H_Z={B intersect A:B in F, B outside A=Z}. Every H_Z is nonempty, contains A, is union-closed, and is G-stable under union. Write Q(X,Y) for the number of ordered pairs with union A and C_G(H)=2Q(G,H)+Q(H,H). Global e-modal maximality forces
+ C_G(H)-2|H|<=q_G(A).
+This adjusted cap, rather than the old stricter C_G(H)<=q_G(A), was used throughout the new enumeration.
+
+The cap follows by counting proper union decompositions of D=A union Z inside the core-plus-one-fibre subfamily. It already supplies [C_G(H)-2(|G|+|H|)+1]/2 decompositions. Full F can add more, while e_F(A)=(q_G(A)-2|G|+1)/2 must dominate e_F(D).
+
+A local weighting certificate is a normalized vector w>=0 with
+ sum_i w_i*(2*f_K(i)-|K|)>=0
+for K=G and for every permitted H. Summing over the actual fibres proves at least one coordinate in the support globally abundant. Permitted fibres may be individually possible without being jointly realizable; the certificate is valid because it handles a superset of all actual fibres.
+
+An equal pair i,j has the particularly transparent condition
+ f_K(i)+f_K(j)>=|K|.
+Summing gives f_F(i)+f_F(j)>=|F|, hence at least one globally abundant coordinate. For some tested cores the combined core surplus is zero, so this report does not claim a uniform strict margin or uniqueness of the abundant coordinate.
+
+FROZEN CHALLENGE AND CASE GENERATION
+StageA: consider all959 cores in Exploration11's archived completed six-coordinate set; retain the908 whose top proper-decomposition score is positive and maximal internally.
+StageB: start from the18 distinct core representatives of Exploration20. For every non-top trace of size at least3, either adjoin it and take union closure, or delete it if already present and the deletion preserves union closure. Keep positive internally top-maximal cores, remove labelled duplicates and all labelled cores already in the archive, sort lexicographically, and take at most1,024. There were625 available, all retained. Thus the entire1,533-case list was fixed before fibre enumeration.
+
+Stop at the first exact obstruction to all one- and two-coordinate weights, or after the frozen list. Each primary enumeration had a five-million-node ceiling and10-second subprocess timeout; the overall search limit was180seconds. All1,533 completed, no case was skipped, and no limit was hit. Search runtime was approximately21.1seconds; this is an execution detail, not an efficiency comparison between methods.
+
+These are not1,533 independent experiments. Relabeling audit found454 archive types and320 mutation types, with26 types overlapping, for748 total. New labelled mutations are not automatically new isomorphism types.
+
+EXACT PAIR FEASIBILITY, WITHOUT NUMERICAL LP DEPENDENCE
+For a candidate pair(a,b), normalized weights are(p,1-p), 0<=p<=1. Each family K contributes the inequality
+ s_b(K)+(s_a(K)-s_b(K))*p>=0,
+where s_i(K)=2*f_K(i)-|K|. Intersecting the resulting rational intervals exactly determines pair feasibility. Endpoint bounds and returned weights use Python Fraction. Unit weights were tried first. The code contains a full-weight linear-program fallback only for a case where every pair fails; that branch was never reached.
+
+Initial two-coordinate outputs included530 equal pairs,149 choices with ratios1:7, and3 with ratios1:5. The unequal outputs do NOT establish that unequal weights were necessary: they were merely the first interval endpoints found. Later audit found an equal pair for every one of these cases, possibly a different pair.
+
+AUDIT AND INDEPENDENT CHECKS
+All1,533 recorded certificate vectors were independently checked against their core and every stored fibre using exact rational arithmetic and a different bit-count implementation of coordinate frequencies. All463,842 stored fibre occurrences passed those weight inequalities. Every core was checked for union closure, distinct members, empty/top membership, and positive internally maximal e score.
+
+Twelve cases were selected for independent whole-class enumeration: the eight largest fibre classes among cases needing two coordinates, all three cases whose initial chosen weights included1/6, and the first unit/pair examples from both archive and mutation sources, deduplicating the selection. This selected12 cases. The selection was saved before running the independent enumerator.
+
+For those12, a Python include/exclude traversal with iterative union closure reproduced the entire fibre set of the primary C++ canonical incremental-closure enumerator. Total9,651 fibre occurrences and100,132 independent nodes; exact set equality in every selected case. All emitted fibres in those cases were also checked explicitly for top membership, union closure, G stability, and adjusted cost.
+
+Independent whole-class enumeration was NOT run for the other1,521 cases. Their coverage rests on the completed primary canonical enumeration; their certificate arithmetic was checked against all returned fibres. The distinction between full-set independent checks and certificate arithmetic audit is intentional. This is computer-assisted work, not formal proof-assistant verification or external peer review.
+
+The pruning bound is monotone: adding a trace h to a family containing A creates at least2 cross-pair contributions with g=A and at least2 ordered H-H contributions with A, while subtracting2 for the new trace. Thus C(H)-2|H| increases by at least2 and cannot return under the cap after pruning. The primary closure formula uses union closure of both G and the current H; the independent algorithm reaches closure by repeated binary unions instead.
+
+EXPLORATORY STRUCTURAL RULE
+The previous 'every pair works' hypothesis was already refuted in Exploration21 and is not revived here. Instead, every tested core has at least one equal pair certificate. In all tested cases, the pair of most frequent internal coordinates chosen by fixed tie-breaking is one such certificate. This is a more specific, falsifiable target for mathematical explanation or a further adversarial test.
+The tie check is stronger within this dataset: every pair maximizing the sum of its two internal coordinate frequencies also certified every permitted fibre. No tied maximum-frequency pair failed. This too was a post-search exploratory check, not a general theorem.
+
+WHAT THIS DOES AND DOES NOT CHANGE
+The intended all-pair-support obstruction was not found. We should not claim to have beaten it, or interpret the search as a proof that it cannot exist. We have widened the tested collection substantially, obtained exact certificates for all searched cases, and exposed a crisp selection rule worth trying to prove or falsify.
+
+The main conjecture and the existence of a universal local weighting remain open in this project. Even an exact failure of every local weighting would first be a limitation of this fibre proof strategy; it would not automatically be a global counterexample. Conversely, survival of this targeted search says nothing reliable about the probability of survival on unsearched cores or larger targets.
+
+NEXT COURSE
+A productive fork is to attack the internally most-frequent-pair rule structurally, or test it on larger targets with strict resource limits. Repeating nearby six-coordinate samples indefinitely would add less than identifying why the rule works here or constructing a genuinely different obstruction. Fresh target generation should be frozen before evaluation. Poetry attribution and historical novelty require their own comparisons and literature work.

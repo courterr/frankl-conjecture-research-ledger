@@ -1,0 +1,216 @@
+NARRATIVE EXCERPT — HISTORICAL SOURCE, NOT A NEW VERIFICATION
+Original report: Strange-Seed-Frankl-Exploration-01.txt
+Source record: E01; excerpt lines 1-209.
+This excerpt omits reproduction appendices and raw poem texts.
+Historical dates/statuses and claims below retain their original scope.
+Consult ../../SOURCE-COVERAGE.md for the current audit and verification limits.
+
+STRANGE SEED — FRANKL EXPLORATION 01
+Truth & Wonder | 2026-10-21
+
+OUTCOME
+A poetry-associated refinement of our existing triple-fibre approach gives a proved localization inequality, an asymptotically sharp example sequence, and a restricted abundance criterion. No exact precedent was located in the targeted literature search. Novelty is unconfirmed. The broader method is established local-configuration mathematics. This is not a proof of Frankl's conjecture, a new global frequency bound, or evidence of a causal poetry advantage.
+
+The comparative testing protocol is paused. This record follows the requested exploratory workflow: bounded ordinary expansion; random poem; precise candidate; literature check; mathematical development and attempted application. Preliminary derivation was needed to make the candidate searchable. No workers or comparative trials were launched.
+
+ORDINARY BASELINE, RECORDED BEFORE THE DRAW
+Ordinary baseline expansion, before viewing a new poem. 2026-10-21.
+Scope: eight explicit next directions; this is an operational stopping point, not exhaustive saturation. Earlier baseline and literature correction retained.
+1. Charge negative triple fibres to their union fibre. Failure: many lower fibres share one target; sharp 4/9 construction realizes collision. Need a quantitative capacity invariant, not mere target existence.
+2. Use the actual disjoint-set anchor Y and its forced full cube if S is deficient. Gap: cube itself is balanced and may be tiny relative to the family. No general outside-frequency bridge.
+3. Delete an outside coordinate and induct. Gap: projected sets carry multiplicity 1 or 2; ordinary union-closed induction does not transfer automatically.
+4. Find a normalized nonnegative weight vector making every fibre locally half-heavy. Failure: F34 forbids this certificate. Global weighting/LP still possible but established territory.
+5. Relax inclusion matching using bounded downward moves. Gap: arbitrary injections restate Frankl, and universal monotone matching is already false in Edgington 2016. Need independently tractable restrictions on violations.
+6. Reuse forced cube as many translation targets. Maps A to A union R collide; partition by outside trace resolves some collisions but gives only local inequalities already bounded by 4/9.
+7. Use entropy on a coupling whose union has exactly the original law. Failure for fixed finite universe: containment and equal expected size force identical sets. Approximate laws need controlled transport costs; no quantitative improvement here.
+8. Count incidences of outside coordinates in negative fibres. Sharp examples concentrate such incidences, but arbitrary negative-fibre supports need not be uniform or disjoint. A restricted theorem depending on anchor size or overlap could be tractable.
+Working gap: translate structural necessity of an actual full cube into an outside-coordinate abundance certificate, without universal inclusion matching.
+
+
+POETRY DRAW AND TRANSLATION
+Frozen collection SS-POETRY-100-v1, index 25 (zero based), P026, title Dream On. Uniform draw using secrets.randbelow(100), with no redraw. The draw was persisted before reading the selected text. The frozen JSON's SHA256 was verified as 48f84b7efe84de1868996c8f2a6f89d108e0a3936979614ccd5d1e59e1d8bad8.
+
+Important source correction: frozen metadata says Edward Taylor, but the poem is James Tate's Dream On, from The Shroud of the Gnome, 1997. The Academy of American Poets credits Tate and identifies the poem as copyright 1997. Thus the collection's prior blanket public-domain assumption is false for at least this entry. Original frozen bytes are preserved as historical input; a correction is recorded separately. Future distribution or reuse of the collection needs an attribution/rights audit. This report does not reproduce the poem. No audit of the other 99 entries was performed this pass.
+Authoritative attribution: https://poets.org/poem/dream-4/print
+
+The chosen reading emphasized an unnoticed absence amid otherwise elaborate activity. Translation: examine where the empty trace is structurally forbidden, rather than only where troublesome traces occur. In particular, a fibre whose outside base extends beyond the union of disjoint members cannot have an empty trace. Ask whether these fibres carry an unavoidable positive balance.
+
+This is a refinement of ordinary directions 2 and 8. The pre-draw baseline already mentioned those structural ingredients. We cannot establish that poetry was necessary, that baseline would never find the bound, or that the model had never encountered a related idea in training.
+
+CANDIDATE AS RECORDED BEFORE SEARCH
+Candidate E01: localization of triple deficiency around the union of disjoint members.
+Let S in F have size 3, Y=union{A in F:A disjoint S}, E nonempty. If each x in S has f(x)<m/2, claim strictly more than 9m/16 members of F are contained in S union Y.
+Poetry transformation: notice structurally absent traces rather than only the patterns present; treat regions without empty traces separately. Outside Y, empty traces are forbidden by definition, so low-trace deficits cannot live there.
+Preliminary derivation: D(H)>=-|H|/3 for all top-containing triple fibres; if empty trace absent, D(H)>=3|H|/7. Let I count members contained in S union Y and O=m-I. Then total D >= -I/3+3O/7. Total D<0 implies I>9m/16.
+Potential payoff: localize a deficient chosen triple's obstruction inside a majority subfamily, which itself is union-closed. Gap: abundance inside that restricted family may still be diluted below m/2 globally. Sharpness and literature status unchecked at this point.
+
+
+LITERATURE CHECK
+Status: no exact precedent found; originality unconfirmed. The search is finite and cannot establish absence from all literature, unpublished work, or equivalently formulated results.
+
+Closest inspected sources:
+1. Jonad Pulaj and Kenan Wood, Local Configurations in Union-Closed Families, arXiv:2301.01331v2, especially Section 5, Theorem 5.1 and Corollary 5.2.1.
+https://arxiv.org/html/2301.01331v2
+Their generalized local-configuration framework already treats restricted fibres, and their triple corollary concerns exclusion of a singleton trace. Consequently, the broad missing-trace strategy is established. Our earlier actual-anchor cube condition is also a direct consequence: if a singleton is absent at the disjoint-set anchor, unioning with that anchor excludes it from any fibre with an empty trace; a fibre without an empty trace has nonnegative pair balance. The 9/16 concentration count was not located in this paper.
+
+2. Weidong Gao and Hongquan Yu, Note on the Union-Closed Sets Conjecture, Ars Combinatoria 49 (1998), 280–288.
+https://combinatorialpress.com/article/ars/Volume%20049/volume-49-paper-24.pdf
+Inspected all nine scanned pages using OCR, following retrieval of the original PDF. Their main-results section uses the largest member disjoint from a specified set; preliminary lemmas compare trace-class cardinalities. This anchor is established machinery. No exact 9/16 localization statement was located; OCR is imperfect, so this inspection is not a certified textual exclusion.
+
+3. George M. Bergman, Some Notes Regarding Peter Frankl's Conjecture, dated May 27, 2026.
+https://math.berkeley.edu/~gbergman/papers/unpub/PFrankl_thts.pdf
+Its two-element hitting condition and injection argument are related elementary trace tools. The note does not supply the exact localization inequality we found.
+
+The earlier ledger's 2016 matching correction remains in force: Alec Edgington's Polymath11 comment already refutes universal inclusion-respecting coordinate matching.
+https://gowers.wordpress.com/2016/02/13/func3-further-strengthenings-and-variants/#comment-154441
+
+Queries across two search engines included combinations of union-closed / Frankl with 9/16, 9m and 16, disjoint three-element sets, localization, empty traces, 3/7, 4/9, hypercubes, and union of disjoint members. Exact-number searches yielded much irrelevant material. We did not review all cited references or all published literature. General finite-fibre linear inequalities are established, so even an unpublished special-case formula would not by itself constitute a new broad approach.
+
+MATHEMATICAL RESULT — COMPLETE PROOF
+Let F be a finite union-closed family, m=|F|, and S in F with |S|=3. Let f(x) count members containing x. Define
+  Y = union of all A in F with A intersect S empty,
+with union of an empty collection interpreted as empty. Define
+  I = number of A in F with A subset S union Y,
+  O = m-I.
+Then
+  max over x in S of f(x) >= (36m-8I)/63.                 (1)
+In particular:
+  I <= 9m/16 implies some x in S has f(x)>=m/2.        (2)
+Equivalently, if every x in S is below half, then I>9m/16. In fact the latter localization follows under the weaker assumption sum over S of f(x)<3m/2.
+
+Proof. Partition F into nonempty fibres indexed by T subset U minus S:
+  H_T = {R subset S : T union R in F}.
+Each fibre is union-closed and contains S, because S is a member of F. Write h=|H_T| and
+  D(H_T) = sum over R in H_T of (2|R|-3).
+For a fibre, let e indicate presence of the empty trace, s count singleton traces, and p count pair traces. Since the top S is present,
+  h=1+e+s+p,   D=3-3e-s+p,
+and closure implies p>=binomial(s,2).
+
+For every fibre, D>=-h/3. Indeed,
+  3D+h=10-8e-2s+4p>=0.
+For e=0 this is positive; for e=1 check s=0,1,2,3 using p>=binomial(s,2).
+
+For a fibre with e=0, D>=3h/7. Indeed,
+  7D-3h=18-10s+4p>=0.
+The lower bounds for s=0,1,2,3 are 18,8,2,0.
+
+If T is not a subset of Y, its fibre has no empty trace: otherwise T itself belongs to F and is disjoint from S, contradicting the definition of Y. Thus fibres based inside Y contribute at least -I/3 in total balance, while those based outside contribute at least 3O/7. Consequently,
+  2 sum over x in S of f(x)-3m
+      = sum_T D(H_T)
+      >= -I/3 + 3O/7
+      = (9m-16I)/21.
+Rearranging and taking the largest of the three frequencies proves (1), and then (2). No unproved conjecture or computational assumption enters this argument.
+
+ASYMPTOTIC SHARPNESS — COMPLETE CONSTRUCTION
+For integer q>=3, take S={a,b,c}, and disjoint X={x_1,...,x_(3q)}. Assign labels l_i in S with exactly q indices for each label. Put T_i=X minus {x_i}.
+Start with
+  {S},
+  {T_i, T_i union {l_i}, T_i union S} for every i,
+  {X union R : R subset S}.
+There are 9q+9 distinct members. Every element of S occurs 4q+5 times.
+
+Add new points z_1,...,z_(q-2). For j=1,...,q-2 put Z_j={z_1,...,z_j}, and append the seven members
+  X union Z_j union R, for all nonempty R subset S.
+The resulting family is union-closed. Two different lower bases T_i union T_k give X. Appended bases form a nested chain and already contain X; their nonempty traces remain nonempty under every mixed union. All other unions remain in the specified layers.
+
+The union of members disjoint from S is exactly Y=X. Every appended member is outside S union Y. Counts are
+  m=16q-5,
+  I=9q+9,
+  f(a)=f(b)=f(c)=8q-3=(m-1)/2.
+Hence all three elements are deficient and
+  I/m=(9q+9)/(16q-5) tends to 9/16 from above.
+No constant greater than 9/16 can universally replace the coefficient in the localization conclusion I>c*m. Equivalently, the leakage threshold 7/16 cannot be reduced by a fixed positive amount. The affine bound (1) is approached to within a constant independent of q.
+
+The original X coordinates are highly abundant in this construction. It does not threaten Frankl's conjecture.
+
+ATTEMPTED APPLICATION AND PRECISE STOPPING POINT
+The result proves a genuine restricted case: if at least 7/16 of the members extend outside S union Y, some element of S is abundant. This condition is computable directly from F and the chosen member S.
+
+When S is deficient, define G={A in F:A subset S union Y}. It is union-closed and contains more than 9m/16 members. Try to use its concentration to locate a globally abundant element in Y. This attempt stops at a dilution gap: even if some y has f_G(y)>=|G|/2, that does not imply f_F(y)>=m/2. Let H=F minus G. A successful lift needs an actual certificate
+  (2f_G(y)-|G|)+(2f_H(y)-|H|)>=0
+for one common y. The localization inequality supplies no such certificate. Assuming Frankl for G is itself only justified in an induction setup or a separately solved restricted case. Thus no global conclusion is claimed.
+
+Sharpness rules out simply improving the localization constant indefinitely. A next substantive route must exploit cross-union compatibility between G and H, or find a different invariant. Mere existence of a majority subfamily is insufficient to complete our argument.
+
+VALIDATION
+The proof is primary; finite checks supplement it. The checker independently enumerated all 90 nonempty union-closed triple fibres containing the top and checked both local inequalities. It checked the construction for q=3,4,6,10,20, including closure, exact frequencies, anchor, and concentration.
+
+It also enumerated all 4,959 nonempty labelled union-closed families on four available ground points and generated 3,000 deterministic random closures on five to eight available ground points. Neither set contained a deficient member-triple, so those broad checks did not exercise the conditional conclusion. They are not counted as evidence from thousands of successful deficient cases. The five explicit sharp constructions do exercise it.
+
+{
+  "triple_fibres": 90,
+  "nonempty_four_ground_families": 4959,
+  "four_ground_deficient_triples": 0,
+  "random_families": 3000,
+  "random_deficient_triples": 0,
+  "sharp_examples": [
+    {
+      "q": 3,
+      "m": 43,
+      "I": 36,
+      "ratio": "36/43",
+      "triple_frequencies": [
+        21,
+        21,
+        21
+      ],
+      "Y_size": 9
+    },
+    {
+      "q": 4,
+      "m": 59,
+      "I": 45,
+      "ratio": "45/59",
+      "triple_frequencies": [
+        29,
+        29,
+        29
+      ],
+      "Y_size": 12
+    },
+    {
+      "q": 6,
+      "m": 91,
+      "I": 63,
+      "ratio": "9/13",
+      "triple_frequencies": [
+        45,
+        45,
+        45
+      ],
+      "Y_size": 18
+    },
+    {
+      "q": 10,
+      "m": 155,
+      "I": 99,
+      "ratio": "99/155",
+      "triple_frequencies": [
+        77,
+        77,
+        77
+      ],
+      "Y_size": 30
+    },
+    {
+      "q": 20,
+      "m": 315,
+      "I": 189,
+      "ratio": "3/5",
+      "triple_frequencies": [
+        157,
+        157,
+        157
+      ],
+      "Y_size": 60
+    }
+  ]
+}
+
+CREDIT AND CLAIM STATUS
+- Eight baseline directions: operational expansion, not exhausted mathematics.
+- Missing-trace/fibre/anchor framework: established literature, with specific related sources above.
+- Exact localization bound and sharp sequence: proved here; no exact precedent located; novelty unconfirmed.
+- New method outside all existing approaches: not established.
+- Poetry efficacy or necessity: not established; the move overlaps ordinary baseline directions.
+- Frankl conjecture: unresolved by this work.

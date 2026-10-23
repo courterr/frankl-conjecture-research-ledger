@@ -1,6 +1,6 @@
 {
-  "package_version": "0.4.1",
-  "prepared_date": "2026-10-22",
+  "package_version": "0.5",
+  "prepared_date": "2026-10-23",
   "suggested_repository_name": "union-closed-proper-decomposition-certificates",
   "suggested_title": "Union-closed families: proper union decompositions, weighted certificates, and support obstructions",
   "human_attribution": "Strange Seed / Truth & Wonder project",
@@ -10,11 +10,17 @@
   "release_tag": null,
   "doi": null,
   "novelty": "unconfirmed",
-  "historical_audit": "partial",
+  "historical_audit": "all29 saved narrative records mapped; full computational appendices not all reissued",
   "ai_use_disclosure": "PROVENANCE.md",
   "note": "Licenses adopted under the project owner's express authorization. Null repository/date/DOI fields are unassigned publication details, not pending licensing decisions.",
   "documentation_license": "CC-BY-4.0",
   "data_metadata_license": "CC0-1.0",
   "license_scope": "LICENSE.md",
-  "open_release_authorization": "OPEN-RELEASE-AUTHORIZATION.md"
+  "open_release_authorization": "OPEN-RELEASE-AUTHORIZATION.md",
+  "update_publication_date": null,
+  "package_status": "prepared update; not yet uploaded by the assistant",
+  "source_base_commit": "3f20059bae7103525633de4fcf024027f17cc58b",
+  "catalog_entries": 41,
+  "poem_draws": 8,
+  "distinct_selected_poem_titles": 7
 }

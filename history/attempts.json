@@ -1,0 +1,812 @@
+{
+  "version": "0.5",
+  "scope": "Poetry-conditioned Frankl candidates and their documented descendants in this conversation; baseline/control context only where necessary",
+  "evidence_warning": "Narrative coverage is not full appendix reproduction, proof-assistant verification or expert review. Causal attribution and priority are not established.",
+  "poem_draws": [
+    {
+      "id": "S01",
+      "draw_record": "P01",
+      "poem_id": "P023",
+      "author": "Edgar Allan Poe",
+      "title": "To Frances S. Osgood",
+      "reported_association": "Identity and exactness suggested retaining discrete counts and testing preservation of a probability law."
+    },
+    {
+      "id": "S02",
+      "draw_record": "P02",
+      "poem_id": "P033",
+      "author": "Emily Bronte",
+      "title": "Come hither, child",
+      "reported_association": "An isolated chamber and repeated strain suggested local Hall deficits hidden by global abundance."
+    },
+    {
+      "id": "S03",
+      "draw_record": "P03",
+      "poem_id": "P043",
+      "author": "Gerard Manley Hopkins",
+      "title": "Moonless darkness stands between",
+      "reported_association": "A persistent anchor suggested the actual largest disjoint member; a vanishing past suggested testing terminal-layer instability."
+    },
+    {
+      "id": "S04",
+      "draw_record": "E01",
+      "poem_id": "P026",
+      "author": "James Tate",
+      "title": "Dream On",
+      "reported_association": "An unnoticed absence suggested localizing where empty traces are impossible. Frozen metadata incorrectly named Edward Taylor; the report corrected it."
+    },
+    {
+      "id": "S05",
+      "draw_record": "E04",
+      "poem_id": "P022",
+      "author": "Edgar Allan Poe",
+      "title": "The Happiest Day",
+      "reported_association": "Irreversibility suggested reversing the union operation probabilistically through convolution roots."
+    },
+    {
+      "id": "S06",
+      "draw_record": "E05",
+      "poem_id": "P097",
+      "author": "William Blake",
+      "title": "Spring",
+      "reported_association": "Individual voices in a common refrain suggested private contributions of irreducible union generators."
+    },
+    {
+      "id": "S07",
+      "draw_record": "E07",
+      "poem_id": "P097",
+      "author": "William Blake",
+      "title": "Spring",
+      "reported_association": "A separate repeat draw suggested counting how many pairs produce the same union, rather than crediting generators."
+    },
+    {
+      "id": "S08",
+      "draw_record": "E17",
+      "poem_id": "P054",
+      "author": "Henry Wadsworth Longfellow",
+      "title": "Moonlight",
+      "reported_association": "Changed illumination suggested removing automatic union pairs involving the target itself."
+    }
+  ],
+  "attempts": [
+    {
+      "id": "P01-C1",
+      "title": "Classify negative triple fibres",
+      "seed_lineage": "S01",
+      "sources": [
+        "BASE",
+        "P01"
+      ],
+      "status": "valid restricted result; duplicated by controls",
+      "original_proposal": "Classify all union-closed trace families on a three-element member and use their deficits to force abundance.",
+      "attempt_or_test": "The seeded condition classified the negative cases; all three conditions did so independently. The parent checked all 128 top-containing candidate families.",
+      "recorded_outcome": "There are 90 union-closed top-containing fibres. Six labelled fibres, in two permutation types, have negative balance, each exactly -1.",
+      "precise_limit": "Classification is not a global abundance argument, and was already accessible from the baseline decomposition.",
+      "research_time_saving": "Do not claim this shared classification as a poem-specific discovery. A global proof needs control of how many deficits occur.",
+      "role": "poetry-conditioned proposal; baseline overlap",
+      "verification_in_v05": "verify_history.py: triple-fibre classification",
+      "novelty": "unconfirmed; established ingredients are separately identified"
+    },
+    {
+      "id": "P01-C2",
+      "title": "Parity-sensitive deficit tolerance",
+      "seed_lineage": "S01",
+      "sources": [
+        "P01"
+      ],
+      "status": "valid restricted result; no general bridge",
+      "original_proposal": "Retain integer frequencies instead of treating the three-element balance as a continuous average.",
+      "attempt_or_test": "Let b count negative fibres and p their total positive compensation. Compare total balance p-b with the largest possible value when all three coordinates are rare.",
+      "recorded_outcome": "All-three rarity forces total balance <=-3 for odd m and <=-6 for even m. Hence b-p<3 or <6 respectively suffices for an abundant triple coordinate.",
+      "precise_limit": "This supplies a conditional test, not a way to guarantee its hypothesis in an arbitrary family. Integrality also appeared in a control.",
+      "research_time_saving": "An inequality with a strict threshold cannot be relaxed to equality without another argument.",
+      "role": "poetry-conditioned proposal; control overlap",
+      "verification_in_v05": "historical report only",
+      "novelty": "unconfirmed; established ingredients are separately identified"
+    },
+    {
+      "id": "P01-C3",
+      "title": "Nontrivial union coupling with the original law",
+      "seed_lineage": "S01",
+      "sources": [
+        "P01",
+        "E01"
+      ],
+      "status": "mechanism blocked",
+      "original_proposal": "Couple two copies of the uniform family law so their union retains that same law, hoping for a nontrivial entropy route.",
+      "attempt_or_test": "Use containment and the identity E|B union C|-E|B|=E|B symmetric-difference C|/2 for equal input laws on a finite universe.",
+      "recorded_outcome": "Exact preservation forces B=C almost surely. A nontrivial union coupling cannot preserve the full input law. A total-variation lower bound was also derived.",
+      "precise_limit": "This blocks that exact-preservation mechanism, not approximate couplings or the established entropy program.",
+      "research_time_saving": "Any repair must explicitly relax distribution preservation and control the resulting error.",
+      "role": "poetry-conditioned proposal",
+      "verification_in_v05": "historical report only",
+      "novelty": "unconfirmed; established ingredients are separately identified"
+    },
+    {
+      "id": "P02-C1",
+      "title": "Projective-plane obstruction to universal inclusion matching",
+      "seed_lineage": "S02",
+      "sources": [
+        "P02",
+        "P03"
+      ],
+      "status": "stronger certificate refuted; historical overlap",
+      "original_proposal": "Use local upward-closed imbalance to test the proposed injection from coordinate-absent sets to supersets containing that coordinate.",
+      "attempt_or_test": "Construct a 29-member complement family from the seven-point projective plane and compute a maximum matching at each coordinate.",
+      "recorded_outcome": "Every coordinate occurs in 21/29 members, yet each absent side has eight members and maximum inclusion matching seven. No coordinate supplies the proposed certificate.",
+      "precise_limit": "This refutes inclusion-respecting matching, not abundance. The universal monotone-matching direction already had a 2016 counterexample, identified in the later literature correction.",
+      "research_time_saving": "Do not try to infer an inclusion-respecting injection merely from global abundance; account for every local Hall constraint.",
+      "role": "poetry-conditioned proposal",
+      "verification_in_v05": "verify_history.py: explicit 29-set construction and all seven matchings",
+      "novelty": "unconfirmed; established ingredients are separately identified"
+    },
+    {
+      "id": "P02-C2",
+      "title": "Allow a fixed unmatched-source budget",
+      "seed_lineage": "S02",
+      "sources": [
+        "P02",
+        "P03"
+      ],
+      "status": "proposed repair refuted",
+      "original_proposal": "Repair universal inclusion matching by allowing at most a fixed number of unmatched sources.",
+      "attempt_or_test": "Generalize the complement construction using projective planes of prime order q. Pilot03 ordinary follow-up supplied an exact maximum-matching count.",
+      "recorded_outcome": "There are 1+(q^2+q+1)2^q sets; the unmatched deficit is 2^q-q-1, unbounded, while coordinate abundance tends to one.",
+      "precise_limit": "The general construction and formulas are historical proof claims in the source excerpts; v0.5 directly checks q=2 only. The exact-count follow-up was ordinary work, not a new poem.",
+      "research_time_saving": "A universal constant allowance cannot fix the rule. A structural, growing allowance would be a different claim.",
+      "role": "poetry-conditioned generalization plus ordinary follow-up",
+      "verification_in_v05": "historical report only",
+      "novelty": "unconfirmed; established ingredients are separately identified"
+    },
+    {
+      "id": "P03-C1",
+      "title": "Anchor at the actual largest disjoint member",
+      "seed_lineage": "S03",
+      "sources": [
+        "P03",
+        "E01"
+      ],
+      "status": "valid criterion; duplicated and related to prior literature",
+      "original_proposal": "Replace the whole outside universe by Y, the union of family members actually disjoint from a chosen triple S.",
+      "attempt_or_test": "Use missing singleton traces at Y to obtain a nonnegative balance on the complementary pair.",
+      "recorded_outcome": "If all three S-elements are rare, the anchor fibre H_Y must be the full triple cube. The structured control independently proved the equivalent statement.",
+      "precise_limit": "The full cube alone need not have enough mass to force a globally abundant outside coordinate. Exploration01 identified the broad missing-trace framework as established.",
+      "research_time_saving": "Do not repeat the anchor criterion as a new global bridge; its remaining difficulty is quantitative transfer.",
+      "role": "poetry-conditioned proposal; control duplicate",
+      "verification_in_v05": "historical report only",
+      "novelty": "unconfirmed; established ingredients are separately identified"
+    },
+    {
+      "id": "P03-C2",
+      "title": "An incomplete terminal fibre forces abundance in S",
+      "seed_lineage": "S03",
+      "sources": [
+        "P02",
+        "P03"
+      ],
+      "status": "stronger claim refuted",
+      "original_proposal": "Test the earlier unresolved assertion that an incomplete terminal fibre alone forces an abundant coordinate in the selected triple.",
+      "attempt_or_test": "Append a fresh greatest member to a triple-deficient example.",
+      "recorded_outcome": "The seeded condition gave a 37-member family with triple frequencies18 and terminal fibre {S}; a structured control gave 35/17. The terminal-only implication is false.",
+      "precise_limit": "This does not refute the earlier restricted theorem requiring the whole outside universe to be a member. Controls also found the top-extension mechanism.",
+      "research_time_saving": "Changing the terminal fibre by a new top layer can preserve the underlying deficiency. The actual anchor carries information that a terminal layer may lose.",
+      "role": "poetry-conditioned falsification; control duplicate",
+      "verification_in_v05": "historical report only",
+      "novelty": "unconfirmed; established ingredients are separately identified"
+    },
+    {
+      "id": "E01-L",
+      "title": "Localize deficiency inside S union Y",
+      "seed_lineage": "S04",
+      "sources": [
+        "E01"
+      ],
+      "status": "proved restricted bound; global application stalled",
+      "original_proposal": "If every element of a triple S is rare, more than 9m/16 family members lie inside S union Y.",
+      "attempt_or_test": "Bound fibre balance by -h/3 generally and by 3h/7 when the empty trace is absent; construct sharp examples.",
+      "recorded_outcome": "With I=|{A in F:A subset S union Y}|, max_(x in S) f(x)>=(36m-8I)/63. Deficiency forces I>9m/16. A sequence has m=16q-5, I=9q+9 and triple frequencies8q-3.",
+      "precise_limit": "An abundant element in the majority subfamily need not reach half the whole family. The constant is asymptotically sharp; simply improving it indefinitely cannot close the gap.",
+      "research_time_saving": "A successful continuation needs cross-union compatibility or a genuine lift of one common coordinate, not just a majority subfamily.",
+      "role": "fresh poem-associated proposal; overlaps pre-draw directions",
+      "verification_in_v05": "verify_history.py: local inequalities and sharp examples",
+      "novelty": "unconfirmed; established ingredients are separately identified"
+    },
+    {
+      "id": "E02-A",
+      "title": "Naively lift a core-abundant triple coordinate",
+      "seed_lineage": "S04",
+      "sources": [
+        "E02"
+      ],
+      "status": "stronger transfer refuted",
+      "original_proposal": "Assume a coordinate abundant inside the localized core remains globally abundant.",
+      "attempt_or_test": "Recover a 55-member construction: core45 with triple frequencies(23,20,20), exterior pieces of sizes4 and6.",
+      "recorded_outcome": "The full family has triple frequencies(27,27,27), all below half. The inequality f_F(x)>=f_G(x)+|C|/2+|B|/4 is sharp for the initially abundant coordinate.",
+      "precise_limit": "Other coordinates remain abundant. The example rejects naive lifting, not Frankl or every stronger transfer condition.",
+      "research_time_saving": "Core abundance requires a quantified exterior margin; it cannot be transferred without loss.",
+      "role": "follow-up",
+      "verification_in_v05": "verify_history.py: 55-set family and exact counts",
+      "novelty": "unconfirmed; established ingredients are separately identified"
+    },
+    {
+      "id": "E02-B",
+      "title": "Omission-budget bookkeeping",
+      "seed_lineage": "S04",
+      "sources": [
+        "E02",
+        "E03"
+      ],
+      "status": "identity valid; missing structural inequality",
+      "original_proposal": "For core candidates K subset Y, control dilution by counting exterior omissions.",
+      "attempt_or_test": "Write sigma_K for total core surplus and M_K=sum_(A in exterior)|K minus A|.",
+      "recorded_outcome": "Exact total surplus is sigma_K+|K|O-2M_K. Nonnegativity is a sufficient certificate. Simultaneous dilution demands the opposite strict inequality.",
+      "precise_limit": "The identity itself does not exploit union closure and requires the unknown incidence information. No general upper bound on simultaneous omissions was obtained.",
+      "research_time_saving": "Restating the desired incidence bound is not a new proof. Supply a structural omission bound before reinvesting.",
+      "role": "follow-up",
+      "verification_in_v05": "historical report only",
+      "novelty": "unconfirmed; established ingredients are separately identified"
+    },
+    {
+      "id": "E02-C",
+      "title": "Depth-at-most-two omission transfer",
+      "seed_lineage": "S04",
+      "sources": [
+        "E02"
+      ],
+      "status": "valid restricted theorem; extension to three refuted",
+      "original_proposal": "Transfer two core-abundant anchor coordinates when every exterior member omits at most two elements of Y, and try to extend it.",
+      "attempt_or_test": "Pair the possible hole {u,v} with the full completion in each outside part; then build nested layers with holes of size up to three.",
+      "recorded_outcome": "At depth<=2, f_H(u)+f_H(v)>=|H|. At depth3 a 49-member example has u,v core frequencies8/9 but global frequencies24/49.",
+      "precise_limit": "The counterexample has abundant S-elements; it does not settle the additional all-S-rare simultaneous-dilution conjecture.",
+      "research_time_saving": "The numerical depth hypothesis cannot simply be removed. Keep the all-S-rare condition separate.",
+      "role": "follow-up",
+      "verification_in_v05": "verify_history.py: 49-set family and counts",
+      "novelty": "unconfirmed; established ingredients are separately identified"
+    },
+    {
+      "id": "E02-D",
+      "title": "Six-coordinate core average at least half",
+      "seed_lineage": "S04",
+      "sources": [
+        "E02"
+      ],
+      "status": "auxiliary shortcut refuted",
+      "original_proposal": "Use a guaranteed half-density of the six-coordinate core to finish the transfer.",
+      "attempt_or_test": "Take the product of the full S cube with {empty,{w},Y}, where |S|=|Y|=3.",
+      "recorded_outcome": "The 24-member core has frequencies(12,12,12,8,8,16), total incidence68<72.",
+      "precise_limit": "Two other small infeasibility probes were solver reports without independent proof certificates; no theorem is inferred from them.",
+      "research_time_saving": "Do not infer global half-density merely from these anchor/cube assumptions.",
+      "role": "follow-up",
+      "verification_in_v05": "verify_history.py: 24-set density counterexample",
+      "novelty": "unconfirmed; established ingredients are separately identified"
+    },
+    {
+      "id": "E03-S",
+      "title": "Survival of some core-abundant anchor candidate",
+      "seed_lineage": "S04",
+      "sources": [
+        "E03"
+      ],
+      "status": "bounded search inconclusive; branch parked",
+      "original_proposal": "If all S-elements are rare and some Y-elements are core-abundant, must one of those particular candidates remain globally abundant?",
+      "attempt_or_test": "Three one-exterior-coordinate integer programs: (|Y|,|K|)=(4,1),(4,2),(5,2), plus an analytic omission attempt.",
+      "recorded_outcome": "The first two were reported infeasible without independent certificates. The third timed out. No general contradiction or counterexample was found.",
+      "precise_limit": "The weaker claim permitting a newly abundant Y-element is different. The mixed-union common-abundance direction overlaps Eccles2016; its status was not settled here.",
+      "research_time_saving": "Do not call a timeout an exclusion, or treat size advantage plus mixed-union compatibility as a proved transfer theorem.",
+      "role": "follow-up",
+      "verification_in_v05": "historical report only",
+      "novelty": "unconfirmed; established ingredients are separately identified"
+    },
+    {
+      "id": "E04-R",
+      "title": "Probabilistic union-convolution roots",
+      "seed_lineage": "S05",
+      "sources": [
+        "E04"
+      ],
+      "status": "novelty gate rejected; positivity also fails",
+      "original_proposal": "Mobius-invert fractional powers of the cumulative uniform union law to obtain probabilistic union roots.",
+      "attempt_or_test": "Search established random-set theory, then inspect the square root for F={0,3,5,6,7}.",
+      "recorded_outcome": "The base construction matches union-infinite divisibility in Molchanov. The unique formal square root for the five-set example has a negative top mass.",
+      "precise_limit": "Negative mass blocks a probability experiment, not abundance. No precise literature-distinct Frankl application emerged.",
+      "research_time_saving": "Use the established terminology and theory; do not relabel union-infinite divisibility as a new object.",
+      "role": "fresh poem-associated proposal",
+      "verification_in_v05": "verify_history.py: exact negativity inequality and signed convolution sanity check",
+      "novelty": "unconfirmed; established ingredients are separately identified"
+    },
+    {
+      "id": "E05-W",
+      "title": "Raw private-witness score selector",
+      "seed_lineage": "S06",
+      "sources": [
+        "E05"
+      ],
+      "status": "selector refuted",
+      "original_proposal": "Maximize aggregate private-coordinate credit across all minimal irreducible-generator representations; claim some maximizer is abundant.",
+      "attempt_or_test": "Four-coordinate exhaustive screen passed; larger search reduced a failure to an18-member six-coordinate family.",
+      "recorded_outcome": "Frequencies are(9,8,11,7,14,12), scores(18,19,16,11,14,18). Unique score maximizer bit1 has frequency8<9. Independent-coordinate products preserve failure.",
+      "precise_limit": "The score overcounts targets having many representations. No global minimality claim is made, and the broader use of private witnesses is not refuted.",
+      "research_time_saving": "Do not equate representation credit with distinct-set frequency. The original formula is false even allowing an abundant tied maximizer.",
+      "role": "fresh poem-associated proposal",
+      "verification_in_v05": "verify_history.py: all minimal representations, private scores and frequencies",
+      "novelty": "unconfirmed; established ingredients are separately identified"
+    },
+    {
+      "id": "E06-V",
+      "title": "Normalize private credit per target",
+      "seed_lineage": "S06",
+      "sources": [
+        "E06"
+      ],
+      "status": "revised selector refuted",
+      "original_proposal": "Average private credit over each target's minimal representations, fixing the raw-score multiplicity problem.",
+      "attempt_or_test": "Freeze the revised formula separately. It repairs the old example but fails on F={empty} union {A:A meets {u,v}} on five coordinates.",
+      "recorded_outcome": "The 25-set family gives anchors frequency16 and score43/4; other coordinates frequency12 and higher score35/3. An explicit infinite family works for k>=3.",
+      "precise_limit": "Fixing one counterexample did not validate the revised claim. Normalization discounts redundancy in a way still inconsistent with frequency.",
+      "research_time_saving": "Preserve both rejected formulas separately. A third revised score needs an independent justification.",
+      "role": "follow-up",
+      "verification_in_v05": "verify_history.py: exact normalized scores at k=3 and finite checks of the family",
+      "novelty": "unconfirmed; established ingredients are separately identified"
+    },
+    {
+      "id": "E07-Q",
+      "title": "Select an abundant coordinate inside a modal union",
+      "seed_lineage": "S07",
+      "sources": [
+        "E07",
+        "E08",
+        "E09",
+        "E10",
+        "E11",
+        "E12",
+        "E13",
+        "E14",
+        "E15",
+        "E16"
+      ],
+      "status": "main candidate unresolved",
+      "original_proposal": "Every target maximizing ordered pair-union count q(A) contains a globally abundant coordinate, including tied modes.",
+      "attempt_or_test": "Exhaustive four-coordinate and generated-family screens, restricted proofs, core/fibre comparisons and weighted follow-ups.",
+      "recorded_outcome": "No general counterexample or proof was obtained. A nine-set example demonstrates genuine narrowing to a proper modal target. Restricted target-size results followed.",
+      "precise_limit": "If the full universe is the mode, there may be no narrowing. A proof of the general selector would already imply Frankl; it is not an easy reduction around the difficulty.",
+      "research_time_saving": "Keep q-mode distinct from the later proper-decomposition e-mode. Neither general statement was resolved.",
+      "role": "fresh repeat draw; different mathematical proposal",
+      "verification_in_v05": "historical report only",
+      "novelty": "unconfirmed; established ingredients are separately identified"
+    },
+    {
+      "id": "E08-C",
+      "title": "Coatom-only q-mode proof",
+      "seed_lineage": "S07",
+      "sources": [
+        "E08"
+      ],
+      "status": "valid restricted structural result",
+      "original_proposal": "Use the q-mode condition when the internal core consists of empty, A and selected Boolean coatoms.",
+      "attempt_or_test": "Count q(A)=t^2+t+3 and compare forced exterior coatoms with the modal budget.",
+      "recorded_outcome": "Every exterior trace contains more than half of the t omitted-coordinate indices. This proves the selector in that structural class and for all targets of size<=4.",
+      "precise_limit": "For mixed internal sets omitting two or more coordinates, unioning no longer forces one specified coatom in the same way.",
+      "research_time_saving": "The proof is a structural-class result, not a general theorem for arbitrary modal targets.",
+      "role": "follow-up",
+      "verification_in_v05": "historical report only",
+      "novelty": "unconfirmed; established ingredients are separately identified"
+    },
+    {
+      "id": "E09-F",
+      "title": "q-mode certificates for target size at most five",
+      "seed_lineage": "S07",
+      "sources": [
+        "E09"
+      ],
+      "status": "reported computer-assisted restricted theorem",
+      "original_proposal": "Enumerate all relevant five-coordinate cores and all fibres satisfying C_G(H)<=q_G(A).",
+      "attempt_or_test": "Classify4945 labelled cores into119 types; two enumerators agree on1483 core/fibre occurrences.",
+      "recorded_outcome": "Every type admits a fixed-coordinate certificate. All maximum-core-frequency coordinates also pass in this restricted class.",
+      "precise_limit": "This historical completeness result is documented by the narrative excerpt; its full enumeration appendices are not reissued or rerun in v0.5.",
+      "research_time_saving": "Do not promote the five-coordinate maximizer-transfer pattern to all dimensions.",
+      "role": "follow-up",
+      "verification_in_v05": "historical report only",
+      "novelty": "unconfirmed; established ingredients are separately identified"
+    },
+    {
+      "id": "E10-T",
+      "title": "Transfer the most frequent core coordinate",
+      "seed_lineage": "S07",
+      "sources": [
+        "E10",
+        "E18",
+        "E19"
+      ],
+      "status": "local maximizer rule refuted",
+      "original_proposal": "Extend the observed five-coordinate maximum-core-frequency rule to larger cores.",
+      "attempt_or_test": "Use a19-member six-coordinate core with frequencies(12,14,12,13,12,13) and H={13,29,31,45,47,61,63}.",
+      "recorded_outcome": "Unique core maximizer bit1 occurs in3/7 fibre members despite old modal cost187<=189. In its26-set global extension A is uniquely q-modal and bit1 is17/26 abundant.",
+      "precise_limit": "The failure is local transfer through every permissible fibre, not global abundance of bit1 or the selector claim.",
+      "research_time_saving": "Core rank does not substitute for a fibre certificate.",
+      "role": "follow-up",
+      "verification_in_v05": "verify_history.py: old-cap witness and actual global extension",
+      "novelty": "unconfirmed; established ingredients are separately identified"
+    },
+    {
+      "id": "E10-U",
+      "title": "A fixed single-coordinate certificate for every fibre",
+      "seed_lineage": "S07",
+      "sources": [
+        "E10",
+        "E11",
+        "E12",
+        "E18",
+        "E19"
+      ],
+      "status": "universal point-certificate strategy fails on explicit cores",
+      "original_proposal": "Find one coordinate nonnegative in the core and every permitted exterior fibre.",
+      "attempt_or_test": "Retain a separate negative fibre for each of six coordinates on the mixed core; seek a pair instead.",
+      "recorded_outcome": "Every point fails a local constraint, while an equal-weight pair(4,5) certifies all316 old-cap fibres. Under the adjusted later cap it certifies427.",
+      "precise_limit": "The separate negative witnesses need not coexist globally. No simultaneous rare-target counterexample follows.",
+      "research_time_saving": "Use weighted combinations or tighter global conditions; do not presume a common point from small-target success.",
+      "role": "follow-up",
+      "verification_in_v05": "historical report only",
+      "novelty": "unconfirmed; established ingredients are separately identified"
+    },
+    {
+      "id": "E11-S",
+      "title": "Trust weights fitted only to sampled fibres",
+      "seed_lineage": "S07",
+      "sources": [
+        "E11"
+      ],
+      "status": "sampling shortcut refuted; replacements exist",
+      "original_proposal": "Use sampled one/two/three-seed fibres to choose a provisional common coordinate or rational weighting.",
+      "attempt_or_test": "Generate4000 core trials, then exhaustively challenge the1000 six-coordinate trials rather than merely sampling more.",
+      "recorded_outcome": "Twenty-three provisional choices fail omitted constraints; replacement weights pass complete checks. An explicit missed7-member fibre has point surplus-1.",
+      "precise_limit": "No failure of the full weighting program was found. The4000 generated trials include duplicates, impossible-modal cases and650 especially easy fibre cases.",
+      "research_time_saving": "A sampled pass certifies only sampled constraints. Demand an exact separator, full enumeration or structural certificate.",
+      "role": "follow-up",
+      "verification_in_v05": "historical report only",
+      "novelty": "unconfirmed; established ingredients are separately identified"
+    },
+    {
+      "id": "E11-N",
+      "title": "Uncapped negative mixture as a modal obstruction",
+      "seed_lineage": "S07",
+      "sources": [
+        "E11"
+      ],
+      "status": "obstruction valid but inapplicable to capped target",
+      "original_proposal": "Use a negative convex mixture of stable fibres to defeat all coordinate weights.",
+      "attempt_or_test": "Four fibres for G={0,29,43,63} yield mixture surplus-21/11 in every coordinate.",
+      "recorded_outcome": "Their costs141,141,387,387 vastly exceed q=9; the capped core admits only the singleton top fibre.",
+      "precise_limit": "This is an unrestricted certificate obstruction, not the sought modal-restricted one.",
+      "research_time_saving": "Check cost admissibility before treating a negative mixture as relevant.",
+      "role": "follow-up",
+      "verification_in_v05": "historical report only",
+      "novelty": "unconfirmed; established ingredients are separately identified"
+    },
+    {
+      "id": "E12-A",
+      "title": "Adversarial weighted separation",
+      "seed_lineage": "S07",
+      "sources": [
+        "E12"
+      ],
+      "status": "mixed outcomes; original timed searches remain unresolved",
+      "original_proposal": "Iteratively propose rational weights and search for a negative permissible fibre.",
+      "attempt_or_test": "Freeze three earlier7/8/9-coordinate cores; use bounded node/time limits.",
+      "recorded_outcome": "Four weight choices fail on the7-coordinate core before a fifth succeeds. The original8/9-coordinate nonuniform searches hit node limits. Later uniform flow certificates separately cover those cores.",
+      "precise_limit": "The later success does not retrospectively complete the earlier timed searches or verify their original weight vectors.",
+      "research_time_saving": "Retain every failed candidate and label a budget stop unresolved.",
+      "role": "follow-up",
+      "verification_in_v05": "historical report only",
+      "novelty": "unconfirmed; established ingredients are separately identified"
+    },
+    {
+      "id": "E12-G",
+      "title": "Unary implication graph and closure/min-cut",
+      "seed_lineage": "S07",
+      "sources": [
+        "E12",
+        "E13",
+        "E14",
+        "E15",
+        "E16"
+      ],
+      "status": "useful sufficient method; relaxation incomplete",
+      "original_proposal": "Minimize weighted surplus over traces obeying forced G-unions and unary cost exclusions.",
+      "attempt_or_test": "Construct exact flow/cut witnesses on three selected7/8/9-coordinate cores, followed by48 selected cases and ablations.",
+      "recorded_outcome": "The selected cases have certificates; removing modal exclusions produces negative relaxed optima. The graph method avoids some exhaustive enumerations.",
+      "precise_limit": "A negative graph optimum may violate the full cost or binary closure and need not refute the weighting. Min-cut and weighted certificates are established tools.",
+      "research_time_saving": "Audit the negative family before abandoning a candidate weighting or claiming a mathematical counterexample.",
+      "role": "follow-up",
+      "verification_in_v05": "historical report only",
+      "novelty": "unconfirmed; established ingredients are separately identified"
+    },
+    {
+      "id": "E13-W",
+      "title": "Universal uniform-coordinate weighting",
+      "seed_lineage": "S07",
+      "sources": [
+        "E13",
+        "E14",
+        "E15"
+      ],
+      "status": "strengthening refuted",
+      "original_proposal": "Extrapolate successful uniform-weight certificates to all modal cores/fibres.",
+      "attempt_or_test": "Use a25-member product family with unequal clone blocks, including a version having no member smaller than three.",
+      "recorded_outcome": "Block sizes(3,3,13,3,3) give a genuine permitted5-member fibre of uniform surplus-3, core surplus-132 and globally q-modal target.",
+      "precise_limit": "Coordinates in four blocks remain abundant. This is not failure of all nonuniform weights or the modal selector.",
+      "research_time_saving": "Uniformity can overcount interchangeable rare coordinates; account for coordinate signatures.",
+      "role": "follow-up",
+      "verification_in_v05": "verify_history.py: no-small-sets product family and q-modal status",
+      "novelty": "unconfirmed; established ingredients are separately identified"
+    },
+    {
+      "id": "E14-B",
+      "title": "Balance coordinate-block totals, including partial blocks",
+      "seed_lineage": "S07",
+      "sources": [
+        "E14"
+      ],
+      "status": "conditional repair; fails beyond stated hypothesis",
+      "original_proposal": "For G=K times {empty,D} times {empty,E}, place half total weight on each of D,E.",
+      "attempt_or_test": "Prove the certificate under q_K<=2|K|+1, covering every partial-block trace; test a case beyond that condition.",
+      "recorded_outcome": "The balanced rule repairs the earlier uniform failure. With K=2^B, |B|=3, q_K=27>17, an explicit6-member fibre has balanced surplus-2 and cost207<=243.",
+      "precise_limit": "The sufficient numerical hypothesis cannot be dropped. The example does not show it is an optimal necessary condition for every other weighting.",
+      "research_time_saving": "Preserve partial-block possibilities and the quantitative hypothesis, not just whole-block examples.",
+      "role": "follow-up",
+      "verification_in_v05": "verify_history.py: explicit outside-threshold fibre",
+      "novelty": "unconfirmed; established ingredients are separately identified"
+    },
+    {
+      "id": "E14-S",
+      "title": "Saturated-image split",
+      "seed_lineage": "S07",
+      "sources": [
+        "E14",
+        "E15",
+        "E16"
+      ],
+      "status": "exact special repair; not a universal relaxation fix",
+      "original_proposal": "If a forced principal image exhausts the cost cap, check that exact fibre separately and exclude its trace from the residual graph.",
+      "attempt_or_test": "At the product-lemma equality boundary the ordinary graph gives-30, while the saturation split certifies the weighting.",
+      "recorded_outcome": "The split repairs this equality case. It changes nothing for the nonproduct uniform failure and repairs none of15 failed known-valid graph screens in Exploration16.",
+      "precise_limit": "Strictly under-cap traces can still be incompatible jointly. Saturation alone misses those conflicts.",
+      "research_time_saving": "Do not treat saturation splitting as a general solution to negative relaxed optima.",
+      "role": "follow-up",
+      "verification_in_v05": "historical report only",
+      "novelty": "unconfirmed; established ingredients are separately identified"
+    },
+    {
+      "id": "E15-N",
+      "title": "Nonproduct clone-family weighted repair",
+      "seed_lineage": "S07",
+      "sources": [
+        "E15"
+      ],
+      "status": "one unbounded template succeeds; broader scope unproved",
+      "original_proposal": "Challenge whether product structure explains the weighted repairs by cloning a coordinate of a nonproduct35-member core.",
+      "attempt_or_test": "At clone size15, construct an actual13-member fibre with uniform surplus-1. Reweight or ignore the clone block.",
+      "recorded_outcome": "Two nonuniform rules certify the case. A finite charging proof extends the zero-on-clone rule to every positive clone size, including partial traces.",
+      "precise_limit": "This is one nonproduct template, not arbitrary nonproduct cores. The enormous negative uniform graph family was not classified as a permissible fibre.",
+      "research_time_saving": "Do not count more clone sizes as independent hard cases or assume future fibres keep whole clone blocks.",
+      "role": "follow-up",
+      "verification_in_v05": "verify_history.py: finite cloned counterexample and actual q-mode; unbounded charging proof remains in source excerpt",
+      "novelty": "unconfirmed; established ingredients are separately identified"
+    },
+    {
+      "id": "E16-J",
+      "title": "Joint trace-cost branches",
+      "seed_lineage": "S07",
+      "sources": [
+        "E16"
+      ],
+      "status": "bounded checker improvement; no new global candidate",
+      "original_proposal": "Detect traces whose principal images fit individually but exceed the cost cap together; branch on omitting one.",
+      "attempt_or_test": "Challenge four known-valid nonproduct weightings that both ordinary and saturated graphs reject.",
+      "recorded_outcome": "Four complete branch proofs succeed within43,11,11,7 graph calls. Root negative families are already union-closed; excessive joint cost is the actual defect.",
+      "precise_limit": "The cases were already certified. Pair conflicts may miss higher-order conflicts and branch counts can grow exponentially. Optimizing known cases is not a new substantive approach.",
+      "research_time_saving": "Keep cost conflicts distinct from missing union closure, and stop implementation work when it no longer tests a new claim.",
+      "role": "follow-up",
+      "verification_in_v05": "verify_history.py: concrete core406 individual/joint costs and invalid-point witnesses",
+      "novelty": "unconfirmed; established ingredients are separately identified"
+    },
+    {
+      "id": "E17-E",
+      "title": "Remove automatic pairs: proper-decomposition maximizer",
+      "seed_lineage": "S08",
+      "sources": [
+        "E17",
+        "E18",
+        "E19",
+        "E20",
+        "E21",
+        "E22",
+        "E23",
+        "E24",
+        "E25"
+      ],
+      "status": "main candidate unresolved",
+      "original_proposal": "Maximize e(A)=(q(A)-2r(A)+1)/2, counting unordered unions of two proper members; every positive maximizer should contain an abundant coordinate.",
+      "attempt_or_test": "Freeze the variant before tests; prove coatom-only and <=4 target cases; exhaust four-coordinate families and test16000 generated trials.",
+      "recorded_outcome": "No counterexample found in those bounded tests. The selector genuinely differs from q-mode selection; zero e means a chain.",
+      "precise_limit": "No general implication between the two selector claims was established, and both remain unresolved. This is a score modification within an existing proof framework.",
+      "research_time_saving": "Do not silently replace q with e in old hypotheses or present a passing sample as a general proof.",
+      "role": "fresh poem-associated variant",
+      "verification_in_v05": "historical report only",
+      "novelty": "unconfirmed; established ingredients are separately identified"
+    },
+    {
+      "id": "E18-C",
+      "title": "Correct the cap before reusing q-mode certificates",
+      "seed_lineage": "S08",
+      "sources": [
+        "E18"
+      ],
+      "status": "necessary correction; restricted result reported",
+      "original_proposal": "Extend the e-mode investigation to five-coordinate targets using the appropriate exterior bound.",
+      "attempt_or_test": "Derive C_G(H)-2|H|<=q_G(A), then enumerate the enlarged fibre classes rather than reusing the old lists.",
+      "recorded_outcome": "Old-cap1483 occurrences grow to2178 across119 core types. The111 relevant e-modal types admit point certificates; the report establishes the <=5 target result computationally.",
+      "precise_limit": "Full historical enumeration appendices are not reissued or rerun in this compact expansion. The old cap is valid for q-mode but too strong as a necessary condition for e-mode.",
+      "research_time_saving": "Always label which selector a cap belongs to. Old weights need a fresh challenge under the adjusted bound.",
+      "role": "follow-up",
+      "verification_in_v05": "historical report only",
+      "novelty": "unconfirmed; established ingredients are separately identified"
+    },
+    {
+      "id": "E19-P",
+      "title": "Repair the mixed six-coordinate core under the adjusted cap",
+      "seed_lineage": "S08",
+      "sources": [
+        "E19"
+      ],
+      "status": "fixed-core certificate succeeds",
+      "original_proposal": "Test whether the known pair(4,5) still works when the permissible class expands.",
+      "attempt_or_test": "Two complete enumerators agree on427 fibres instead of the old316.",
+      "recorded_outcome": "The pair passes all427; combined core surplus12 gives f_F(4)+f_F(5)>=|F|+6 for any actual extension with that exact core.",
+      "precise_limit": "No general six-coordinate theorem follows, and the negative point witnesses remain.",
+      "research_time_saving": "This instance does not require a new weighting. Do not count the old316-fibre pass as verification of the larger class.",
+      "role": "follow-up",
+      "verification_in_v05": "historical report only",
+      "novelty": "unconfirmed; established ingredients are separately identified"
+    },
+    {
+      "id": "E20-A",
+      "title": "Extrapolate all equal pairs from selected difficult types",
+      "seed_lineage": "S08",
+      "sources": [
+        "E20",
+        "E21"
+      ],
+      "status": "pattern valid on selected types; universal extrapolation refuted",
+      "original_proposal": "Ask whether the stronger every-pair pattern seen in18 six-coordinate types holds generally.",
+      "attempt_or_test": "Verify all15 pairs on18 representative types, then challenge the extension in a different archive core.",
+      "recorded_outcome": "Exploration21 immediately finds two failing pairs in its first qualifying core. Thirteen others and five unit-coordinate choices still work.",
+      "precise_limit": "The18-type certificates remain valid. Failure of one equal pair is much weaker than failure of every two-coordinate weighting.",
+      "research_time_saving": "Do not promote a selected-type pattern into a universal pair rule.",
+      "role": "follow-up",
+      "verification_in_v05": "verify_history.py: both exact failing pairs in the15-member core and their global realizations",
+      "novelty": "unconfirmed; established ingredients are separately identified"
+    },
+    {
+      "id": "E22-A",
+      "title": "Find a core defeating every support of size at most two",
+      "seed_lineage": "S08",
+      "sources": [
+        "E22"
+      ],
+      "status": "bounded negative search; target unmet",
+      "original_proposal": "Search908 archive cores and625 nearby mutations for an exact obstruction to all point/pair weights.",
+      "attempt_or_test": "All1533 frozen cases complete; rational interval checks classify pair feasibility. Twelve selected whole fibre sets get independent enumeration.",
+      "recorded_outcome": "Every case has a certificate. All1533 also have an equal pair, noticed in a later integer audit; they represent748 isomorphism types.",
+      "precise_limit": "A selected finite search is not a universal theorem. Some returned unequal weights were arbitrary interval endpoints, not evidence unequal weights were necessary.",
+      "research_time_saving": "Do not keep sampling nearby cases as if more passes established universality or independence.",
+      "role": "follow-up",
+      "verification_in_v05": "historical report only",
+      "novelty": "unconfirmed; established ingredients are separately identified"
+    },
+    {
+      "id": "E22-R",
+      "title": "Top-frequency pair selects a local certificate",
+      "seed_lineage": "S08",
+      "sources": [
+        "E22",
+        "E23"
+      ],
+      "status": "post-hoc rule refuted in dimension seven",
+      "original_proposal": "Choose the pair with greatest internal frequency sum, with recorded tie handling.",
+      "attempt_or_test": "The rule passes all1533 six-coordinate cases, then a seven-coordinate distinct-column construction challenges it.",
+      "recorded_outcome": "For G20 the unique top pair(1,6) admits no normalized weights: two permitted fibres have pair surpluses(0,-2) and(-1,+1). Another pair works.",
+      "precise_limit": "This defeats local support selection, not the assertion that the top pair contains an abundant element globally. Distinct columns may remain nested/correlated.",
+      "research_time_saving": "Frequency ranking remains a heuristic only; it cannot replace checking constraints.",
+      "role": "follow-up",
+      "verification_in_v05": "verify.py check_ranking; existing compact certificates retained",
+      "novelty": "unconfirmed; established ingredients are separately identified"
+    },
+    {
+      "id": "E23-K",
+      "title": "Fixed top-k support through synchronized cloning",
+      "seed_lineage": "S08",
+      "sources": [
+        "E23"
+      ],
+      "status": "literal general recipe refuted",
+      "original_proposal": "Allow a larger fixed number k of highest-frequency coordinates as the certificate support.",
+      "attempt_or_test": "Clone the bad unique frequency maximizer of the six-coordinate seed into k copies.",
+      "recorded_outcome": "The copies are exactly the top k coordinates, all with negative surplus-1 in the copied permissible fibre; every normalized weighting on them fails.",
+      "precise_limit": "This is representation-dependent and does not rule out quotienting duplicates or a structural selector. A separate distinct-column pair obstruction remains after duplicate removal.",
+      "research_time_saving": "Increasing a fixed k does not rescue the literal rank-only recipe.",
+      "role": "follow-up",
+      "verification_in_v05": "verify.py cloning seed plus NOTE.md general argument",
+      "novelty": "unconfirmed; established ingredients are separately identified"
+    },
+    {
+      "id": "E23-N",
+      "title": "Separate cloned columns while preserving a negative witness",
+      "seed_lineage": "S08",
+      "sources": [
+        "E23"
+      ],
+      "status": "multiple rejected constructions before a valid repair",
+      "original_proposal": "Make the cloned top pair distinct while retaining unique rank, negative fibre and cost admissibility.",
+      "attempt_or_test": "Test64 split-trace additions; try refined closed deletions; then inspect the explicit strict-rank near miss.",
+      "recorded_outcome": "The first64 additions do not retain every required property. Three refinements have witnesses over cap and exact separators certify the pair. A near miss has q201 but cost207 and is rejected.",
+      "precise_limit": "A negative score outside the cap is not an obstruction. The near-miss global extension has exterior e85>A e82, confirming its failure.",
+      "research_time_saving": "Keep unsuccessful perturbations and all admissibility checks; do not quietly present the final accepted instance as the first try.",
+      "role": "follow-up",
+      "verification_in_v05": "verify_history.py: strict-rank near miss q201/cost207 and global score reversal",
+      "novelty": "unconfirmed; established ingredients are separately identified"
+    },
+    {
+      "id": "E23-S",
+      "title": "Witness-preserving stabilizer additions",
+      "seed_lineage": "S08",
+      "sources": [
+        "E23",
+        "E24",
+        "E25"
+      ],
+      "status": "constructive move works locally; broad feasibility unestablished",
+      "original_proposal": "Add t satisfying t union h in H for every h in a fixed negative witness, preferring more core union-to-top partners than witness partners.",
+      "attempt_or_test": "Search the stabilizer of H and independently check closure, rank, modality and adjusted cost.",
+      "recorded_outcome": "Adding94 to the near miss raises q201->219 but witness cost207->217, making it admissible. The exact slack gain is2[Q({t},G)-Q({t},H)].",
+      "precise_limit": "Closure additions, ranking, other witnesses and global modal status require separate checks. The formula alone does not ensure a useful construction.",
+      "research_time_saving": "Use the explicit stabilizer/slack mechanism rather than indiscriminate additions.",
+      "role": "follow-up",
+      "verification_in_v05": "verify_history.py: near miss and repair; verify.py: accepted pair obstruction",
+      "novelty": "unconfirmed; established ingredients are separately identified"
+    },
+    {
+      "id": "E24-B",
+      "title": "Accumulate all pair obstructions with a preserved witness bank",
+      "seed_lineage": "S08",
+      "sources": [
+        "E24"
+      ],
+      "status": "one lane improves; two stall; target unmet",
+      "original_proposal": "Preserve existing support obstructions while extending several seven-coordinate cores.",
+      "attempt_or_test": "Six baselines, three active lanes, at most two rounds with four selected preserving additions per round;38 distinct cores total.",
+      "recorded_outcome": "One lane moves14->15->16 blocked supports. Two active lanes have no gains among selected additions. Two controls have no starting obstruction; one control is incomplete. Five primary enumerations remain incomplete.",
+      "precise_limit": "Thirty-three completed cases do not exhaust all additions;55 candidates passed the preservation filter but only16 preserving instances were enumerated. Contextual additions can restore old supports.",
+      "research_time_saving": "Do not extrapolate a single successful lane into reliable completion, or call unsearched/stopped lanes impossible.",
+      "role": "follow-up",
+      "verification_in_v05": "verify_history.py: accepted14->15->16 arithmetic and new witness costs; full bank/history not rerun",
+      "novelty": "unconfirmed; established ingredients are separately identified"
+    },
+    {
+      "id": "E25-B",
+      "title": "Eliminate the last five supports",
+      "seed_lineage": "S08",
+      "sources": [
+        "E25"
+      ],
+      "status": "one gain; four protected survivors; branch paused",
+      "original_proposal": "Diagnose surviving certificates, measure negative-witness cost distances, and test every qualifying one-trace bank-preserving addition.",
+      "attempt_or_test": "Four full matchings, one joint-exclusion proof, six relaxed caps and eight qualifying additions are checked.",
+      "recorded_outcome": "Pair(4,6) has exact negative cost609; adding100 gives17 blocked supports. Four equal pairs survive, and every core extension of G37 with q<=629 keeps all four certificates.",
+      "precise_limit": "The desired all-support obstruction was not found. q>=631 is necessary, not sufficient; deletions, unrelated cores and larger changes are not excluded.",
+      "research_time_saving": "Do not search the proved protected additive range for an impossible gain. Do not interpret17/21 as a completion probability.",
+      "role": "follow-up",
+      "verification_in_v05": "verify.py: exact support partition, sharp cost and extension protection",
+      "novelty": "unconfirmed; established ingredients are separately identified"
+    }
+  ]
+}

@@ -1,102 +1,98 @@
-STRANGE SEED / TRUTH & WONDER
-PUBLIC RESEARCH HANDOFF v0.4.1 — 22 October 2026
+STRANGE SEED / TRUTH & WONDER — PUBLIC HANDOFF v0.5
+Prepared 23 October 2026, America/Los_Angeles
 
-START HERE
-This supersedes v0.4 as the preferred compact handoff. It adds an evidence-bounded
-historical/novelty audit. It is not a complete reconstruction of every project
-session. Do not assume the agreed literature-before-investment gate was always
-enforced: that has not been demonstrated by the available records.
+PURPOSE
+Save mathematicians and models time by preserving the poetry-associated Frankl
+approaches pursued in this conversation, including false claims, failed repairs,
+incomplete searches, restricted successes and the final unresolved barriers.
+This expands the published v0.4.1 package, which overemphasized the later branch.
 
-CURRENT OBJECTIVE
-Prepare a truthful, reproducible note that other mathematicians and models can
-inspect and reuse. Mathematical exploration remains paused. The current task
-was updating the handoff, not conducting another search or publishing online.
+SCOPE AND COVERAGE
+41 editorial claim/subroute entries map to all 29 saved Frankl reports: one
+baseline, three pilots and Explorations01–25. There were eight recorded poem
+draws selecting seven different titles. Many later sessions were mathematical
+follow-ups, not fresh poetry discoveries. Baseline/controls appear as needed
+to disclose origins and duplicates. No poem texts or frozen corpus are included.
 
-CORE QUESTION
-In a finite union-closed family containing the empty set, let e_F(A) count
-unordered proper pairs whose union is A. Does every positive global e-maximizer
-contain an abundant coordinate? This question remains unresolved in the project.
-It is not a proof of Frankl's conjecture; exact literature status is unconfirmed.
-
-MATHEMATICAL CHECKPOINT
-Seven coordinates, indexed 0..6, top mask127. The source core G37 has q597 and
-top score262. Adjoining mask100 gives G38, q613 and top score269. Exact finite
-certificates show that 17 of 21 pair supports are blocked. Four remain:
-(1,4), (3,4), (3,5), (5,6), each requiring equal weights.
-On G37, the minimum cost of a negative equal-pair fibre for (4,6) is exactly609.
-Four other certificates survive every union-closed core extension of G37 with
-q<=629. Reaching q>=631 is necessary for an additive attack on that protection,
-not sufficient. The goal of eliminating all one/two-coordinate supports was unmet.
-
-The necessary fibre cap is c_G(H)=2Q(G,H)+Q(H,H)-2|H| <= q_G(A).
-Do not reuse the older unadjusted cap. Failure of a local sufficient certificate
-does not imply failure of abundance. Full definitions and proofs are in NOTE.md.
-
-NOVELTY CORRECTION
-Four overlapping established machinery families were identified: weighted
-certificates; optimization/cutting planes/exact feasibility; matching/injections;
-and coordinate cloning. That does not mean four entire research paths have been
-shown redundant. Specific applications and claims require separate comparison.
-No exact count of redundant approaches or wasted sessions is currently supported.
-
-Exploration25 explicitly recorded no literature search or novelty claim in that
-session. Publication preparation later made a limited retrospective check.
-Historical pre-attempt clearance of each specific result is NOT DOCUMENTED in
-the sources inspected for this revision. This does not prove that no earlier
-check occurred; it prevents us from claiming that one did.
+All29 mathematical narrative sections were reviewed and included as excerpts,
+with source names and hashes. This is not a complete transcript recovery or
+a byte-for-byte reissue of all computational appendices. Unrecorded transient
+ideas cannot be guaranteed recovered. Historical computational claims are
+distinguished from freshly checked finite witnesses.
 
 READING ORDER
-1. HISTORICAL-AUDIT.md: source scope, chronology, ten audit entries and gaps.
-2. NOTE.md: mathematical definitions, arguments, exact scope and examples.
-3. NOVELTY-AND-PRIOR-ART.md: established overlap and limited-search qualifications.
-4. APPROACH-LEDGER.md: technical route summary, not a chronology or novelty audit.
-5. QUESTIONS.md and PUBLICATION.md: expert questions and suggested release route.
+1. RESEARCH-STOPPING-POINTS.md: quick map of shortcuts not to repeat unchanged.
+2. POETRY-APPROACH-CATALOG.md: precise claims, tests, outcomes and boundaries.
+3. SEED-LINEAGE.md: poem/draw origins, duplicates and follow-up relationships.
+4. SOURCE-COVERAGE.md: reconciliation of all 29 reports and its limitations.
+5. VERIFICATION-SCOPE.md: fresh checks versus historical claims.
+6. NOTE.md: self-contained later seven-coordinate certificate results.
+7. HISTORICAL-AUDIT.md and NOVELTY-AND-PRIOR-ART.md: timing and known overlap.
+
+EARLY BRANCHES NOW PRESERVED
+Triple-fibre classification/parity; exact-law coupling obstruction; projective-
+plane matching failure and unbounded deficits; actual disjoint-anchor and false
+terminal-fibre rules;9/16 localization and failed global lifts; omission-depth
+transfer and its depth-three counterexample; inconclusive simultaneous-dilution
+searches; union roots rejected as an established framework; raw and normalized
+private-witness score selectors, both refuted; and the full q-mode follow-up.
+
+LATER CHECKPOINT
+The proper-decomposition candidate uses e_F(A)=(q_F(A)-2r_F(A)+1)/2.
+The correct necessary exterior-fibre cap is
+ c_G(H)=2Q(G,H)+Q(H,H)-2|H| <= q_G(A).
+Do not import the unadjusted old q-mode cap unchanged.
+
+The seven-coordinate source coreG37 has q597 and top e262. Adding100 gives
+G38,q613,e269. Exactly17 of 21 pair supports are blocked; four survive, requiring
+equal weights: (1,4),(3,4),(3,5),(5,6), zero-based coordinates.
+For source pair(4,6), exact minimum negative fibre cost is609. Every union-closed
+core extension ofG37 with q<=629 retains the four protected certificates.
+q>=631 is necessary for an additive attack, not sufficient. The all-support
+obstruction goal was not reached. Mathematical exploration remains paused.
+
+STATUS OF THE MAIN IDEAS
+The general q-mode selector, general positive-e-mode selector, and Frankl's
+conjecture remain unresolved in this work. Failed local sufficient certificates
+are not global counterexamples. Novelty and poetry's causal benefit are not
+established. The41 entries are not independent efficacy trials or41 discoveries.
 
 VERIFICATION
-Run python3 verify.py and python3 test_verifier.py using Python3.9+.
-No third-party packages are needed. They check finite certificate data and
-reject four deliberate corruptions. Both pass for this archive. These checks
-are not independent human peer review or proof-assistant formalization.
-Historical five-coordinate coverage is mentioned in the audit as a reported
-result only; its full search appendices are not part of this compact package.
+Python 3.9+, standard library only:
+ python3 verify.py
+ python3 test_verifier.py
+ python3 verify_history.py
+ python3 verify_release.py
+The retained certificates and13 selected earlier witness groups are checked.
+Full historical enumeration campaigns are not all rerun. The package checker
+also validates source coverage, relative links and checksums. This is neither
+external peer review nor proof-assistant formalization.
 
-PUBLICATION STATUS
-This package was prepared before public release. A GitHub repository named
-union-closed-proper-decomposition-certificates is recommended as the first home.
-Record the actual repository URL and release date in release-details.json. The repository account remains to be selected. Project attribution is
-Strange Seed / Truth & Wonder. Software is MIT; documentation is CC BY4.0;
-data and metadata are CC0. Full texts and exact scope are included. Zenodo is a possible
-later archive only after assessment of its requirements; see PUBLICATION.md.
-No DOI or repository URL has been assigned by this package.
-No novelty certification or poetry-efficacy claim is made.
+PUBLICATION
+Existing repository:
+https://github.com/courterr/union-closed-proper-decomposition-certificates
+Initial smaller public package:22 October 2026. This v0.5 update is prepared for
+review/upload and has not been posted by the assistant. See RELEASE-CHECKLIST.md.
+The current repository URL is already filled in. A release tag/DOI remains
+unassigned. After intentional edits, run refresh_checksums.py and verify_release.py.
 
-NEXT RESPONSIBLE ACTION
-Review this draft and obtain focused expert prior-art/equivalence assessment.
-If investigation resumes later, record exact claims, closest prior work, search
-dates and the decision to proceed BEFORE substantial new attempts. Mark missing
-historical records as missing. Do not invent dates or retroactive clearances.
-
-Truth & Wonder means preserving useful results AND the limits of our evidence.
-
-VERSION0.3 PUBLICATION ADDITIONS
-Clearer searchable repository title; correction invitation; release checklist;
-unfilled attribution/license/URL/date fields; and current-status wording that
-does not assert a continuing absence of publication after a later upload.
-Start with RELEASE-CHECKLIST.md before posting. No new mathematical search or
-literature review was performed. The certificate data and checker are unchanged.
-
-VERSION0.4 OPEN-RELEASE AUTHORIZATION
-The human project owner expressly instructed:
+OPEN REUSE
+Original software:MIT. Original documentation:CC BY 4.0. Data/metadata:CC0 1.0.
+Full texts and exact scope are included. Project attribution:Strange Seed /
+Truth & Wonder. The owner's authorization remains verbatim:
 "Open, sorry. I missed that bit. Please make it as open sources as possible and feel free to quote me in the handoff somewhere saying that so it is totally unambiguous."
 
 The owner's follow-up, preserved for the record:
 "Wait, did you directly quote me with the misspelling 'sources'?"
 The owner then asked that the original wording remain unchanged.
 
-This instruction authorizes the open licensing applied in v0.4. See LICENSE.md
-and OPEN-RELEASE-AUTHORIZATION.md. Commercial reuse and modification are allowed
-under the applicable terms. No noncommercial or no-derivatives restriction is
-added. This authorizes licensing the included project materials, not disclosure
-of the private conversation, external papers or other third-party materials.
-Historical changelog entries about unselected licenses describe earlier drafts
-and are superseded by this release. Mathematical claims remain unchanged.
+No private conversation transcript or third-party poem corpus is licensed by
+this package. The included project materials are licensed under the stated terms.
+
+NEXT RESEARCH RULE
+Use the catalog to identify what a new proposal changes. Record precise claims,
+closest prior work, search timing and stopping criteria. Keep failed formulas
+separate from repairs. Do not silently turn historical uncertainties, timeouts,
+selected samples or known machinery into novelty or proof claims.
+
+Truth, Wonder, & Sources.

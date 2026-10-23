@@ -1,3 +1,20 @@
+# v0.5 — 23 October 2026
+
+- Expanded from the later-branch summary to 41 source-linked claim/subroute
+  entries spanning the documented poetry-conditioned Frankl work in this conversation.
+- Reconciled the baseline, three pilots and Explorations01–25:29 narrative
+  sources, eight draws, seven distinct selected poem titles.
+- Added early failures, near misses, inconclusive searches and restricted
+  successes, with exact scopes and concrete advice on what not to repeat.
+- Added narrative source excerpts; full historical appendices are not all reissued.
+- Recovered documented early literature-gate records; retained priority uncertainty.
+- Added13 fresh finite-witness check groups and a clear verification-scope guide.
+- Marked sourceP02's absence-versus-occurrence formula clarification explicitly.
+- Added integrity/navigation checks and a checksum-refresh helper.
+- Preserved existing certificate code/data, open licenses, owner quote and joke.
+- Retained the actual public repository metadata; no public update was posted
+  by the assistant, no new mathematical search or poem draw was conducted.
+
 # v0.4.1 — 22 October 2026
 
 - Preserved “open sources” verbatim and added the owner's requested humorous

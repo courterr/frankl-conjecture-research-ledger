@@ -1,0 +1,81 @@
+NARRATIVE EXCERPT — HISTORICAL SOURCE, NOT A NEW VERIFICATION
+Original report: Strange-Seed-Frankl-Pilot-02-Full-Record.txt
+Source record: P02; excerpt lines 1-69.
+This excerpt omits reproduction appendices and raw poem texts.
+Historical dates/statuses and claims below retain their original scope.
+Consult ../../SOURCE-COVERAGE.md for the current audit and verification limits.
+
+v0.5 editorial clarification: in the general projective-plane paragraph,
+the quantity (q+2)2^(q-1) counts absence in the union-closed complement
+family (presence in the intersection-closed pre-complement family).
+The union-closed occurrence count is m-(q+2)2^(q-1), giving21 of29
+when q=2. See the freshly checked Fano example. Original wording follows.
+
+STRANGE SEED — FRANKL PILOT 02: FULL TRIAL RECORD
+Truth & Wonder
+21 October 2026
+
+RESULT
+This round produced a distinct, verified result in the poetry condition: an explicit family refuting the proposed universal inclusion-matching certificate for every coordinate. Both controls also made valid progress. This is a promising observed outcome for the seeded condition, not an established causal or general advantage for poetry.
+The original union-closed sets conjecture was not solved or refuted. The counterexamples concern stronger proposed certificates, and in the seeded family every element is abundant.
+
+DESIGN
+This is one further adaptive comparison on the same mathematical problem. All workers received the same new checkpoint containing the validated mathematical developments from round one, without the previous poem or condition labels. Those old developments could not earn repeat credit.
+A=ordinary continuation; B=structured continuation; C=poetry-seeded continuation. Fresh contexts, one supplied prompt each, identical common input, no inherited conversation turns. All inherited parent defaults with no model/effort override. Exact backend version and hidden reasoning usage were unavailable.
+Each had one response of at most 1,200 whitespace-delimited words and three candidate proposals, using own reasoning after loading its prompt. No additional feedback/rescue turn. Same common encouragement. Post-response verification occurred only after all workers had finished.
+The previous budget, intervention and reporting rules were retained. Checkpoint 02 replaced the first checkpoint before the draw. Sampling remained uniform from all 100 poems, with replacement between rounds; a repeat poem would have been retained. No repeat occurred.
+
+DRAW
+P033 — Emily Bronte, Come hither, child: 32 nonblank lines, 219 words.
+One operating-system random draw, no redraw. Full text and draw hashes are preserved below.
+Poetry data from PoetryDB (https://poetrydb.org), curated by The Combed Thunderclap, CC BY 4.0; its poem texts are identified by the source as public domain.
+
+CONDITION RESULTS
+A — ORDINARY
+- Proved a restricted structural result: if X=U minus a chosen triple S is a member and the terminal fibre H_X is not the full triple cube, some element of S is abundant.
+- Constructed a 19-member union-closed family where two abundant coordinates each fail their own inclusion-matching condition.
+- The broader terminal-fibre claim in the response's opening heading was not established. The worker identified its failed implication and explicitly left the unrestricted version unresolved. Only the repaired theorem is credited.
+- The global assertion that SOME coordinate always has an inclusion matching remained unresolved in this response.
+
+B — STRUCTURED
+- Proved the strict prescribed-triple bound max_(x in S)f(x)>4m/9, hence at least floor(4m/9)+1, with sharper stated conditional bounds.
+- Gave an infinite family attaining that integer lower bound for infinitely many m and with the ratio tending to 4/9. This establishes the optimal leading coefficient for that particular prescribed-triple estimate.
+- The original conjecture remained unresolved. These are statements about an element inside a specified triple member, not all possible ways of locating an abundant element.
+
+C — POETRY-SEEDED
+- Constructed a 29-member union-closed family on seven coordinates where every coordinate has frequency 21, but NO coordinate has the checkpoint's inclusion-respecting injection from sets omitting it to sets containing it.
+- Proved the maximum inclusion matching has size 7 for each coordinate, although the domain has 8 members.
+- Generalized using projective planes to families where all global frequency ratios tend to 1, but the required local matching deficit tends to infinity.
+- Consequently refuted both the universal inclusion-matching certificate and repairs allowing only a universally fixed number of unmatched sources.
+
+WHY THE SEEDED EXAMPLE WORKS
+For each coordinate, its global frequency is 21/29, well above half. Nevertheless, a seven-member upward-closed subfamily has four members omitting that coordinate and only three containing it. An inclusion-respecting matching must keep those four sources inside that subfamily, so three available targets cannot suffice. Thus global abundance does not supply the stronger local capacity constraints needed for this certificate.
+The construction uses complements of selected subsets of the seven-point projective plane. It moves beyond the checkpoint's triple-member examples: its smallest family members have size four. The route being tested (inclusion matching) was already a baseline suggestion; the finite geometry construction and refutation were additions within this run.
+
+POEM-TO-MOVE TRACE
+The seeded worker associated the poem's isolated chamber and repeated musical strain with relatively upward-closed subfamilies that can exhibit a local imbalance despite global abundance. It translated that image into an explicit Hall-deficit construction, not just a proposed future test.
+This attribution is self-report. It does not establish that the poem caused the discovery or that the same model would not find it in another ordinary continuation. The concrete construction appeared only in C in this round, while A obtained a weaker coordinatewise separation.
+
+MATHEMATICAL REVIEW
+Assessment was parent review with condition labels visible, supported by post-response computation. It was not independent blinded adjudication. Literature novelty remains unassessed for every claimed development.
+A1: the restricted theorem is valid. When X belongs to F, all occurring traces are in H_X. If H_X is not full, some singleton is absent; the other two coordinates hit every nonempty trace. The full trace contributes +2 and an empty trace at worst -2 to that pair's balance in each fibre, proving an abundant member of the pair. The unqualified opening claim still has a gap and is not credited as proved.
+A2: valid. The 19-member construction is closed under union, has frequencies (10,10,6,14,14,14,14), and the two stated relatively upward-closed witnesses each have 11 members with only 5 containing the relevant abundant coordinate. It does not refute global existence of a matching coordinate; the worker correctly left that unresolved.
+B1: valid. If a nonempty proper subset of S is present, the known one-/two-element theorem supplies the bound. Otherwise the empty-outside fibre is nonnegative and uses at least one member, so 3b<=m-1. The balance identity gives the strict bound. Tracking the empty-outside fibre more closely proves the two conditional inequalities.
+B2: valid. Pairwise unions of distinct co-singleton outside parts go to X, where a full trace cube is provided. Counts give m=9q+9 and each chosen-triple frequency 4q+5=4m/9+1. This proves sharpness of the leading coefficient and infinitely many exact integer cases. Outside coordinates remain abundant, so these are not counterexamples to Frankl.
+C1: valid. In the cyclic construction, the seven triples form the seven-point projective plane. Cross-line intersections have size at most one, and same-line nonsingleton intersections retain the designated point. The complement family is therefore union-closed. Direct counting gives 29 members, frequency 21 everywhere, and a 4-versus-3 upward-set obstruction for every coordinate.
+C2: valid. The local obstruction bounds every matching by 7, and the seven explicit complement matches are distinct and valid. Computational maximum matchings independently have size 7 on all seven coordinates.
+C3: valid. The point-line incidence graph of a projective plane is regular and balanced, so Hall's edge-counting argument gives distinct incident centers for all lines. The complement family has m=1+(q^2+q+1)2^q members. Each point's complement frequency is (q+2)2^(q-1), while its local deficit is 2^q-q-1. Prime orders supply an infinite sequence. This proves the asymptotic statements and the obstruction to a fixed unmatched-source allowance.
+
+VALIDATION SCOPE
+Checked the ordinary 19-member family and both upward-set witnesses directly. Checked structured sharpness constructions for n=6,9,12. Exhaustively checked the stated restricted/strict bounds on all 3,150 union-closed families on four labeled coordinates containing a fixed triple (756 met A1's extra hypothesis). Checked the seeded cyclic construction's closure, all frequencies, all seven upward witnesses and all maximum matchings. Independently instantiated the projective-plane construction over prime fields q=2,3,5 and verified closure, counts, frequency formulas and each local deficit.
+These checks supplement the general proofs. They are not a substitute for a proof for arbitrary size, nor new scored discoveries supplied to the workers. No solving program or search engine was used by a scored condition.
+
+COMPARISON AND INTERPRETATION
+All three conditions made checkable progress beyond checkpoint 02. In this round, C closed an explicit open certificate question that A left unresolved; B settled the leading constant of a different, local estimate. Those outputs have different mathematical roles, so no numerical winner is assigned from an undeclared weighting of results.
+The seeded construction is a useful positive signal for further testing: a poem was used as a source of a concrete, validated move, and this move was absent from the two controls' outputs. It is not evidence of new-to-literature mathematics without a literature check, and one response per condition cannot isolate poetry from ordinary sampling variation or differing hidden computation.
+The two rounds used different shared checkpoints, so they are not independent repetitions of an unchanged problem state. They should not be pooled into a success-probability estimate.
+The common checkpoint was concise mathematical information, not a harness generating novel approaches. Logging and post-response validation were administrative/evaluation operations. Isolation was instruction-based in fresh contexts on a shared filesystem, not a security boundary.
+All outputs were within the word and proposal caps. No protocol violation was observed. Equal output ceilings did not enforce equal actual computation. Actual input/output whitespace counts are recorded below; tokenizer counts and hidden reasoning tokens were unavailable.
+
+NEXT MATHEMATICAL STATE
+The universal inclusion-matching certificate is now refuted within this investigation. A future checkpoint should preserve that obstruction and the strict/sharp triple estimate, so neither rediscovery earns repeated credit. Revised certificates must explicitly escape the projective-plane obstruction. No third trial was launched here.

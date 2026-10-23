@@ -1,0 +1,81 @@
+NARRATIVE EXCERPT — HISTORICAL SOURCE, NOT A NEW VERIFICATION
+Original report: Strange-Seed-Frankl-Exploration-20.txt
+Source record: E20; excerpt lines 1-74.
+This excerpt omits reproduction appendices and raw poem texts.
+Historical dates/statuses and claims below retain their original scope.
+Consult ../../SOURCE-COVERAGE.md for the current audit and verification limits.
+
+STRANGE SEED — FRANKL EXPLORATION 20
+22 October 2026 (America/Los_Angeles)
+Truth & Wonder
+
+OUTCOME
+A targeted challenge of the six-coordinate weighting strategy did not break it. All 31 selected archive cases passed; these represent 18 distinct core types up to coordinate permutation, all different from Exploration 19's core. Fresh adjusted-cap enumeration produced 9,387 fibre occurrences across the 18 representatives, including 2,865 excluded by the older q-mode cap. A second, structurally different enumerator reproduced each representative's entire fibre set exactly.
+
+The simple repair was stronger than anticipated: in every representative, all 15 pairs of coordinates, each weighted equally, have nonnegative surplus in every permitted fibre and strictly positive combined surplus in the internal core. No single-coordinate certificate works for any of these 18 types. We did not find a case requiring support larger than two or a case defeating all nonnegative weights.
+
+This is a restricted computer-assisted mathematical result and a stress test of a proof strategy. It is not an exhaustive six-coordinate classification, a proof of Frankl's conjecture, a historical novelty claim, or evidence of poetry's causal advantage. No new poem was drawn. The current branch continues the proper-decomposition idea derived earlier.
+
+MATHEMATICAL SETUP
+F is finite, union-closed, and contains the empty set. A target A has six coordinates. For T in F, q_F(T) is the count of ordered union pairs producing T, and r_F(T) counts members of F contained in T. Set
+ e_F(T)=(q_F(T)-2r_F(T)+1)/2.
+This counts unordered proper union decompositions of T. The conjectural selector says every positive global maximizer A of e_F contains a globally abundant coordinate (frequency at least |F|/2), including tied maximizers.
+
+For a fixed core G=F intersect 2^A, put r=|G| and q=q_G(A). Each occurring exterior trace Z gives an internal trace family H_Z. It is nonempty, contains A, is union-closed, and is G-stable. With Q(X,Y) counting ordered pairs whose union is A, write C_G(H)=2Q(G,H)+Q(H,H). Global e-modal maximality implies
+ C_G(H)-2|H| <= q.
+This is the correct adjusted cap. The old C_G(H)<=q cap is insufficient for this branch.
+
+To see necessity, in the subfamily G plus the Z-fibre, the union pairs producing D=A union Z number C_G(H). Remove the 2(r+|H|)-1 pairs involving D itself. The remaining count divided by two is a lower bound on e_F(D). Comparing it with e_F(A)=(q-2r+1)/2 yields the adjusted cap.
+
+THE EXACT CERTIFICATE
+For coordinate i let s_i(K)=2*f_K(i)-|K|. For every representative G and every pair i != j, computation verifies
+ s_i(G)+s_j(G)>0,
+ s_i(H)+s_j(H)>=0 for every adjusted-cap permitted H.
+Summing the partition of the actual F into G and its exterior fibres gives
+ 2*(f_F(i)+f_F(j)-|F|) >= s_i(G)+s_j(G)>0.
+Therefore every pair has f_F(i)+f_F(j)>|F|. Consequently at most one coordinate of A can be globally rare, and the candidate's abundance conclusion follows for every actual family having one of these internal cores, in any ambient dimension. This uses independently permitted fibres only as a superset of the actual fibres; it does not assume arbitrary permitted fibres coexist.
+
+This pair conclusion was observed after the planned pair-support search. It is recorded as an exploratory structural pattern, with exact certificates, rather than a pre-specified statistical endpoint.
+
+WHAT WAS CHALLENGED AND HOW CASES WERE SELECTED
+Source: Exploration 11's 959 completed sampled six-coordinate cores and their old-cap certificates. From those, select cases having no common single-coordinate old-cap certificate, require e_G(63)>0 and internally maximal at 63, and exclude every permutation of Exploration 19's fixed core. There were 31 selected cases. Search in archive-index order, stopping at the first absence of a certificate supported on two or fewer coordinates, or after the selected set. All 31 completed without such a failure.
+
+This archive was not a uniform random sample of core types. Coordinate relabelings are not independent successes: canonicalization over all 720 permutations reduces 31 cases to 18 distinct types. No success probability is estimated. This challenge was deliberately restricted to known difficult cases; it could miss the true obstruction entirely.
+
+For each core, fresh canonical C++ enumeration used the adjusted cap, a five-million-node ceiling and a 10-second process timeout. No budget or timeout was reached. Each supported-pair LP was tested and every successful numerical result reconstructed as rational numbers and checked with exact inequalities. All full-weight solutions also passed exact reconstruction. The accepted mathematical conclusion ultimately rests on the simpler direct integer checks of all equal-weight pairs, not on numerical LP status.
+
+VERIFICATION
+1. Validate distinct core members, union closure, empty and top membership, and positive internally maximal e(63).
+2. Validate every enumerated H: top membership, union closure, G stability, adjusted cost.
+3. Independently enumerate each of the 18 representative fibre sets using binary include/exclude decisions and iterative closure, rather than the first enumerator's canonical incremental traversal. Full set equality was checked, not just counts. Total independent nodes: 105,160.
+4. Check all 15 equal-weight pair inequalities by integer arithmetic, including the core.
+5. For each individual coordinate, retain an admissible fibre with negative surplus, confirming that a one-coordinate local certificate really fails.
+6. Directly check the full e-score of each actual one-exterior-coordinate extension for the 18 representatives. None is a counterexample to the candidate. This supplementary finite check is not the source of the arbitrary-ambient-size theorem above.
+
+Cost pruning is sound: for families containing A, adding a new h adds at least two cross-pair contributions using g=A, at least two H-H ordered contributions using A, and subtracts two for size. Hence adjusted cost increases by at least two per new trace. The closure operation can only increase it further. Independent enumeration uses the same necessary bound but different traversal and closure code; it is not a formal proof-assistant verification.
+
+TYPE SUMMARY
+Indices are inherited archive identifiers, not a numbering of all six-coordinate cores. Bits are numbered 0 through 5. Each row has all 15 equal-weight pairs certified; pair bounds and all six negative single-coordinate witnesses are in verification.json below.
+
+Index | Core size | e_G(63) | Old-cap fibres | Adjusted-cap fibres
+    9 |        20 |      90 |            365 |                 577
+   26 |        21 |      91 |            405 |                 588
+   36 |        20 |      85 |            325 |                 516
+   56 |        19 |      79 |            315 |                 437
+   60 |        18 |      74 |            299 |                 344
+   69 |        19 |      80 |            314 |                 459
+   74 |        20 |      90 |            372 |                 604
+   76 |        20 |      91 |            393 |                 589
+   83 |        20 |      92 |            434 |                 606
+  120 |        19 |      83 |            322 |                 514
+  124 |        19 |      83 |            324 |                 524
+  127 |        19 |      84 |            332 |                 555
+  134 |        18 |      76 |            308 |                 354
+  156 |        18 |      76 |            310 |                 368
+  203 |        22 |      99 |            531 |                 710
+  406 |        20 |      93 |            535 |                 661
+  417 |        19 |      83 |            320 |                 499
+  476 |        19 |      80 |            318 |                 482
+
+DECISION
+Retain the weighting approach provisionally. This challenge has not supplied a reason to abandon it, but the archive survival cannot justify claiming that a certificate always exists. A productive next step is to explain structurally why all pairs succeed in these types, or deliberately construct/search outside this archive for a core with a negative equal-pair witness. Failure of all local weights would still be an obstruction to this proof mechanism rather than automatically a global counterexample. Actual global compatibility and full modal maximality must remain separate checks.

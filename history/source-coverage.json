@@ -1,0 +1,499 @@
+{
+  "version": "0.5",
+  "records_reviewed": 29,
+  "poem_draws": 8,
+  "distinct_selected_poem_titles": 7,
+  "source_scope": "Baseline01, Pilots01-03, Explorations01-25",
+  "full_appendices_reissued": false,
+  "records": [
+    {
+      "id": "BASE",
+      "original_filename": "Strange-Seed-Frankl-Baseline-Checkpoint-01.txt",
+      "excerpt_path": "history/sources/BASE.txt",
+      "excerpt_lines": [
+        1,
+        126
+      ],
+      "retrieved_prefix_lines": 126,
+      "mapped_attempts": [
+        "P01-C1"
+      ],
+      "role": "baseline context",
+      "excerpt_sha256": "4be4cb90b51d5c880108fe9293a457fe7772aa3fb400ff30a06f83d25dae9b20"
+    },
+    {
+      "id": "E01",
+      "original_filename": "Strange-Seed-Frankl-Exploration-01.txt",
+      "excerpt_path": "history/sources/E01.txt",
+      "excerpt_lines": [
+        1,
+        209
+      ],
+      "retrieved_prefix_lines": 275,
+      "mapped_attempts": [
+        "P01-C3",
+        "P03-C1",
+        "E01-L"
+      ],
+      "role": "fresh draw",
+      "excerpt_sha256": "44e6aab95d5c10896093a3a3f04e56e8c8b8e5f08d7edbd474819362377e9864"
+    },
+    {
+      "id": "E02",
+      "original_filename": "Strange-Seed-Frankl-Exploration-02.txt",
+      "excerpt_path": "history/sources/E02.txt",
+      "excerpt_lines": [
+        1,
+        106
+      ],
+      "retrieved_prefix_lines": 350,
+      "mapped_attempts": [
+        "E02-A",
+        "E02-B",
+        "E02-C",
+        "E02-D"
+      ],
+      "role": "descendant follow-up",
+      "excerpt_sha256": "ff299aa06c8a619a979be9dc9eba3c2a52a270cab2dc6163edb5c3e749a056c5"
+    },
+    {
+      "id": "E03",
+      "original_filename": "Strange-Seed-Frankl-Exploration-03.txt",
+      "excerpt_path": "history/sources/E03.txt",
+      "excerpt_lines": [
+        1,
+        88
+      ],
+      "retrieved_prefix_lines": 129,
+      "mapped_attempts": [
+        "E02-B",
+        "E03-S"
+      ],
+      "role": "descendant follow-up",
+      "excerpt_sha256": "c7f9ff5776f0511105b9e2038e1b71e704288292fc9d361055f77cdb81956442"
+    },
+    {
+      "id": "E04",
+      "original_filename": "Strange-Seed-Frankl-Exploration-04.txt",
+      "excerpt_path": "history/sources/E04.txt",
+      "excerpt_lines": [
+        1,
+        94
+      ],
+      "retrieved_prefix_lines": 94,
+      "mapped_attempts": [
+        "E04-R"
+      ],
+      "role": "fresh draw",
+      "excerpt_sha256": "1c42f3f0d191ef360e51a46953d4a109f1a6083b220411f18e810e39a4c85b10"
+    },
+    {
+      "id": "E05",
+      "original_filename": "Strange-Seed-Frankl-Exploration-05.txt",
+      "excerpt_path": "history/sources/E05.txt",
+      "excerpt_lines": [
+        1,
+        67
+      ],
+      "retrieved_prefix_lines": 350,
+      "mapped_attempts": [
+        "E05-W"
+      ],
+      "role": "fresh draw",
+      "excerpt_sha256": "e043bbdf5959536e8813fa93da6956ab607de63b06234c134ce923d0f95e9016"
+    },
+    {
+      "id": "E06",
+      "original_filename": "Strange-Seed-Frankl-Exploration-06.txt",
+      "excerpt_path": "history/sources/E06.txt",
+      "excerpt_lines": [
+        1,
+        119
+      ],
+      "retrieved_prefix_lines": 350,
+      "mapped_attempts": [
+        "E06-V"
+      ],
+      "role": "descendant follow-up",
+      "excerpt_sha256": "0139137db81a01341df944901bdb772c3188f0cc271231bc1c321c6b69f9a0dc"
+    },
+    {
+      "id": "E07",
+      "original_filename": "Strange-Seed-Frankl-Exploration-07.txt",
+      "excerpt_path": "history/sources/E07.txt",
+      "excerpt_lines": [
+        1,
+        91
+      ],
+      "retrieved_prefix_lines": 350,
+      "mapped_attempts": [
+        "E07-Q"
+      ],
+      "role": "fresh draw",
+      "excerpt_sha256": "f126ca7ad6c4e434781f96150641d93138565c5e98dea3eb5713f173acc7cf33"
+    },
+    {
+      "id": "E08",
+      "original_filename": "Strange-Seed-Frankl-Exploration-08.txt",
+      "excerpt_path": "history/sources/E08.txt",
+      "excerpt_lines": [
+        1,
+        146
+      ],
+      "retrieved_prefix_lines": 350,
+      "mapped_attempts": [
+        "E07-Q",
+        "E08-C"
+      ],
+      "role": "descendant follow-up",
+      "excerpt_sha256": "e7942b3c0a5e7da02aa4bc777504f03798a002186922601ee46c0b54bef7c292"
+    },
+    {
+      "id": "E09",
+      "original_filename": "Strange-Seed-Frankl-Exploration-09.txt",
+      "excerpt_path": "history/sources/E09.txt",
+      "excerpt_lines": [
+        1,
+        113
+      ],
+      "retrieved_prefix_lines": 350,
+      "mapped_attempts": [
+        "E07-Q",
+        "E09-F"
+      ],
+      "role": "descendant follow-up",
+      "excerpt_sha256": "1e0b7b1e8f9f0359c83c9308cb745555affeccb11e8a77947a0baa7367de7f08"
+    },
+    {
+      "id": "E10",
+      "original_filename": "Strange-Seed-Frankl-Exploration-10.txt",
+      "excerpt_path": "history/sources/E10.txt",
+      "excerpt_lines": [
+        1,
+        141
+      ],
+      "retrieved_prefix_lines": 350,
+      "mapped_attempts": [
+        "E07-Q",
+        "E10-T",
+        "E10-U"
+      ],
+      "role": "descendant follow-up",
+      "excerpt_sha256": "2f43d472aa95d7f9b497753de4c8e26d3d2717e526db67bca5e447312c373809"
+    },
+    {
+      "id": "E11",
+      "original_filename": "Strange-Seed-Frankl-Exploration-11.txt",
+      "excerpt_path": "history/sources/E11.txt",
+      "excerpt_lines": [
+        1,
+        169
+      ],
+      "retrieved_prefix_lines": 350,
+      "mapped_attempts": [
+        "E07-Q",
+        "E10-U",
+        "E11-S",
+        "E11-N"
+      ],
+      "role": "descendant follow-up",
+      "excerpt_sha256": "03b64f24a46292b50c3f4fa53f558d23fa6479c293cd6b086d3d1a9797f5e0cb"
+    },
+    {
+      "id": "E12",
+      "original_filename": "Strange-Seed-Frankl-Exploration-12.txt",
+      "excerpt_path": "history/sources/E12.txt",
+      "excerpt_lines": [
+        1,
+        170
+      ],
+      "retrieved_prefix_lines": 350,
+      "mapped_attempts": [
+        "E07-Q",
+        "E10-U",
+        "E12-A",
+        "E12-G"
+      ],
+      "role": "descendant follow-up",
+      "excerpt_sha256": "be1f327dbb3a2367ca56a7f2a762192e6a26ed5ba45a0765046205cd849b812b"
+    },
+    {
+      "id": "E13",
+      "original_filename": "Strange-Seed-Frankl-Exploration-13.txt",
+      "excerpt_path": "history/sources/E13.txt",
+      "excerpt_lines": [
+        1,
+        209
+      ],
+      "retrieved_prefix_lines": 350,
+      "mapped_attempts": [
+        "E07-Q",
+        "E12-G",
+        "E13-W"
+      ],
+      "role": "descendant follow-up",
+      "excerpt_sha256": "1403121cbdac99ab35a0718fe2aa304d938662cc5b51b864f283e3cf3e26603c"
+    },
+    {
+      "id": "E14",
+      "original_filename": "Strange-Seed-Frankl-Exploration-14.txt",
+      "excerpt_path": "history/sources/E14.txt",
+      "excerpt_lines": [
+        1,
+        258
+      ],
+      "retrieved_prefix_lines": 350,
+      "mapped_attempts": [
+        "E07-Q",
+        "E12-G",
+        "E13-W",
+        "E14-B",
+        "E14-S"
+      ],
+      "role": "descendant follow-up",
+      "excerpt_sha256": "a88f1637f7d9fb9c57ddeae59080082d399e8eca09fcef85368ea0e874aa1b30"
+    },
+    {
+      "id": "E15",
+      "original_filename": "Strange-Seed-Frankl-Exploration-15.txt",
+      "excerpt_path": "history/sources/E15.txt",
+      "excerpt_lines": [
+        1,
+        227
+      ],
+      "retrieved_prefix_lines": 350,
+      "mapped_attempts": [
+        "E07-Q",
+        "E12-G",
+        "E13-W",
+        "E14-S",
+        "E15-N"
+      ],
+      "role": "descendant follow-up",
+      "excerpt_sha256": "8aa453351f0921f677aa204ccef968ab1a97e083a253ed6653a8466ad9b94a92"
+    },
+    {
+      "id": "E16",
+      "original_filename": "Strange-Seed-Frankl-Exploration-16.txt",
+      "excerpt_path": "history/sources/E16.txt",
+      "excerpt_lines": [
+        1,
+        201
+      ],
+      "retrieved_prefix_lines": 350,
+      "mapped_attempts": [
+        "E07-Q",
+        "E12-G",
+        "E14-S",
+        "E16-J"
+      ],
+      "role": "descendant follow-up",
+      "excerpt_sha256": "7a2cc69f89eec5e33bc4c3fb83bfd31f7558dbd6241ad260e7700c7df46c6c1f"
+    },
+    {
+      "id": "E17",
+      "original_filename": "Strange-Seed-Frankl-Exploration-17.txt",
+      "excerpt_path": "history/sources/E17.txt",
+      "excerpt_lines": [
+        1,
+        202
+      ],
+      "retrieved_prefix_lines": 350,
+      "mapped_attempts": [
+        "E17-E"
+      ],
+      "role": "fresh draw",
+      "excerpt_sha256": "fe9087fd1f876bebe6f7d66794d5e76a171ea092e0b31a909150d2c8290e9072"
+    },
+    {
+      "id": "E18",
+      "original_filename": "Strange-Seed-Frankl-Exploration-18.txt",
+      "excerpt_path": "history/sources/E18.txt",
+      "excerpt_lines": [
+        1,
+        186
+      ],
+      "retrieved_prefix_lines": 350,
+      "mapped_attempts": [
+        "E10-T",
+        "E10-U",
+        "E17-E",
+        "E18-C"
+      ],
+      "role": "descendant follow-up",
+      "excerpt_sha256": "f3c9a9509fcbe40b78f86d1419cfdd185a07785773e1fe83959cf130ef6e7a58"
+    },
+    {
+      "id": "E19",
+      "original_filename": "Strange-Seed-Frankl-Exploration-19.txt",
+      "excerpt_path": "history/sources/E19.txt",
+      "excerpt_lines": [
+        1,
+        52
+      ],
+      "retrieved_prefix_lines": 220,
+      "mapped_attempts": [
+        "E10-T",
+        "E10-U",
+        "E17-E",
+        "E19-P"
+      ],
+      "role": "descendant follow-up",
+      "excerpt_sha256": "36ed02b20ee367f691bbe74c081341f3c7f80b64149d3bed9a9d7c5082e1d474"
+    },
+    {
+      "id": "E20",
+      "original_filename": "Strange-Seed-Frankl-Exploration-20.txt",
+      "excerpt_path": "history/sources/E20.txt",
+      "excerpt_lines": [
+        1,
+        74
+      ],
+      "retrieved_prefix_lines": 350,
+      "mapped_attempts": [
+        "E17-E",
+        "E20-A"
+      ],
+      "role": "descendant follow-up",
+      "excerpt_sha256": "26d783c9d1e5a0a4776600a67a770132d4faa978a9dad7dcac9b3bf9f3e30518"
+    },
+    {
+      "id": "E21",
+      "original_filename": "Strange-Seed-Frankl-Exploration-21.txt",
+      "excerpt_path": "history/sources/E21.txt",
+      "excerpt_lines": [
+        1,
+        54
+      ],
+      "retrieved_prefix_lines": 350,
+      "mapped_attempts": [
+        "E17-E",
+        "E20-A"
+      ],
+      "role": "descendant follow-up",
+      "excerpt_sha256": "4498ba8bd71ca3f59ded01689bbeba2a3ba1eeb440245e867d8b8baf73aafda6"
+    },
+    {
+      "id": "E22",
+      "original_filename": "Strange-Seed-Frankl-Exploration-22.txt",
+      "excerpt_path": "history/sources/E22.txt",
+      "excerpt_lines": [
+        1,
+        71
+      ],
+      "retrieved_prefix_lines": 350,
+      "mapped_attempts": [
+        "E17-E",
+        "E22-A",
+        "E22-R"
+      ],
+      "role": "descendant follow-up",
+      "excerpt_sha256": "a76594b8b91e4da7e2397cc0a78df8a4f3b1eaa68e2ef617bf56dfbce96a3847"
+    },
+    {
+      "id": "E23",
+      "original_filename": "Strange-Seed-Frankl-Exploration-23.txt",
+      "excerpt_path": "history/sources/E23.txt",
+      "excerpt_lines": [
+        1,
+        106
+      ],
+      "retrieved_prefix_lines": 350,
+      "mapped_attempts": [
+        "E17-E",
+        "E22-R",
+        "E23-K",
+        "E23-N",
+        "E23-S"
+      ],
+      "role": "descendant follow-up",
+      "excerpt_sha256": "c8f8c1774fc54457c4e610613f37e0bb9a4633a8daf02e2de30974e4b218e0d4"
+    },
+    {
+      "id": "E24",
+      "original_filename": "Strange-Seed-Frankl-Exploration-24.txt",
+      "excerpt_path": "history/sources/E24.txt",
+      "excerpt_lines": [
+        1,
+        107
+      ],
+      "retrieved_prefix_lines": 350,
+      "mapped_attempts": [
+        "E17-E",
+        "E23-S",
+        "E24-B"
+      ],
+      "role": "descendant follow-up",
+      "excerpt_sha256": "13a3febd5f1b12ed85246bc0569f39670094e5bbb09b4e3fed12a4f36ecf9bf1"
+    },
+    {
+      "id": "E25",
+      "original_filename": "Strange-Seed-Frankl-Exploration-25-Paused-Handoff.txt",
+      "excerpt_path": "history/sources/E25.txt",
+      "excerpt_lines": [
+        1,
+        136
+      ],
+      "retrieved_prefix_lines": 350,
+      "mapped_attempts": [
+        "E17-E",
+        "E23-S",
+        "E25-B"
+      ],
+      "role": "descendant follow-up",
+      "excerpt_sha256": "1dc953e3e4453b887d005eca7122e0073715249b11d524d95a1a78d370bf4ca7"
+    },
+    {
+      "id": "P01",
+      "original_filename": "Strange-Seed-Frankl-Pilot-01-Full-Record.txt",
+      "excerpt_path": "history/sources/P01.txt",
+      "excerpt_lines": [
+        1,
+        50
+      ],
+      "retrieved_prefix_lines": 350,
+      "mapped_attempts": [
+        "P01-C1",
+        "P01-C2",
+        "P01-C3"
+      ],
+      "role": "poetry-conditioned proposals",
+      "excerpt_sha256": "d441fdbd4e515ad3e4943d0e0b09bfdf33b9554ee17fbb070286b516aaac33d5"
+    },
+    {
+      "id": "P02",
+      "original_filename": "Strange-Seed-Frankl-Pilot-02-Full-Record.txt",
+      "excerpt_path": "history/sources/P02.txt",
+      "excerpt_lines": [
+        1,
+        69
+      ],
+      "retrieved_prefix_lines": 350,
+      "mapped_attempts": [
+        "P02-C1",
+        "P02-C2",
+        "P03-C2"
+      ],
+      "role": "poetry-conditioned proposals",
+      "excerpt_sha256": "73d23e3c29d3612dcfba5bd737567bc66d10d053c07819be435ac5eaa5422f9a"
+    },
+    {
+      "id": "P03",
+      "original_filename": "Strange-Seed-Frankl-Pilot-03-Full-Record.txt",
+      "excerpt_path": "history/sources/P03.txt",
+      "excerpt_lines": [
+        1,
+        66
+      ],
+      "retrieved_prefix_lines": 350,
+      "mapped_attempts": [
+        "P02-C1",
+        "P02-C2",
+        "P03-C1",
+        "P03-C2"
+      ],
+      "role": "poetry-conditioned proposals",
+      "excerpt_sha256": "2f1a3171d104914242ad55269e20df2445cf4c637bdf29902aa436d2a11cfb6a"
+    }
+  ]
+}

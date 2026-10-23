@@ -1,36 +1,41 @@
-# Provenance and limits
+# Provenance and verification limits
 
-This package arose from a human-directed exploration called Strange Seed,
-which investigates whether abstract prompts, including poetry, can suggest
-useful problem-solving moves. ChatGPT/Codex was used substantially for approach
-generation, mathematical derivation, code, computational exploration, literature
-search and writing. The mathematical claims are presented independently of that
-origin so readers can inspect them directly.
+Version 0.5 — prepared 23 October 2026. This human-directed work is substantially
+AI-assisted. ChatGPT/Codex contributed approach proposals, mathematical
+derivations, code, computational exploration, literature searching, verification
+and writing. AI tools are disclosed as tools, not accountable human authors.
+Public project attribution is Strange Seed / Truth & Wonder project.
 
-The handoff was assembled on 22 October 2026. Its Python verifier was executed
-on the included finite certificates, with exact integer/rational checks and
-several rejection tests for deliberately corrupted input. The accompanying
-proofs explain the universal claims those certificates support. This is not
-independent human expert review, peer review or formal proof-assistant verification.
-The checker and the explanations may share errors and warrant independent review.
+The user's current request was to expand the public handoff to include all
+documented poetry-seeded Frankl approaches from THIS conversation, including
+failed/incomplete branches. No unrelated conversations or projects were added.
+No mathematical search, new poem draw, worker trial or comprehensive new
+literature search was launched during this reconstruction.
 
-The optional C++ programs preserve earlier search implementations. Their labels
-and historical search counts are not used as substitutes for the finite proofs.
-This packaging pass did not rerun the full searches. No external research code,
-private conversation transcript or third-party poems are included.
+The base was retrieved from the public repository at commit
+3f20059bae7103525633de4fcf024027f17cc58b, retaining its corrected publication
+metadata and license terms. The later proof certificates and their checker
+source remain unchanged. The new history is drawn from the narrative sections
+of all 29 saved Frankl reports; original full appendices were not all reissued.
+The source mapping and excerpts allow readers to inspect the reconstruction.
 
-The package does not establish that poetry caused a useful result or that any
-mathematical idea is new. It does not solve the motivating selector question,
-Frankl's conjecture or P versus NP. Public release can be useful without those
-claims, provided the status remains clear.
+Thirteen groups of selected earlier finite witnesses were freshly checked.
+Full historical survey/classification numbers and some parameterized arguments
+remain historical claims, not newly recertified computations. The precise split
+is in VERIFICATION-SCOPE.md. All source-aware summaries and code were prepared
+within the same investigation, not independently reviewed by a human expert.
 
-Public attribution for this package is Strange Seed / Truth & Wonder project.
-The human project owner authorized open licensing in v0.4; see LICENSE.md and
-OPEN-RELEASE-AUTHORIZATION.md. No personal author name has been assigned. AI tool use should be disclosed in any eventual submission;
-the tool should not be treated as an accountable human author.
+The narrative sourceP02 has a marked clarification: its projective-plane
+quantity(q+2)2^(q-1) is the absence count in the union-closed complement family;
+the occurrence count is m minus it. The freshly checked q=2 construction has
+frequency21 and absence8 out of 29. No earlier result is silently rewritten.
 
-Revision v0.2 adds an evidence-bounded audit based on the opening sections of
-Exploration18 and Exploration25, v0.1 and the visible workflow discussion. It
-does not reconstruct the entire historical record. No new literature search
-or mathematical exploration was performed. Historical check timing is marked
-undocumented where the inspected records do not establish it.
+Poem-to-move associations are recorded self-attributions. Pilot controls often
+produced the same developments. No causal efficacy, historical priority, general
+selector proof or solution to Frankl is established by this package.
+
+The owner expressly authorized open licensing; see LICENSE.md and
+OPEN-RELEASE-AUTHORIZATION.md. No personal author name is invented. Poem titles,
+authors and mathematical associations are included; poem texts and the frozen
+corpus are not distributed. The known P026 attribution/rights correction remains
+visible in SEED-LINEAGE.md. No private conversation transcript is included.

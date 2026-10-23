@@ -27,7 +27,7 @@ note and handoff; that included note is covered by the documentation license.
 
 Documentation attribution: **Strange Seed / Truth & Wonder project**, title
 **Union-closed families: proper union decompositions, weighted certificates,
-and support obstructions**, version v0.4 (22 October 2026). Include a source
+and support obstructions**, version v0.5 (23 October 2026). Include a source
 link when available, link to CC BY 4.0, retain applicable notices, and indicate
 changes as required by that license. No personal author name is required by
 this package. “Project contributors” is collective project attribution; AI
@@ -53,3 +53,8 @@ Canonical references:
 Complete text copies were obtained from the SPDX license-list-data text
 collection on 22 October 2026, with the MIT notice filled for this project:
 https://github.com/spdx/license-list-data/tree/main/text
+
+The v0.5 additions, including original history summaries, source narrative
+excerpts, catalog metadata and verification code, follow the same scope table.
+The historical narratives were AI-assisted project outputs; external cited
+works and the omitted poem corpus are not relicensed.

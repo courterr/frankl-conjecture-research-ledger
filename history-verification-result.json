@@ -1,0 +1,364 @@
+{
+  "passed": true,
+  "check_groups": 13,
+  "scope": "Selected finite witnesses only; see VERIFICATION-SCOPE.md",
+  "checks": {
+    "triple_fibres": {
+      "fibres": 90,
+      "negative_fibres": [
+        [
+          0,
+          1,
+          7
+        ],
+        [
+          0,
+          2,
+          7
+        ],
+        [
+          0,
+          1,
+          2,
+          3,
+          7
+        ],
+        [
+          0,
+          4,
+          7
+        ],
+        [
+          0,
+          1,
+          4,
+          5,
+          7
+        ],
+        [
+          0,
+          2,
+          4,
+          6,
+          7
+        ]
+      ]
+    },
+    "fano_matching": {
+      "family": [
+        29,
+        31,
+        39,
+        55,
+        58,
+        59,
+        62,
+        63,
+        78,
+        79,
+        83,
+        91,
+        93,
+        95,
+        103,
+        105,
+        109,
+        110,
+        111,
+        115,
+        116,
+        118,
+        119,
+        121,
+        123,
+        124,
+        125,
+        126,
+        127
+      ],
+      "frequencies": [
+        21,
+        21,
+        21,
+        21,
+        21,
+        21,
+        21
+      ],
+      "matching_sizes": [
+        7,
+        7,
+        7,
+        7,
+        7,
+        7,
+        7
+      ],
+      "source_sizes": [
+        8,
+        8,
+        8,
+        8,
+        8,
+        8,
+        8
+      ]
+    },
+    "localization_examples": [
+      {
+        "q": 3,
+        "m": 43,
+        "inside": 36,
+        "triple_frequencies": [
+          21,
+          21,
+          21
+        ]
+      },
+      {
+        "q": 4,
+        "m": 59,
+        "inside": 45,
+        "triple_frequencies": [
+          29,
+          29,
+          29
+        ]
+      },
+      {
+        "q": 6,
+        "m": 91,
+        "inside": 63,
+        "triple_frequencies": [
+          45,
+          45,
+          45
+        ]
+      },
+      {
+        "q": 10,
+        "m": 155,
+        "inside": 99,
+        "triple_frequencies": [
+          77,
+          77,
+          77
+        ]
+      }
+    ],
+    "core_lifting_failures": {
+      "naive_lift": {
+        "m": 55,
+        "core_triple": [
+          23,
+          20,
+          20
+        ],
+        "global_triple": [
+          27,
+          27,
+          27
+        ]
+      },
+      "depth_three": {
+        "m": 49,
+        "core_anchor": [
+          8,
+          8,
+          8
+        ],
+        "global_anchor": [
+          24,
+          24,
+          40
+        ]
+      },
+      "low_density_core": {
+        "m": 24,
+        "incidences": 68
+      }
+    },
+    "union_roots": {
+      "family": [
+        0,
+        3,
+        5,
+        6,
+        7
+      ],
+      "negative_top_mass": -0.0029394051011117917,
+      "exact_sign_argument": "81>80; see source E04",
+      "floating_sanity_tolerance": 1e-12
+    },
+    "private_witness_scores": {
+      "raw_counterexample": {
+        "family": [
+          0,
+          6,
+          17,
+          21,
+          22,
+          23,
+          40,
+          46,
+          48,
+          49,
+          53,
+          54,
+          55,
+          56,
+          57,
+          61,
+          62,
+          63
+        ],
+        "frequencies": [
+          9,
+          8,
+          11,
+          7,
+          14,
+          12
+        ],
+        "scores": [
+          18,
+          19,
+          16,
+          11,
+          14,
+          18
+        ]
+      },
+      "normalized_examples": [
+        {
+          "k": 3,
+          "m": 25,
+          "anchor_score": "43/4",
+          "other_score": "35/3",
+          "frequencies": [
+            16,
+            16,
+            12,
+            12,
+            12
+          ]
+        },
+        {
+          "k": 4,
+          "m": 49,
+          "anchor_score": "269/16",
+          "other_score": "71/3",
+          "frequencies": [
+            32,
+            32,
+            24,
+            24,
+            24,
+            24
+          ]
+        },
+        {
+          "k": 5,
+          "m": 97,
+          "anchor_score": "105/4",
+          "other_score": "143/3",
+          "frequencies": [
+            64,
+            64,
+            48,
+            48,
+            48,
+            48,
+            48
+          ]
+        }
+      ]
+    },
+    "old_modal_transfer": {
+      "q": 189,
+      "old_cost": 187,
+      "core_maximizer_frequency": 14,
+      "fibre_frequency": "3/7",
+      "global_frequency": "17/26"
+    },
+    "uniform_and_balanced_threshold": {
+      "uniform": {
+        "m": 25,
+        "core_surplus": -132,
+        "fibre_surplus": -3,
+        "q": 81
+      },
+      "outside_balanced_threshold": {
+        "m": 38,
+        "q": 243,
+        "fibre_cost": 207,
+        "balanced_surplus": -2
+      }
+    },
+    "nonproduct_clone": {
+      "clone_size": 15,
+      "target_size": 21,
+      "m": 48,
+      "q": 555,
+      "fibre_cost": 521,
+      "fibre_surplus": -1,
+      "core_surplus": 159
+    },
+    "joint_cost_conflict": {
+      "q": 225,
+      "individual_costs": [
+        199,
+        199
+      ],
+      "joint_cost": 365,
+      "negative_point_witnesses": 2
+    },
+    "adjusted_pair_failures": [
+      {
+        "pair": [
+          0,
+          4
+        ],
+        "cost": 117,
+        "pair_surplus": -2,
+        "global_target_e": 44
+      },
+      {
+        "pair": [
+          3,
+          4
+        ],
+        "cost": 109,
+        "pair_surplus": -2,
+        "global_target_e": 44
+      }
+    ],
+    "stabilizer_near_miss": {
+      "near_q": 201,
+      "near_cost": 207,
+      "near_target_e": 82,
+      "near_exterior_e": 85,
+      "repaired_q": 219,
+      "repaired_cost": 217
+    },
+    "additive_path_witnesses": {
+      "core_q_path": [
+        555,
+        571,
+        597
+      ],
+      "first_cost_path": [
+        565,
+        569
+      ],
+      "second_costs_before": [
+        561,
+        589
+      ],
+      "second_costs_after": [
+        575,
+        597
+      ]
+    }
+  }
+}

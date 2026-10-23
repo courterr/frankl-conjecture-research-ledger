@@ -1,0 +1,61 @@
+NARRATIVE EXCERPT — HISTORICAL SOURCE, NOT A NEW VERIFICATION
+Original report: Strange-Seed-Frankl-Exploration-21.txt
+Source record: E21; excerpt lines 1-54.
+This excerpt omits reproduction appendices and raw poem texts.
+Historical dates/statuses and claims below retain their original scope.
+Consult ../../SOURCE-COVERAGE.md for the current audit and verification limits.
+
+STRANGE SEED — FRANKL EXPLORATION 21
+22 October 2026 (America/Los_Angeles)
+Truth & Wonder
+
+RESULT
+The exploratory stronger hypothesis 'every coordinate pair works' fails immediately outside the 18 types examined in Exploration20. The first qualifying archive core has two equal-weight pairs with negative surplus on admissible fibres. This is an exact counterexample to that general local-certificate hypothesis, not a counterexample to the abundance conjecture and not a failure of all weightings.
+
+In fact the original weighted-certificate strategy needs no elaborate repair here: five separate unit-coordinate choices certify every permitted fibre for this core. Full adjusted-cap enumeration gives 136 fibres, with exact set equality from an independent enumerator. The old stronger cap would allow only 89. No new poem was drawn and no causal claim about poetry is made.
+
+WHAT WAS FROZEN
+After Exploration20's targeted 18-type success, test whether its stronger all-pairs pattern extends to other six-coordinate cores with no nonempty set of size one or two and a positive internally maximal proper-decomposition score at the top. Traverse Exploration11's existing 959-core archive in index order and stop at the first failing pair. This stops at archive index0, the first qualifying core. It is not a search through all 959 cases, and is not an estimate of the frequency of failure. Each C++ enumeration had a five-million-node limit and 10-second subprocess timeout; neither was reached.
+
+CORE AND NOTATION
+Coordinates are zero-based bits 0 through5, and A=63.
+G=[0,7,11,15,47,50,51,53,54,55,59,60,61,62,63].
+This core is union-closed, contains the empty set, has 15 members, and contains no nonempty member of size below3.
+q_G(A)=117 counts ordered union pairs producing A. With r_G(A)=15,
+e_G(A)=(117-2*15+1)/2=44,
+which is positive and maximal within G. More generally e_F(T) counts unordered pairs of proper subsets in F whose union is T.
+
+An actual exterior trace Z yields a nonempty internal trace family H, containing A, union-closed and stable under union with G. Let Q(X,Y) count ordered pairs with union A, and C_G(H)=2Q(G,H)+Q(H,H). If A globally maximizes e_F, the necessary fibre bound is
+ C_G(H)-2|H|<=q_G(A)=117.
+For any coordinate j define s_j(K)=2*f_K(j)-|K|. A proposed pair certificate demands s_i(H)+s_j(H)>=0 for every permitted H, as well as nonnegative core surplus. A negative permitted H refutes this particular pair certificate only.
+
+EXPLICIT FAILURE, INCLUDING THE NEW-BOUND EDGE CASE
+Pair (0,4):
+ H=[14,15,46,47,62,63].
+It is union-closed and G-stable, contains63, and has size6.
+C_G(H)=129, so C_G(H)-2|H|=117, exactly the permitted adjusted cap. The old C<=117 cap would have wrongly excluded it for this score.
+The coordinate surpluses of H are [0,6,6,6,-2,2]. Thus s_0(H)+s_4(H)=-2.
+The concrete global extension F=G union {h union {6}:h in H} has21 members and target coordinate frequencies [13,17,16,14,12,15]. Both63 and127 maximize e at44. It is an actual realizable fibre under the target's global maximality, including a tie. The global pair still has positive combined surplus8 because the core offsets this one fibre's deficit. All six target coordinates are abundant in this extension. It is not a counterexample to the main claim.
+
+Second pair failure, without a tie:
+ Pair(3,4), H=[7,15,39,47,55,63].
+Here C_G(H)=121, adjusted cost109, and fibre surpluses [6,6,6,0,-2,2]. The pair surplus is again-2. Its 21-member one-exterior-coordinate extension has frequencies [16,17,16,11,12,15]. The target63 is the unique global e-maximizer at44; the exterior top127 has score40. This is therefore not merely a tie-related issue. All six target coordinates are still abundant.
+
+WHAT STILL WORKS
+Fresh enumeration finds all136 permitted H. For each j in{0,1,2,3,5}, both s_j(G)>=0 and s_j(H)>=0 for every H. Coordinate0 has s_0(G)=5 and minimum fibre surplus0. Therefore any actual global family with this core and globally e-maximal target A satisfies
+ 2*f_F(0)-|F| >=5,
+by summing the core and all exterior fibres. In particular coordinate0 is globally abundant, regardless of how many exterior coordinates or fibres the actual family has.
+
+Thirteen of the15 equal-weight pairs also certify all permitted fibres. The only failing pairs are(0,4) and(3,4). This is a simpler case for the broader weighting strategy than Exploration20's cores, all of which defeated every unit-coordinate certificate. The purpose here was to falsify an overly strong extrapolation, not to portray this core as a hard failure of the main strategy.
+
+VERIFICATION AND COMPLETENESS
+C++ canonical incremental closure enumeration:136 fibres,1070 visited nodes.
+Independent Python include/exclude traversal with iterative closure:136 fibres,2139 nodes. Entire fibre sets match exactly, not merely their counts.
+Every emitted H was checked separately for top membership, union closure, G stability, and the adjusted cap. Direct integer margins classify all six unit choices and all15 equal-weight pairs. A numerical LP's proposed unit weighting was verified exactly with rational arithmetic; the accepted certificate is simply integer surplus in coordinate0.
+All136 actual one-exterior-coordinate extensions were checked by directly counting proper decomposition pairs over the full family. In each,63 is a global e-maximizer, and none violates target abundance. The unrestricted ambient-size conclusion comes from the fibre certificate, not from treating these136 extensions as exhaustive global families.
+
+Cost pruning uses the fact that adding h to a family containing A increases C(H)-2|H| by at least2: at least2 from cross pairs with the core's A, at least2 from ordered H-H pairs with A, minus2 for the added trace. Both enumerators use this correct necessary cap, with different closure and traversal implementations. This is computer-assisted verification, not formal proof-assistant verification.
+
+INTERPRETATION AND NEXT COURSE
+The all-pairs pattern is confined to the types for which it was established; it cannot be promoted to a universal six-coordinate rule. Exploration20's certificates remain valid. More generally, failing one pair does not tell us that no other pair, coordinate or weight vector works. The broad local-weighting approach remains unrefuted by this test, and the general e-mode abundance claim remains unresolved. No historical novelty is established.
+A stronger adversarial target is a core for which every one- and two-coordinate weighting fails, rather than a core where just one equal-weight pair fails. If such a target is found, test a full weighting, then assess global compatibility separately. Search diversity should not be confused with progress toward a proof.

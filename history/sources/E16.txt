@@ -1,0 +1,208 @@
+NARRATIVE EXCERPT — HISTORICAL SOURCE, NOT A NEW VERIFICATION
+Original report: Strange-Seed-Frankl-Exploration-16.txt
+Source record: E16; excerpt lines 1-201.
+This excerpt omits reproduction appendices and raw poem texts.
+Historical dates/statuses and claims below retain their original scope.
+Consult ../../SOURCE-COVERAGE.md for the current audit and verification limits.
+
+STRANGE SEED / TRUTH & WONDER
+Frankl exploration 16 — joint trace costs repair graph false negatives
+21 October 2026 (America/Los_Angeles)
+
+OUTCOME AND DECISION
+
+The bounded joint-cost experiment succeeded in all four attempted nonproduct
+cases. A valid weighting can fail the ordinary graph test because two traces
+are individually permitted but exceed the modal budget when present together.
+Exact pairwise exclusions repaired four such failures, using 43,11,11,7 graph
+calls, below the frozen 64-call limit per case. The saturation split alone had
+repaired none of them.
+
+The improvement is attributable to JOINT MODAL COST. No binary union-closure
+constraints were added. In fact all four root negative families were already
+union-closed; their defect was excessive cost, not missing union closure.
+
+Retain this exact pair-cost check, then park the implementation branch and
+return to a fresh substantive poetry-seeded candidate. These were known-valid
+weights on previously certified cases. Improving their checker is useful, but
+continuing indefinitely would not establish new problem-solving approaches.
+
+The original modal-support claim remains unresolved. No historical novelty or
+causal poetry advantage is claimed. No new poem or fresh random core was drawn.
+
+CONTEXT
+
+F is a finite union-closed family of distinct sets containing empty. q_F(A)
+counts ORDERED pairs (B,C) with B union C=A, including equal pairs. The original
+candidate says that every target maximizing q_F contains an abundant coordinate
+(one belonging to at least half of F). We have not proved this in general.
+
+For a fixed modal A, its exact internal core is G={B in F:B subset A}.
+For each nonempty occurring exterior trace Z, put
+ H_Z={B intersect A:B in F, B minus A=Z}.
+Each H contains A, is G-stable (g union h in H), is union-closed, and obeys
+ C_G(H):=2Q_A(G,H)+Q_A(H,H) <= q:=Q_A(G,G),                    (1)
+where Q_A counts ordered cross pairs whose union is A. This is a necessary
+condition from q_F(A union Z)>=C_G(H) and q_F(A)=q.
+
+Nonnegative coordinate weights p, total W, define
+ S_p(H)=sum_{T in H}(2 sum_{i in T}p_i-W).
+If S_p(G)>=0 and S_p(H)>=0 for all permissible fibres, summing proves abundance
+inside the positive weight support. The four certified cores here have strictly
+positive core surplus, so they give strict abundance in every extension with
+that exact core and a modal target. This was already known from prior complete
+fibre enumeration; the new work is a different, stronger relaxed certificate.
+
+The ordinary graph test keeps unary G-stability and excludes individually
+over-budget traces. It drops binary closure and the full nonlinear bound (1).
+For T in H, its principal image I_T={g union T:g in G} is contained in H.
+If C_G(I_T)>q, T is forbidden. If C_G(I_T)=q, H must equal I_T whenever it contains
+T, since adding a trace strictly increases cost. The saturated-image split
+checks those exact images separately and excludes saturated traces from the
+remaining graph problem. These necessary restrictions can still be too weak.
+
+FROZEN SELECTION AND BOUNDS
+
+Choose 16 cases from exploration 11's complete six-coordinate archive:
+eight whose permissible fibres have no universal single-coordinate certificate,
+and eight which have one. Within each group rank by descending fibre count,
+then existing core index. Require internally modal top, possible exterior
+fibres, no nonempty core set smaller than three, six distinct coordinate
+signatures, and no nontrivial Cartesian coordinate partition. Freeze all inputs
+before graph tests. These are selected prior cases, not random independent
+trials or a blind efficacy benchmark. Isomorphic cases were not removed.
+
+Recheck prior rational weights against every archived permissible fibre.
+Screen ordinary and saturated graphs on all 16. Investigate only the first
+four saturated-graph failures in frozen order, each limited to 64 graph calls.
+Do not change a known-valid weighting to conceal a false negative of the graph.
+
+SCREEN
+
+5,982 archived permissible fibres were rechecked for union closure, G-stability,
+the modal bound and exact weighted scores. All 16 weightings have minimum
+surplus 0 across their archived complete lists; their core surpluses are
+nonnegative. Single-coordinate classifications were also independently
+recomputed, with actual negative witnesses retained for the eight non-unit cases.
+Completeness of the lists is inherited from the earlier enumeration work;
+this session did not re-enumerate all families to re-prove completeness.
+
+The ordinary graph rejects 15 of the 16 known-valid weights. The saturated
+split rejects the same 15, repairing none. Core 104 is the one graph success.
+The four bounded follow-ups are indices 406,203,83,590. None has any single
+coordinate with nonnegative surplus in ALL its permissible fibres, so these
+weightings are not simply disguising a universal fixed-coordinate certificate.
+
+JOINT TRACE RULE
+
+If T,U both belong to H, G-stability forces I_T union I_U subset H. Therefore
+                   C_G(I_T union I_U)>q                     (2)
+implies that T and U cannot coexist. Each image can be strictly under budget
+on its own. No binary-union closure of I_T union I_U is used: this is a pure
+joint-cost exclusion, valid even for the relaxed unary-closed family class.
+
+For a negative source-side family from the graph, select a violating pair
+using the largest joint cost, with deterministic trace-order tie breaks.
+Branch into two subproblems: exclude T, or exclude U. Every remaining valid
+fibre belongs to at least one branch. The branches may overlap; disjointness is
+unnecessary for a cover proof. Each positive leaf exports an integer flow and a
+matching cut. Together they prove the exact graph minimum is nonnegative.
+This certifies a class larger than the actual union-closed fibres.
+
+At a negative leaf with no violating pair, the pair method remains unresolved
+unless that leaf is independently an actual permissible negative witness. A
+node-limit stop is also unresolved. Neither is an absence proof. Pairwise tests
+can miss higher-order cost conflicts, and branching can grow exponentially.
+
+FOUR EXACT REPAIRS
+
+Index |G|   q   integer weights             graph min  calls branches leaves
+406    20  225  (7,0,0,1,0,0)                  -12       43     21      22
+203    22  241  (0,1,0,0,7,0)                   -6       11      5       6
+83     20  223  (7,0,0,0,0,1)                   -6       11      5       6
+590    20  223  (8,0,0,1,1,0)                  -12        7      3       4
+
+Every terminal proof leaf has nonnegative minimum; the smallest leaf minimum
+in each proof is 0. Core surpluses are 64,74,78,64 respectively. Saturated image
+scores are checked separately and nonnegative. The four proofs have 72 graph
+calls, 34 branches and 38 positive leaves in total, with no unresolved frontier.
+They no longer depend on archive completeness to establish these weightings:
+their pair-cover and flow witnesses directly certify all permissible fibres.
+
+CONCRETE MECHANISM, CORE 406
+
+ G=[0,23,27,29,30,31,39,43,45,46,47,51,53,55,58,59,60,61,62,63]
+ q=225; weights=(7,0,0,1,0,0).
+The graph's negative optimum has 22 traces, score -12 and cost 671. It is
+already union-closed, so adding binary closure would not remove it.
+
+Its first branching pair is trace masks 14 and 50:
+ C_G(I_14)=199<225,
+ C_G(I_50)=199<225,
+ C_G(I_14 union I_50)=365>225.
+Both traces pass the individual exclusion and neither is saturated. They fail
+when combined. Excluding one or the other removes that impossible coexistence,
+and subsequent branches establish the full certificate.
+
+The other root examples have the same diagnosis:
+203: root cost 369; pair (13,37), individual costs (237,229), joint cost 353>241.
+83:  root cost 367; pair (22,26), individual costs (205,205), joint cost 323>223.
+590: root cost 323; pair (14,38), individual costs (197,217), joint cost 307>223.
+All four negative roots are union-closed. This identifies a concrete source of
+the relaxation's false negatives rather than just reporting more successes.
+
+INDEPENDENT VERIFICATION AND NEGATIVE CONTROLS
+
+verify_pair.py independently reconstructs images, individual costs, every
+exported joint conflict, each node's graph, flow conservation/capacities,
+matching cuts, objective values, and exact two-child branch coverage. It checks
+parent exclusions and traverses every node, preventing omitted branches from
+being counted as completed proofs. It does not call the optimizer to establish
+the exported certificates' optimality. All four proofs passed.
+
+The 32 ordinary/split screen certificates were separately rechecked. With the
+72 pair-proof graph nodes and 4 control nodes below, this session checked 108
+flow/cut witnesses in total. Arithmetic is exact integer/Fraction arithmetic.
+
+Budget control: limit core 406 to one graph call. The result has a branch with
+two unsearched frontier leaves. It remains uncertified; the verifier accepts
+its incomplete status and does NOT turn it into a proof.
+
+Invalid-weight control: on core 406 put weight 1 only on coordinate 0. In three
+graph calls the search returns two negative leaves with no pair conflict. Both
+are actual union-closed, G-stable, permissible fibres, not relaxation artifacts:
+ H1=[56,58,59,60,61,62,63],
+ H2=[14,30,31,46,47,62,63].
+Each has cost 199<=225 and coordinate-0 surplus -1. Thus this weighting truly
+fails the fibre criterion. The branch procedure correctly refuses certification
+rather than manufacturing a repair. This still is not a counterexample to the
+modal-support claim: a failed fixed-coordinate weighting leaves others possible.
+
+The controls first exposed an empty-positive-leaf reporting error in the verifier
+(taking a minimum of an empty list). It was corrected to report no leaf minimum;
+the mathematical graph and branch checks were unaffected. Both controls then
+passed, including their expected non-certification statuses.
+
+SCOPE AND WHAT TO DO NEXT
+
+This is a useful checker improvement, not a novel mathematical approach claim.
+The joint rule follows directly from monotonicity of union-pair counts, while
+branching and min-cut are established methods. The selected weights and cases
+were already certified by prior complete enumeration. No new general target-
+size theorem, obstruction to the candidate, or historical priority is claimed.
+The weighted/cutting-plane background has already been documented in Pulaj's
+2017 dissertation, https://d-nb.info/1156012813/34. No further literature priority
+search was conducted for this implementation-only improvement.
+
+All verifiers were developed within the same investigation; there is no external
+review or proof-assistant formalization. The four cases are small and selected;
+four successes do not establish general scalability or that pair constraints
+always suffice. The original modal-support candidate and poetry's causal
+advantage remain unestablished.
+
+The bounded attempt is now complete. Retain joint pair costs in the checker,
+park further optimization of these known cases, and move back to a fresh poem
+and a substantive candidate, followed by a literature check and a direct test.
+The diagnostic question to carry forward is concrete: does a new seed supply
+a useful mathematical restriction beyond the existing individual and joint
+modal-cost machinery?

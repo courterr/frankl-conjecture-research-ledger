@@ -1,0 +1,216 @@
+NARRATIVE EXCERPT — HISTORICAL SOURCE, NOT A NEW VERIFICATION
+Original report: Strange-Seed-Frankl-Exploration-13.txt
+Source record: E13; excerpt lines 1-209.
+This excerpt omits reproduction appendices and raw poem texts.
+Historical dates/statuses and claims below retain their original scope.
+Consult ../../SOURCE-COVERAGE.md for the current audit and verification limits.
+
+STRANGE SEED / TRUTH & WONDER
+Frankl exploration 13 — final session of the three-session checkpoint
+22 October 2026 (UTC)
+
+CHECKPOINT VERDICT
+
+Keep the weighted modal-fibre / graph-cut method as a useful sufficient test.
+Reject uniform weighting as a universal path to the original claim. The method
+has now passed 48 additional selected labelled cores, but a structured exact
+counterexample defeats the universal uniform strengthening. This is a real
+boundary, not a timeout and not merely a negative optimum in a loose relaxation.
+
+The original claim remains unresolved: every maximizer of ordered union-pair
+multiplicity contains an abundant coordinate. The counterexample below does
+NOT refute that claim. It refutes the stronger uniform-density requirement.
+No new poem was drawn. These are developments of the same approach, not a
+controlled demonstration that poetry improves reasoning. Historical novelty
+has not been established. Three checkpoint sessions are complete.
+
+WHAT WAS FROZEN AND TESTED
+
+Primary diagnostic: 24 prior sampled-weight cores, six each on 6,7,8,9 points.
+Exclude the preceding session's three cores and duplicate labelled inputs.
+Require empty/full, union closure, internally modal top, and q >= 2|G|+1.
+Within each dimension select the three with most distinct sampled constraints,
+then the three smallest remaining cores. Freeze inputs before flow tests.
+
+Adaptive diagnostic, explicitly chosen AFTER the primary results: 24 additional
+old cores, six per dimension. Choose three with the weakest individual-coordinate
+surplus, then three with weakest uniform core surplus. Require internally modal
+top and q >= 2|G|+9, avoiding cases whose elementary fibre-size bound is below
+three. Inputs were again frozen before their flow tests.
+
+No fresh random cores were drawn. These are selected cases from exploration 11,
+not 48 independent random trials, and isomorphic cases were not removed.
+Some six-coordinate cases already had exhaustive certificates in exploration 11;
+their new contribution here is a different certificate and an ablation, not a new
+mathematical case. Selection is deliberately adversarial but remains narrow.
+
+For each core run the exact minimum-weight closure construction twice:
+ 1. uniform weights, with modal trace exclusions;
+ 2. uniform weights, without ANY modal trace exclusions.
+The second run asks whether G-stability alone explains the first result.
+
+Dimension   primary passed   adaptive passed   ablation negative
+6             6/6              6/6              12/12
+7             6/6              6/6              12/12
+8             6/6              6/6              12/12
+9             6/6              6/6              12/12
+Total        24/24             24/24             48/48
+
+Every positive relaxed minimum equals n, attained by the singleton family {A}.
+Every selected core also has nonnegative uniform core surplus. Omitting modal
+exclusions yields a negative relaxed optimum in every case. Thus the modal
+restriction is essential to THIS uniform relaxation on these inputs. It does
+not follow that every exclusion is individually necessary, or that alternative
+methods without these exclusions cannot prove their cases.
+
+MATHEMATICAL SETUP AND CERTIFICATE
+
+F is a finite union-closed family of distinct sets containing empty.
+q_F(A) counts ORDERED pairs (B,C) in F squared whose union is A, equal pairs
+included. Fix a modal target A, of size n. G consists of the members inside A.
+For a nonempty occurring exterior trace E, H={B intersect A: B minus A=E}.
+Then H contains A, is union-closed, and satisfies G union H subset H, where
+this means all pairwise unions g union h belong to H.
+
+Write Q(K,L)=#{(k,l) in K times L:k union l=A}, and q=Q(G,G).
+Every actual exterior fibre obeys
+                 2Q(G,H)+Q(H,H) <= q.                        (1)
+These are disjoint pair contributions to q_F(A union E), whereas q_F(A)=q.
+
+Given nonnegative integer weights p_i of total W, set
+ c_T=2 sum_{i in T}p_i-W, and S_p(H)=sum_{T in H}c_T.
+If S_p(G)>=0 and S_p(H)>=0 for every permissible fibre, summing fibres proves
+an abundant coordinate inside A. Uniform weights give
+ S(H)=2 sum_{T in H}|T|-n|H|.
+
+For any T in H, G-stability forces I_T={g union T:g in G} into H. Exclude T if
+                 2Q(G,I_T)+Q(I_T,I_T)>q.                     (2)
+Enlarge the feasible class to all R containing A, excluding those traces, and
+obeying the unary implications T -> T union g. Do not impose binary union
+closure or the full cost bound (1). A nonnegative minimum over this larger
+class is sufficient. A negative minimum need not be a permissible fibre.
+
+Network: one vertex per trace plus source s and sink t. Add s->T of capacity
+-c_T for negative c_T, and T->t of capacity c_T for positive c_T. Give every
+unary implication capacity M=1+sum |c_T|. Force A using s->A of capacity M;
+exclude forbidden traces using T->t of capacity M. A is allowed in all current
+tests; otherwise no exterior fibre can exist and that case is handled directly.
+Every finite feasible cut has capacity
+                 sum_{c_T<0}(-c_T) + S_p(R).                  (3)
+A feasible integer flow and a cut of the same capacity certify the exact
+minimum. This is an application of the standard closure/min-cut construction;
+the generic optimization tool is not a Strange Seed invention.
+
+STRUCTURAL BOUNDARY: A GENUINE NEGATIVE PERMISSIBLE FIBRE
+
+Take five disjoint nonempty coordinate blocks P,Q,R,D,E, and one exterior
+coordinate z. Put
+ K={empty, P, Q, P union Q, P union Q union R},
+ G={k union d union e: k in K, d in {empty,D}, e in {empty,E}},
+ H={k union D union E:k in K},
+ F=G union {h union {z}:h in H},
+ A=P union Q union R union D union E.
+
+Block sizes can vary; the abstract union table stays the same. |G|=20, |H|=5,
+|F|=25. All families are union-closed, H is G-stable, and H contains A.
+Direct ordered pair counting gives
+ Q(G,G)=81, Q(G,H)=36, Q(H,H)=9,
+                 2*36+9=81.                                 (4)
+Thus H is genuinely permissible, at equality in the modal bound.
+
+Why A is actually modal in F, rather than merely satisfying the necessary
+bound: the first factor K has union multiplicities 1,3,3,9,9. The second factor
+J={empty,D,E,D union E,D union E union {z}} has the same table. F is their
+direct product on disjoint blocks. Ordered union multiplicities multiply, so
+the global maximum is 9*9=81, attained by A and by A union {z}, among ties.
+
+Coordinate surpluses within H, per coordinate in each block, are respectively
+                     P:+1, Q:+1, R:-3, D:+5, E:+5.
+Consequently its uniform surplus is
+                     |P|+|Q|-3|R|+5|D|+5|E|.                 (5)
+This can be arbitrarily negative by enlarging R. Uniform weighting cannot
+possibly be a general certificate for the permissible-fibre condition.
+
+Concrete small version: block sizes (1,1,5,1,1), so |A|=9. Using bit positions
+P=0, Q=1, R=2..6, D=7, E=8, its exact fibre is
+                     H={384,385,386,387,511}.
+It has uniform surplus -3. The core surplus is -52 and the total TARGET
+surplus in F is -55. Target surplus counts x intersect A, not exterior z.
+The uniform graph relaxation has minimum -25; its minimizing relaxed family
+need not satisfy (1), while the explicit H above does. These are distinct facts.
+
+The earlier adversarial separator independently rediscovered this exact H:
+5,756 search nodes, witness score -3, witness cost 81, q=81. It did not time out.
+This is the single separator call used in this session; the conditional sampled
+negative-case calls were unnecessary because all 48 sampled cases passed.
+
+A point weighting on the P coordinate gives an exact graph minimum 0 and core
+surplus 4 for this small core. This repair is EASY: G contains the singleton P,
+so the familiar injection argument already makes P abundant in any extension.
+Do not present this as a novel hard weighted repair.
+
+To remove singleton and two-element sets, take block sizes (3,3,13,3,3).
+Now |A|=25, but |G|=20, |H|=5, |F|=25 and all union counts in (4) are unchanged.
+The minimum size of a nonempty member of F is 3. H still has surplus -3;
+G has surplus -132; the target surplus over F is -135. This version was checked
+directly as a 25-set family, WITHOUT constructing a graph on 2^25 traces.
+No all-fibres weighted certificate is claimed for this larger core.
+
+In BOTH versions, each target coordinate in P,Q,D,E occurs in 15 of the 25
+global sets, while each coordinate in R occurs in 5. Thus the original modal-
+support claim holds in these examples. The uniform strengthening fails because
+it counts many interchangeable rare coordinates heavily, not because there is
+no abundant coordinate. This is the structural lesson of the boundary.
+
+EXACT CHECKS
+
+verify_all.py checks 98 saved flow/cut certificates: 48 paired runs (96), plus
+the structured small core's uniform failure and point-weight success (2).
+For these saved certificates it reconstructs the graphs, recomputes exclusions,
+checks integer capacities and conservation, checks the matching cut and exact
+objective identity. Certificate verification does not ask the flow optimizer
+to establish its own optimality.
+
+The same verifier separately compares the encoding to brute force on all
+eligible three-coordinate cores under two weightings, BOTH with and without
+exclusions: 116 exact comparisons, all matching. It verifies modal maximality
+for all 48 selected cores, and independently checks the structured examples'
+union closure, cost, global multiplicities, actual abundances and surpluses.
+It also checks the retained separator witness against the explicit small H.
+
+These are independent algorithms/checks within one investigation, not external
+mathematical review or proof-assistant formalization. The broad candidate is
+not proved. No weighted obstruction to it has been obtained. A negative uniform
+fibre does not even disprove existence of some useful nonuniform weighting.
+
+THREE-SESSION REVIEW AND NEXT TARGET
+
+Session 1: sampled weights could miss real constraints; exhaustive six-point
+checks found such misses and repaired them.
+Session 2: an adversarial separator plus independent enumeration certified one
+seven-point core; graph-cut certificates then covered selected 7/8/9 cores.
+Session 3: 48 more certificates and 48 ablation failures identify the role of
+modal exclusions, while the structured examples rigorously delimit uniformity.
+
+The branch has earned a focused further investigation, not indefinite sampling.
+Next seek a core outside the easy singleton/two-set cases where uniformity fails
+but a balanced weighting certifies ALL permissible fibres. A sample-only LP
+weighting is provisional until challenged; a negative relaxed graph optimum
+may need the full modal cost or binary closure, rather than different weights.
+If that search only produces trivial repairs or more uniform successes, stop
+and reassess rather than promote the empirical pattern into a theorem.
+
+Coordinate symmetry may reduce the weight search: coordinates with identical
+membership signatures in G can be permuted without changing the feasible
+fibre class. Averaging a valid weight vector over those permutations remains
+valid, so weights may be taken equal within each signature block. This is a
+standard convexity/symmetry argument, not a novelty claim. It does NOT mean
+future exterior fibres must treat a block as an indivisible object: they can
+contain partial blocks, and those fibres still need checking. Blindly collapsing
+blocks would weaken the audit improperly.
+
+No fresh poem or fresh research branch is required for that next step. Novelty
+of any new substantive approach must still be checked against literature before
+being claimed. Established background for weights/cutting planes includes
+Jonad Pulaj, Cutting Planes for Union-Closed Families (2017):
+https://d-nb.info/1156012813/34

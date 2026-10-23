@@ -1,0 +1,193 @@
+NARRATIVE EXCERPT — HISTORICAL SOURCE, NOT A NEW VERIFICATION
+Original report: Strange-Seed-Frankl-Exploration-18.txt
+Source record: E18; excerpt lines 1-186.
+This excerpt omits reproduction appendices and raw poem texts.
+Historical dates/statuses and claims below retain their original scope.
+Consult ../../SOURCE-COVERAGE.md for the current audit and verification limits.
+
+STRANGE SEED / TRUTH & WONDER
+Frankl exploration 18 — the proper-decomposition claim for five-point targets
+21 October 2026 (America/Los_Angeles)
+
+RESULT
+
+The proper-union-decomposition candidate is now supported by a complete
+COMPUTER-ASSISTED CERTIFICATE FOR EVERY TARGET OF SIZE AT MOST FIVE, with no
+bound on the ambient finite family or universe. This extends exploration 17's
+hand proof for targets of size at most four.
+
+Two different enumeration methods agree on every permissible fibre list. The
+core classification covers every labelled five-point core without singleton
+or pair members. Every relevant core type has a fixed coordinate certified in
+the core and every permissible fibre. No LP proposal or floating-point result
+is needed for the accepted certificates: all are integer incidence inequalities.
+
+This does NOT prove the general candidate or Frankl's conjecture. There is no
+external mathematical review or proof-assistant formalization. Historical
+novelty and poetry's causal contribution remain unestablished. No new poem or
+random draw was made; this continues the P054 Moonlight branch.
+
+CANDIDATE AND PRECISE RESTRICTED STATEMENT
+
+F is a finite union-closed family of distinct sets, containing empty and at
+least one nonempty member. Let e_F(A) be the number of UNORDERED pairs {B,C}
+of proper members below A whose union is A. Such members are distinct and
+incomparable. With q_F(A) the ordered union-to-A count and r_F(A) the number
+of family members inside A,
+                    e_F(A)=(q_F(A)-2r_F(A)+1)/2.             (1)
+
+General candidate: if max e_F>0, EVERY maximizing A contains an element in at
+least half of the GLOBAL family F. This general statement remains unresolved.
+
+Restricted result certified here: the conclusion holds whenever |A|<=5,
+regardless of the total number of coordinates or members of F.
+At max e=0, F is a chain and its least nonempty member already supplies an
+abundant coordinate. The zero case needs no enumeration.
+
+CORRECT NEW FIBRE BOUND — THE OLD LISTS ARE INSUFFICIENT
+
+Fix A. Its exact internal core is G={B in F:B subset A}, with r=|G| and
+q=Q_A(G,G), where Q_A(K,L) counts ordered cross pairs with union A.
+For an occurring nonempty exterior trace Z, put
+ H={B intersect A:B in F, B minus A=Z}, h=|H|.
+H contains A, is union-closed and G-stable: g union T in H for every g in G,
+T in H. Define C_G(H)=2Q_A(G,H)+Q_A(H,H).
+
+Inside the subfamily G union {T union Z:T in H}, the target D=A union Z has
+ordered union count C_G(H) and r+h members below it. Thus its proper-pair
+count is [C_G(H)-2(r+h)+1]/2. The full family's e_F(D) is at least this large.
+Because e_F(A)=[q-2r+1]/2 is maximal, every actual fibre must obey
+                         C_G(H)-2h <= q.                    (2)
+
+This is WEAKER than the old q-mode condition C_G(H)<=q. Therefore the old
+q-mode fibre certificates could not simply be reused. Across the same 119
+core classes, the old cap admits 1,483 fibres, whereas (2) admits 2,178:
+695 additional fibre occurrences. All old-cap fibres lie in the new lists.
+Of the relevant 111 core classes, the count increases from 1,481 to 2,166.
+
+The adjusted cost is monotone on families containing A. Adding a new trace
+adds at least one cross pair with the full core member A, two self-family
+ordered pairs with A, and subtracts 2 from the adjustment. Its net increase
+is at least 2. This justifies pruning by (2) during closure enumeration.
+
+CORE COVERAGE
+
+If G contains a singleton {x}, union with it injects the x-absent members of F
+into x-present members, proving x abundant. If G contains {x,y}, union with
+that pair injects the 00 membership class into 11. Hence
+ f_F(x)+f_F(y)>=|F|, so one is abundant. These elementary cases are independent
+of the decomposition score and require no computation.
+
+For |A|=5, every remaining core consists of empty, A, and a selection of the
+ten triples and five four-sets on A. Exhaustive union-closure classification
+gives 4,945 labelled cores in 119 coordinate-permutation classes.
+
+Seven classes have e_G(A)=0 and cannot be a positive-score target. One other
+class has a positive top score but a strictly larger internal score elsewhere;
+it also cannot occur as a global maximizer, because all proper witnesses below
+an internal set are still inside G. The remaining 111 classes represent 4,834
+labelled cores. They are the relevant cases, not an arbitrary sample.
+
+COMPLETE FIBRE CERTIFICATES
+
+For all 119 classes, enumerate every nonempty H subset 2^A satisfying:
+  A in H;
+  union closure;
+  G-stability;
+  adjusted bound (2).
+The total is 2,178 fibre occurrences, of which 2,166 belong to relevant cores.
+Every C++ run completed below the frozen limit of 5,000,000 nodes or two seconds
+per core. The complete runs used 13,809 canonical enumeration nodes in total.
+No stopped or partial enumeration was accepted as a complete list.
+
+For each relevant representative G, there is a coordinate i such that
+  2|{g in G:i in g}|-|G|>=0,
+  2|{T in H:i in T}|-|H|>=0 for EVERY enumerated H.             (3)
+All 111 classes have such an i. Some have only one choice. A further exact
+check shows EVERY coordinate of maximum frequency WITHIN THESE CORES passes
+(3). This last rule is asserted only for the relevant five-coordinate cores
+without singleton/pair members, not for arbitrary families or target sizes.
+The full coordinate lists and margins are in certificates.json and verification.json.
+
+For any actual global extension, all occurring exterior fibres satisfy (2)
+and hence (3). Summing their incidence surpluses with the core gives
+                     2f_F(i)-|F|>=0.
+The same chosen coordinate works across all fibres of that core. Coordinate
+permutation transports each representative's certificate to every labelled
+core in its orbit. No compatibility assumption between independently permitted
+fibres is needed: the class was enlarged, which is safe for sufficiency.
+This proves the five-coordinate restricted result, subject to the finite
+computational verification described below.
+
+WHY THIS ALSO COVERS SMALLER TARGETS
+
+One may use exploration 17's hand proof directly. Alternatively, the present
+result is self-contained via padding. For a nonempty maximizing A with |A|<5,
+replace one of its coordinates by enough perfectly correlated copies to make
+the target size five, applying the same injective union-preserving map to the
+ENTIRE actual family F. All inclusion relations, union decompositions, scores,
+mode ties and coordinate frequencies are preserved (copies inherit the old
+coordinate's frequency). Applying the five-coordinate result and mapping back
+gives an abundant coordinate in the old A. This is not a claim that arbitrary
+future fibres preserve clone blocks; it is an embedding of one whole actual
+family into a class already covered by the theorem.
+
+INDEPENDENT VERIFICATION
+
+The C++ enumerator uses canonical closure extension: from a G-stable union-
+closed H, adding T forces I_T and I_(h union T) for h in H. Canonical earlier-
+trace rejection prevents duplicates. It prunes only by the monotone adjusted
+cost. It exports every fibre bitmask and an explicit completion flag.
+
+A separate Python implementation makes binary include/exclude decisions over
+all 32 possible traces, using iterative queue-style closure and the adjusted
+bound. It used 27,499 decision nodes and produced EXACTLY THE SAME FIBRE SET
+for every one of the 119 classes. Duplicates, omissions relative to the other
+enumerator, or incomplete C++ runs cause verification failure.
+
+The verifier independently checks classifications, each certificate and all
+maximum-core-frequency choices. It regenerates all 32,768 selections of the
+15 possible proper medium sets, using closure to test which are union-closed,
+and checks that all 4,945 valid labelled cores occur in the permutation-orbit
+coverage of the representatives. Relevant labelled count is 4,834.
+
+The one-exterior-fibre counterexample check found no actual counterexample.
+This check is secondary; sufficiency follows from the complete fibre
+certificates, not from an assumption that all global families have one fibre.
+Not every permitted H need produce a globally modal extension by itself; that
+distinction only enlarges the tested class and does not invalidate the proof.
+
+BOUNDARY ALREADY KNOWN AT SIX — DO NOT GENERALIZE THE POINT RULE
+
+The old exploration-10 mixed six-coordinate core supplies a precise existing
+obstruction to extending this COMMON-COORDINATE PROOF STRATEGY unchanged.
+It has 19 members, q_G=189, and core frequencies (12,14,12,13,12,13). Its unique
+most frequent core coordinate is bit 1. The fibre
+ H=[13,29,31,45,47,61,63]
+has seven members, C_G(H)=187 and adjusted cost 173<=189, but bit-1 surplus -1.
+There is also a negative permissible witness for every other fixed coordinate;
+all six previous witnesses were rechecked under the new bound and retained.
+
+This is NOT a counterexample to the proper-decomposition claim. In the actual
+26-set one-fibre extension, A is the unique e-mode with score 76, and bit 1
+still occurs in 17 of 26 sets. The negative local fibre is offset by the core.
+It shows that a single point nonnegative in every enlarged permissible fibre
+cannot simply be presumed at target size six. Weighted certificates or tighter
+global/joint constraints may be needed. Old weights certified under the q-mode
+cap must be challenged again under (2), which permits more fibres.
+
+SCOPE
+
+This is a finite computer-assisted restricted result with an unbounded ambient
+family, not a proof for all target sizes. The general e-mode candidate, the old
+q-mode claim and Frankl's conjecture remain unresolved here. The new count is
+a variant of the earlier score. Historical priority has not been established;
+the limited ingredient/literature check is in exploration 17. No further claim
+of mathematical novelty is made. One adaptive poem-conditioned branch cannot
+establish poetry's causal advantage. There is no external review or formal
+proof-assistant verification; the complete code, lists and exact certificates
+are supplied for inspection and reproduction.
+
+The next substantive issue is the known six-coordinate mixed core under the
+CORRECT new fibre bound, or a conceptual restriction that avoids its local
+obstruction. Merely extrapolating the five-coordinate point rule is ruled out.

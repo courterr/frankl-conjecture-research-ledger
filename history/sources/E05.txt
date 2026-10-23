@@ -1,0 +1,74 @@
+NARRATIVE EXCERPT — HISTORICAL SOURCE, NOT A NEW VERIFICATION
+Original report: Strange-Seed-Frankl-Exploration-05.txt
+Source record: E05; excerpt lines 1-67.
+This excerpt omits reproduction appendices and raw poem texts.
+Historical dates/statuses and claims below retain their original scope.
+Consult ../../SOURCE-COVERAGE.md for the current audit and verification limits.
+
+STRANGE SEED — FRANKL EXPLORATION 05: CREDIT FOR PRIVATE WITNESSES
+Truth & Wonder | 2026-10-21
+
+OUTCOME
+A fresh poetry-associated candidate was stated before search, checked against nearby literature, and falsified by a verified18-set union-closed family. A direct-product argument gives infinitely many counterexamples to the same rule. This is a failed selector, not an improved frequency theorem or a valid new proof strategy. The exact selector's literature novelty remains unconfirmed. No comparative poetry efficacy claim is made.
+
+DRAW
+SS-POETRY-100-v1, random index96 (zero based), P097, William Blake, Spring,83 words. Uniform secrets.randbelow(100) draw, persisted before reading, no redraw. The frozen collection hash was checked. Historical collection attribution/rights caveats remain; this pass did not audit the corpus.
+
+Translation: changing individual voices share a repeated refrain; muting one voice reveals what it uniquely supplied. Seek coordinate-level credit for indispensable contributions to a union representation. This selected interpretation is a creative prompt, not evidence that poetry is necessary or that baseline could not produce the same proposal.
+
+CANDIDATE RECORDED BEFORE LITERATURE SEARCH
+Seed P097, William Blake, Spring: several changing voices produce a repeated refrain; muting one voice reveals its contribution. Mathematical translation: count minimal unions of irreducible generators, crediting a coordinate only when exactly one generator supplies it.
+For a finite union-closed F containing empty, take its nonempty join-irreducible members J. For each nonempty A in F, enumerate every inclusion-minimal subfamily D of J whose union is A. For each x in A, award one unit when x belongs to exactly one generator of D. Sum these units over all A and all such D to obtain W(x), the private-witness count.
+Testable selector claim: at least one coordinate maximizing W(x) is abundant in F. This is a proposed sufficient selector, not a theorem, and no direct causal advantage of poetry is asserted. The generator/irredundance framework is familiar; the exact selector needs a literature check before being called novel. It also risks weighting a member many times according to its number of decompositions.
+
+
+EXACT DEFINITIONS
+Assume F contains empty and a nonempty member. Let J be the nonempty members that cannot be written as unions of other members. These are the irreducible generators. Every nonempty member has a representation as a union of a subfamily of J.
+A decomposition D subset J of A is minimal when union D=A and removing any selected generator changes the union. In such a decomposition, every selected generator has some private coordinate, belonging to it and no other selected generator.
+For each coordinate x define W(x) as the number of pairs (A,D), where D is a minimal decomposition of A, in which x belongs to exactly one generator in D.
+The proposed rule selects a coordinate maximizing W. We explicitly allowed ties: the claim was only that at least one maximizer must be abundant. The counterexample has a unique maximizer, so it refutes even this tie-permissive version.
+
+LITERATURE CHECK BEFORE TESTING
+Generators and irredundant covers are established tools for Frankl's conjecture. The targeted search found no exact match for maximizing this aggregate private-witness score. That is limited search evidence, not a novelty certificate.
+A close inspected primary source was Chenxiao Tian, Frankl's Union-Closed Sets Conjecture: Height Four and Structural Reductions at Height Five, arXiv:2608.25147v1, especially its minimal covers and private critical coordinates in Section7.
+https://arxiv.org/pdf/2608.25147
+Its private-witness use is structural, not our proposed aggregate selector. We do not import or independently certify that preprint's larger theorems.
+For a standard description of generator and lattice formulations, the open-problem page was also inspected:
+https://www.dwest.web.illinois.edu/openp/unionclos.html
+A further located example of established private-element terminology was the independent systems in the monochromatic union-closed-family literature; this does not establish our exact selector's prior occurrence.
+
+Queries in both search engines combined union-closed or Frankl with private elements, generators, irredundant representations, minimal union decompositions, witnesses and frequency. No full review of all cited references or equivalently phrased scoring rules was performed. The proper status is no exact precedent located, originality unconfirmed; the underlying objects are familiar.
+
+SEARCH AND COUNTEREXAMPLE
+The rule survived all2479 nontrivial union-closed families containing empty on four available labelled ground points. A deterministic random search on five to seven points then found a counterexample at the615th checked random family. This is not a success rate, representative sample, or proof of a size threshold.
+The first example had27 members on seven points. Greedy generator deletion and coordinate projection reduced it to18 members on six points. This is a convenient reduced example, not a claim of global minimality.
+
+Let the six coordinates be a,b,c,d,e,f. Use generators
+ {b,c}, {a,e}, {a,c,e}, {b,c,e}, {d,f}, {e,f}.
+Their union-closure, with empty included, consists exactly of
+ empty, bc, ae, ace, bce, abce, df, bcdf, ef,
+ aef, acef, bcef, abcef, def, adef, acdef, bcdef, abcdef.
+Here a string such as bc denotes the set {b,c}.
+
+Coordinate                a   b   c   d   e   f
+Ordinary frequency        9   8  11   7  14  12
+Private-witness score W  18  19  16  11  14  18
+
+The unique W-maximizer is b, yet f(b)=8<18/2=9. Several other coordinates are abundant, so Frankl holds for this family.
+
+WHY THE RULE FAILS
+The score counts decompositions, while abundance counts distinct members. The member abce has four minimal decompositions, and b is private in all four. The members abcef and abcdef each also give b four private credits. These three members alone contribute12 credits for b. Repeated representations of the same target can therefore dominate the selector. Private importance within a representation is not a frequency certificate across distinct sets.
+There are28 minimal decompositions of nonempty members in this example (29 if the unique empty decomposition of empty is included).
+
+INFINITELY MANY COUNTEREXAMPLES
+For k>=0 add k new independent coordinates Z, and form
+ F_k={A union T:A in F, T subset Z}.
+Then |F_k|=18*2^k and f_Fk(b)=8*2^k, still below half.
+Its irreducible generators are the six original ones plus the new singleton coordinates. Each minimal decomposition consists of an old minimal decomposition (possibly empty) and exactly the selected new singletons. Thus each old coordinate's score is multiplied by2^k. For k>=1 each new coordinate has score29*2^(k-1), whereas b has19*2^k=38*2^(k-1). Therefore b remains the unique highest-scoring coordinate for every k. This argument, rather than a finite test alone, establishes an unbounded family of failures.
+
+VERIFICATION
+The search computed minimality through private-coordinate tests. A second checker independently enumerated combinations of generators and tested minimality by explicitly removing each generator and recomputing the union. It checked exact closure, that the displayed generators are precisely the irreducibles, generation of the entire family, all scores, all frequencies, and uniqueness and deficiency of the maximizer. It enumerated28 nonempty minimal decompositions. Product formulas were additionally checked for k=1,2,3,4.
+A small checker setup error (missing __file__ in a dynamically loaded definitions namespace) was corrected before verification; it did not alter the mathematical candidate or search result.
+
+NEXT-STEP IMPLICATION
+Reject this universal selector. The broader use of generators/private witnesses is not refuted. Any revised score needs an explicit argument controlling representation multiplicity; per-target normalization is a possible new hypothesis, not a demonstrated repair, and was not tested or credited here. Avoid changing the failed rule after seeing the answer and treating the altered rule as the original result.

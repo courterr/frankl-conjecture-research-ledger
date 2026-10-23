@@ -1,0 +1,148 @@
+NARRATIVE EXCERPT — HISTORICAL SOURCE, NOT A NEW VERIFICATION
+Original report: Strange-Seed-Frankl-Exploration-10.txt
+Source record: E10; excerpt lines 1-141.
+This excerpt omits reproduction appendices and raw poem texts.
+Historical dates/statuses and claims below retain their original scope.
+Consult ../../SOURCE-COVERAGE.md for the current audit and verification limits.
+
+STRANGE SEED — FRANKL EXPLORATION 10
+Truth & Wonder | 21 October 2026
+Six-coordinate transfer failures and exact weighted certificates
+
+OUTCOME
+The strongest observed five-coordinate pattern does not extend to six coordinates: a coordinate of maximum core frequency can be rare in a permissible exterior fibre. Moreover, some six-coordinate cores admit no single coordinate that is abundant in every permissible fibre.
+
+Weighted certificates survived all 1,000 sampled six-coordinate cores. This is finite, nonuniform coverage, not a proof for all six-coordinate targets. The original modal-support claim remains unresolved. Exploration 09's at-most-five computer-assisted result is unchanged.
+
+The main concrete output is a 19-member core with a seven-member fibre refuting the local maximizer rule, six witnesses ruling out every fixed-coordinate certificate for that core, and an exact two-coordinate certificate covering all 316 permissible fibres for the same core. An independent enumerator verifies the 316-fibre coverage. Historical novelty is unconfirmed.
+
+No new poem was drawn and no controlled baseline comparison was performed. Nothing here establishes a poetry efficacy advantage.
+
+1. UNCHANGED MAIN CLAIM AND LOCAL TEST
+F is a finite union-closed family of distinct sets, containing the empty set and a nonempty member. Let m=|F| and q_F(A) count ordered pairs of members whose union is A. A modal target maximizes q_F, with ties included. A coordinate is abundant when it occurs in at least half the members.
+
+Main claim: every modal target contains a globally abundant coordinate. It remains unproved in general.
+
+For a target A, let G be the members of F contained in A. A nonempty outside trace E defines a trace family H_E on A. Each such fibre is union-closed, contains A, and is stable under union with G. If Q(K,L) counts pairs from K x L with union A, modality implies
+
+ 2 Q(G,H_E)+Q(H_E,H_E) <= Q(G,G).                    (1)
+
+A permissible H means any nonempty union-closed family on A containing A, stable under union with G, and satisfying (1). This is a relaxation: individually permissible fibres may not be simultaneously realizable in a global family.
+
+Exploration 09 observed that all most frequent core coordinates remained abundant in every permissible fibre on five coordinates, in its enumerated no-singleton/no-pair branch. The present diagnostic asks whether that stronger local rule continues. Failure of this rule is not failure of the main claim.
+
+2. SIX-COORDINATE SAMPLE
+Using fixed RNG seed 2026102110, generate union closures of randomly selected lists of three-, four-, and five-element subsets of a six-coordinate target. Force the empty and full target present, deduplicate labelled cores, and stop at 1,000 distinct cores. These cores contain no singleton or pair. They are not uniformly sampled over cores or permutation classes.
+
+For each selected core, the closure enumerator explores all permissible fibres. Across the sample it records 823,142 core/fibre occurrences; the same fibre may occur under multiple cores.
+
+Results partition the 1,000 cores as follows:
+ - 892: every maximum-frequency core coordinate survives in every permissible fibre.
+ - 63: that maximizer rule fails, but another single coordinate certifies every permissible fibre.
+ - 45: no fixed coordinate works across all permissible fibres; a weighted certificate is required by this local method.
+
+Thus 108 sampled cores refute the maximizer-transfer rule. All 45 cases lacking a fixed-coordinate certificate admit nonnegative rational weights summing to one that certify G and every permissible fibre. Together with the 955 single-coordinate cases, all 1,000 sampled cores admit a local certificate.
+
+These are outcomes for the selected cores and this relaxation. They are not probabilities of success on arbitrary mathematical problems or a proof covering all six-coordinate cores.
+
+3. EXPLICIT COUNTEREXAMPLE TO THE STRONGER LOCAL RULE
+Use coordinate names a,b,c,d,e,f, with bits 0,1,2,3,4,5 respectively. A=abcdef has mask 63. Masks represent sets, not multiplicities.
+
+Take the 19-member core
+ G={0,19,22,23,27,31,42,43,44,45,46,47,51,55,59,60,61,62,63}.
+
+It contains the empty set and A, is union-closed, and every nonempty member has at least three coordinates.
+
+Its coordinate frequencies in order a,b,c,d,e,f are
+ [12,14,12,13,12,13].
+Thus b is the UNIQUE maximum-frequency coordinate, appearing in 14 of 19 members.
+
+Take
+ H={13,29,31,45,47,61,63}.
+Equivalently, H is all supersets of acd within A except abcd. It has seven members and frequencies
+ [7,3,7,7,4,4].
+The coordinate b is rare in H, appearing in 3 of 7 members. H is union-closed and stable under union with G. Direct exact pair counts give
+
+ Q(G,G)=189,
+ Q(G,H)=82,
+ Q(H,H)=23,
+ 2 Q(G,H)+Q(H,H)=187<=189.
+
+Hence H passes the additional modal pair-count restriction. The unique most frequent core coordinate still fails abundance in that fibre. This is a counterexample in the no-singleton/no-pair branch, not one already disposed of by the small-member injection argument.
+
+4. AN ACTUAL GLOBAL REALIZATION
+Introduce one outside coordinate z and define
+
+ F=G union {H-member union {z}:H-member in H}.
+
+This family is union-closed: G and H are each union-closed, and G union H is contained in H. It has 26 distinct members.
+
+Exhaustive pair counting shows that A is its UNIQUE modal target, with q_F(A)=189. The full universe A union {z} has count 187, and every other target has lower count than 189. Thus the local transfer failure can occur in an actual family where A really is modal; it is not merely an artefact of omitting the other internal modal comparisons.
+
+Nevertheless b appears in 17 of the 26 global members and is abundant. All six coordinates of A are abundant here. The main modal-support claim therefore holds in this realization. This is NOT a counterexample to Frankl or to the main claim.
+
+5. NO FIXED COORDINATE CAN CERTIFY THIS CORE
+The record supplies one permissible fibre for each coordinate where that coordinate appears in only 3 of 7 members:
+
+ coordinate    witnessing fibre masks
+ a             14,30,31,46,47,62,63
+ b             13,29,31,45,47,61,63
+ c             11,27,31,43,47,59,63
+ d             7,23,31,39,47,55,63
+ e             13,15,31,45,47,61,63
+ f             7,15,23,31,47,55,63
+
+Each witness is checked for union closure, stability under G, and (1). These six explicit witnesses alone prove that no single coordinate is abundant in every permissible fibre for this G. That negative conclusion does not require confidence in an exhaustive fibre enumeration.
+
+The witnesses are separate trace families. No assertion is made that all six can occur together in a global family with modal A; cross-fibre unions impose additional conditions.
+
+6. A TWO-COORDINATE CERTIFICATE DOES WORK
+For this same G, the exact certificate is particularly simple: put weight 1/2 on e, weight 1/2 on f, and zero on the other coordinates.
+
+The core satisfies f_G(e)+f_G(f)=12+13=25>=19.
+For EVERY permissible fibre H, exact enumeration verifies
+
+ f_H(e)+f_H(f)>=|H|.                                 (2)
+
+There are precisely 316 permissible fibres for this G. An independent Python inclusion/exclusion enumerator, using repeated closure rather than the C++ canonical-extension search, finds exactly the same SET of 316 family masks. It visits 4,455 binary decision nodes and verifies (2) using integer arithmetic.
+
+For any actual global family with this core and modal A, every exterior fibre is permissible. Adding (2) over fibres and adding the core inequality yields
+
+ f_F(e)+f_F(f)>=|F|.
+
+At least one of e,f must be globally abundant. This establishes the modal-support conclusion for every global extension with this specific internal core, regardless of the number of outside coordinates. It does not specify one coordinate that is always abundant.
+
+7. THE MODAL COST RESTRICTION IS DOING WORK
+The e/f certificate is not valid for all union-closed G-stable fibres if the pair-count bound is removed. Starting with the full cube on a,b,c,d and closing under unions and union with G produces a 35-member trace family V. It has
+ f_V(e)=f_V(f)=13,
+so f_V(e)+f_V(f)=26<35.
+
+But its local pair cost is 819, far above Q(G,G)=189. Thus V cannot be an exterior fibre when A is modal. The verifier independently checks these facts. The finite certificate uses the modal restriction, not merely generic union stability.
+
+8. VALIDATION AND LIMITS
+The C++ enumerator is the Exploration 09 closure method specialized to six coordinates. It enumerates permissible fibres for each sampled core, pruning only on the monotone cost in (1). Family masks use unsigned 64-bit integers, one bit for each subset of the six-coordinate target. The top trace is bit 63; no shift by 64 is used.
+
+For the 45 cores with no single coordinate, linear programming proposes weights. Each proposed weight vector is converted to rational numbers, then checked exactly for nonnegativity, total weight one, and every core/fibre surplus. The final certificate checks do not rely on floating-point tolerance or solver infeasibility. The representative e/f certificate uses only integers.
+
+The representative negative witnesses, global realization, cost-bound counterexample, and all 316 local fibres were checked independently. The other 999 sampled cores were not all rerun with the independent binary enumerator. Sample-wide counts therefore depend on the C++ enumeration implementation and the supplied exact surplus checks. No complete six-coordinate classification, external review, or proof-assistant formalization is claimed.
+
+The pretest record also contains a separate shifted-cube construction idea. Its seven-coordinate version contains a two-element core member and is not the relevant remaining branch; it was not used for the conclusions here. The six-coordinate example above supplies the direct failure in the intended branch.
+
+9. LITERATURE STATUS
+Unrestricted preservation of abundant coordinates between union-stable families was already discussed and refuted in Polymath in 2016. Tom Eccles's 24 February 2016 comment at 9:57 pm gives a counterexample on the FUNC4 discussion. We do not present the general warning about abundance transfer as new:
+ https://gowers.wordpress.com/2016/02/22/func4-further-variants/
+
+The present test asks whether the additional modal pair-count bound prevents such a failure. It does not. This exact example's historical novelty has not been established.
+
+Weighted abundance certificates are established tools in Poonen's framework. Pulaj discusses their computation and verification; using weights here is not a newly invented method:
+ Jonad Pulaj, Cutting Planes for Union-Closed Families (2017).
+ https://d-nb.info/1156012813/34
+
+Targeted searches combined union-closed/Frankl with modal unions, pair representations, most frequent elements, and core convolution. Many hits were unrelated. No exact precedent was located for the specific modal-restricted counterexample or its certificate. Status: no exact precedent located; novelty unconfirmed. This is not an exhaustive historical review.
+
+10. NEXT DIRECTION
+Retire the universal core-maximizer transfer rule and the idea that a fixed single coordinate must certify every fibre. Keep the original modal-support claim and the at-most-five result separate and intact.
+
+The useful next question is whether every core can admit nonnegative coordinate weights certifying itself and every fibre allowed by (1), or whether a core exists where even those weights fail. A rational mixture of permissible fibres with negative weighted-coordinate surpluses can witness failure of that local certificate program. Such a failure would still not automatically refute the main modal-support claim, because simultaneous realizability of exterior fibres is an additional constraint.
+
+The present run supplies failures, positive certificates, and reproducible records. It supplies no general six-coordinate theorem, proof of Frankl, certified novelty, or comparative Strange Seed efficacy result.

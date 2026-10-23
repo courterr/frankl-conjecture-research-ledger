@@ -1,0 +1,143 @@
+NARRATIVE EXCERPT — HISTORICAL SOURCE, NOT A NEW VERIFICATION
+Original report: Strange-Seed-Frankl-Exploration-25-Paused-Handoff.txt
+Source record: E25; excerpt lines 1-136.
+This excerpt omits reproduction appendices and raw poem texts.
+Historical dates/statuses and claims below retain their original scope.
+Consult ../../SOURCE-COVERAGE.md for the current audit and verification limits.
+
+STRANGE SEED — FRANKL EXPLORATION 25
+22 October 2026 (America/Los_Angeles)
+Truth & Wonder
+PROJECT STATUS: PAUSED BY USER REQUEST AFTER THIS SESSION
+
+FINAL CHECKPOINT
+We obtained one further exact gain:16 blocked coordinate-pair supports became17, with all earlier obstructions retained. Four supports still survive. The goal of defeating every one- and two-coordinate weighting was not reached.
+
+The feasibility signal is now clearer because we can explain the five former survivors, distinguish a weaker one from four more strongly protected supports, and prove a barrier for a range of further addition-only core extensions. This supports controlled incremental progress, but does not establish a reliable route to completion. No defensible percentage chance of eventual success follows from this session.
+
+The final one-step test considered every qualifying witness-preserving single-trace addition in its defined class:8 distinct cores, all completely enumerated. Exactly one blocked an additional support. No second round or expanded search was launched. Strange Seed is now parked so the user can focus on other projects.
+
+MAIN FINDINGS
+1. Four of the five surviving equal-weight certificates admit direct injection proofs, using G-stability and unary cost exclusions. These proofs remain valid for the fixed source core even after raising its adjusted-cost cap from597 to629.
+2. The fifth support,(4,6), is protected by a four-trace joint-cost exclusion rather than the same simple injection. Its minimum negative equal-pair witness cost is exactly609, only12 above the original cap597.
+3. Adding trace100 preserves the existing obstruction bank and admits that fifth support's negative witness. The best core now blocks17 supports. The remaining supports are(1,4),(3,4),(3,5),(5,6), each requiring exactly equal weights.
+4. For ANY union-closed core extension containing the37-set source core with q<=629, those four certificates must survive. This statement does not require retaining the chosen witness bank. A necessary condition for an addition-only attempt to destroy them is q>=631. This is a local barrier, not an impossibility theorem beyond that range.
+
+MATHEMATICAL SETUP
+All internal targets here have seven coordinates, zero-based0,...,6, and A=127.
+For a finite union-closed family F containing the empty set, q_F(T) counts ordered union pairs with union T, r_F(T) counts members contained in T, and
+ e_F(T)=(q_F(T)-2r_F(T)+1)/2
+counts unordered proper union decompositions of T. The unresolved candidate says each positive global e-maximizer A contains an element appearing in at least half of F.
+
+Its internal core G=F intersect2^A and exterior trace fibres H give the necessary fibre conditions: H is nonempty, contains A, is union-closed and G-stable, and
+ c_G(H)=2Q(G,H)+Q(H,H)-2|H| <=q_G(A),
+where Q counts ordered pairs whose union is A. This is the adjusted cost; the older unadjusted q-mode cap was not used.
+
+A coordinate weight vector w>=0, sum(w)=1, is a sufficient local abundance certificate if its weighted surplus is nonnegative on G and every permitted H. Write s_i(K)=2*f_K(i)-|K|. For a pair(i,j), equal weights work exactly when
+ s_i(K)+s_j(K)=2*(n_11(K)-n_00(K))>=0,
+where n_11 and n_00 count members containing both or neither chosen coordinate. Thus an injection from00 members to forced11 members proves the fibre inequality. A local certificate failure is not automatically a counterexample to the underlying abundance claim.
+
+SOURCE CORE AND FROZEN SCOPE
+The source was Exploration24 case23, a37-member core with q=597, e_top=262 and16 blocked supports. Its five remaining normalized pair-weight intervals were all the singleton p=1/2.
+
+The frozen final-session plan had three parts: analyze the five survivors by finite matching certificates; diagnose negative-pair cost distances with fixed cap offsets0,2,4,8,16,32; and test every single-trace core addition preserving the fixed29-fibre bank and all16 blocked supports, capped at24 candidate cores. No further adaptive extension round was allowed. The primary work budget was180seconds, with500,000 nodes/0.75seconds per enumeration and a5second subprocess timeout.
+
+The structural follow-up to a failed matching was an adaptive proof construction, separately recorded before checking its joint-cost closure and absence branches. It introduced no additional empirical core search.
+
+THE FOUR DIRECT INJECTION PROOFS
+For each trace t, its principal G-stable fibre is I_t={t union g:g in G}. It is union-closed, contains t and A. Any permitted H containing t must include I_t. Adjusted cost is monotone on families containing A, so if c_G(I_t)>L, no fibre of cost at most L may contain t.
+
+For each pair, build the finite bipartite graph:
+ left: unary-allowed traces missing both coordinates;
+ right: unary-allowed traces containing both;
+ edges t -> t union g for g in G.
+Every edge is a valid membership implication in any G-stable H. A matching covering all left traces therefore restricts to an injection from the00 members of any permitted H into its11 members. This proves nonnegative equal-pair surplus without enumerating all H.
+
+For pairs(1,4),(3,4),(3,5),(5,6), full matchings were obtained and independently checked at every even offset0,...,32, including cost cap629. The actual proof maps and principal costs are stored in structure.json. The proof does not rely on statistical sampling or an analogy.
+
+WHY THE FIFTH SUPPORT WAS DIFFERENT
+For pair(4,6), the unary graph at cap597 has16 negative traces but maximum matching size15. A Hall-deficient set is
+ S={37,39,45,47},
+whose forced positive neighbors are only{119,125,127}. A failed unary matching is inconclusive by itself.
+
+However the minimum union-closed G-stable family containing S is
+ H_star=[37,39,45,47,55,61,63,101,103,109,111,119,125,127].
+It has14 members and adjusted cost609. Any G-stable union-closed H containing all of S includes H_star, so by cost monotonicity it cannot fit the original cap597. At least one member of S must be absent.
+
+For EACH of the four possible absent traces, a full00-to11 matching exists after deleting that left vertex. These four branches cover every admissible H. Their verified proof remains valid through cost cap607. Since adjusted costs are odd (Q(H,H) consists of symmetric off-diagonal pairs and the sole top diagonal), there is no possible cost608 obstruction. H_star itself is a valid stable union-closed negative witness at609, with pair surpluses(-2,0). Thus609 is the exact minimum negative equal-pair cost. Complete relaxed-cap enumeration independently agrees.
+
+This identifies a concrete mechanism: simultaneous occurrence of four individually permitted negative traces was forbidden by joint cost, and a modest change to the core could make that exact combination admissible.
+
+THE FINAL ONE-STEP TEST
+All91 absent traces below the top were considered. Adjoin a trace, take union closure, require positive internally maximal e_top, preserve stability and cost admissibility of the fixed obstruction bank, and verify all16 prior support obstructions with the updated core row.
+
+80 attempts failed bank stability and3 failed bank cost, leaving8 distinct qualifying cores. All8 were tested, with no candidate truncation and no incomplete enumeration. Seven retained exactly16 blocked supports. Adjoining trace100 produced17. No further round was started.
+
+The eight added trace representatives were22,25,100,97,18,40,96,104, in the frozen slack-based ranking order. The actual core closure and results for every attempt are recorded. This is exhaustive only within the defined one-trace, fixed-bank, positive-top-mode class; additions that replace old witnesses, deletions, multiple simultaneous additions, larger targets and other banks were not exhausted.
+
+THE SEVENTEENTH SUPPORT
+Adjoining100 gives the38-member best core:
+[0, 19, 23, 27, 31, 46, 57, 58, 59, 62, 63, 86, 87, 89, 90, 91, 94, 95, 100, 101, 102, 103, 105, 108, 109, 110, 111, 115, 118, 119, 120, 121, 122, 123, 124, 125, 126, 127]
+
+It has q=613 and e_top=(613-76+1)/2=269, positive and maximal internally. The old H_star remains stable. Its cost rises from609 to613, while q rises from597 to613, so it becomes admissible exactly at the new cap.
+
+On support(4,6), H_star has surplus(-2,0), forcing weight4 to zero. A second permitted fibre
+ H_2=[15,31,47,63,95,111,127]
+has surplus(+1,-1), then forcing weight6 to zero. No normalized nonnegative weighting on that support remains. Both fibres have actual one-exterior-coordinate extensions with A globally e-maximal: H_star yields52 members with A tying the exterior top at269; H_2 yields45 members with A uniquely maximal at269. These are certificate obstructions, not counterexamples to abundance.
+
+Complete enumeration gives61,904 permitted fibres for the best core. Its four surviving supports are
+ (1,4),(3,4),(3,5),(5,6),
+each with exact weight interval p=1/2. The broad two-coordinate certificate strategy therefore still succeeds on this core.
+
+A PROVED BARRIER FOR FURTHER ADDITION-ONLY EXTENSIONS
+Let G be the37-set source core, and let G' be ANY union-closed core containing G with q_G'<=629. The four injection proofs above hold for all G-stable H of adjusted G-cost at most629.
+
+Every G'-stable H is G-stable, and c_G(H)<=c_G'(H). Consequently any H fitting the G' cap satisfies
+ c_G(H)<=c_G'(H)<=q_G'<=629,
+so all four fibre inequalities remain valid.
+
+The core inequalities also survive, as follows. G contains all seven coatoms A minus{i}. Every new nonempty trace t has at least two old union-to-top partners: A itself and the coatom omitting one coordinate of t. Thus each added member contributes at least4 new ordered union pairs. If d=|G' minus G|,
+ q_G'-597>=4d.
+The bound q_G'<=629 therefore gives d<=8. Each added core member reduces a pair surplus by at most2. The source core pair surpluses are32,32,28,28 for the four protected supports. Their G' surpluses remain at least16,16,12,12, respectively, all positive.
+
+Thus every such G' admits all four equal-weight local certificates, independent of the fixed bank. It cannot defeat all one- and two-coordinate supports. Since ordered union-pair counts are odd, any addition-only extension of this source that could possibly destroy a protected certificate must have q>=631. Exceeding that threshold is necessary, NOT sufficient. This theorem does not cover core deletions or unrelated cores, and does not say the method cannot eventually escape the barrier.
+
+COST-DISTANCE CHECKS
+All six relaxed-cap enumerations completed:
+Cap597:54,536 fibres.
+Cap599:56,287 fibres.
+Cap601:58,210 fibres.
+Cap605:62,411 fibres.
+Cap613:72,353 fibres.
+Cap629:92,226 fibres.
+The four directly protected pairs have no negative equal-pair fibre through629. Pair(4,6) has minimum negative cost609. These relaxed classes diagnose distance for the fixed source core; they are not actual modal fibres at their relaxed caps unless the core itself is modified. A negative equal-pair witness alone would not rule out unequal weights after arbitrary changes; the new17th-support proof uses the second witness to rule those out too.
+
+Unrestricted high-cost negative examples exist for all five pairs. For pair(i,j), remove only singleton{i} and pair{i,j} from the seven-coordinate Boolean cube. The remaining126-member family is union-closed and G-stable because G has no nonempty set of size below3. Its equal-pair surplus is-2, but its adjusted cost is4393 or4395, far outside the modal cap. Thus the four protections depend substantively on cost; they are not unconditional incidence theorems.
+
+VERIFICATION
+All14 primary enumerations completed within their per-call limits. Total returned fibre occurrences:869,972, including the six relaxed classes and eight extensions. These occurrences are not independent problem-solving trials.
+
+All68 accepted direct matching maps and24 accepted absence-branch matching maps were independently checked for covering the correct negative traces, distinct positive images, valid G-union implications, and unary cost eligibility. Principal costs, Hall neighbors, the forced closure cost and the small-q extension barrier were recomputed exactly. The new infeasibility witnesses and both actual global extensions were directly checked.
+
+Independent include/exclude enumeration was run for11 selected complete classes: the original cap, the witnessed-distance cap, the widest relaxed cap, and all8 final extensions. Every independent enumeration completed, and entire fibre sets exactly matched the canonical primary enumerator. These cover693,064 fibre occurrences. Every emitted fibre in those independently checked classes was validated for top membership, union closure, G stability and the relevant cost cap. All primary extension interval certificates were checked with exact rational arithmetic and direct integer inequalities on every returned fibre.
+
+The primary enumerator used an optional cost-cap offset, keeping the true q_G field separate from the relaxed cost cap. Both algorithms used the adjusted cost, safe cardinality pruning and no negative-score early exit. The zero-offset output was checked against the archived baseline set, so the interface change was not silently assumed correct.
+
+This remains computer-assisted mathematics rather than formal proof-assistant certification or external peer review. The structural injection and small-q barrier arguments are explicit proofs conditional on the finite maps and arithmetic, all supplied below. No literature search or historical novelty claim is made.
+
+FEASIBILITY ASSESSMENT
+Compared with the preceding weak pilot, we now have a third sequential monotone gain in the same successful lane (14 ->15 ->16 ->17 across sessions) and an explanation of why one remaining support was easier to remove than four others. That is stronger evidence that the construction move can support controlled local progress. It is not evidence of a generally reliable route to all21 supports, and does not erase the two other stalled seeds in the earlier pilot.
+
+The signal is clearer because the remaining obstruction is partly mathematical, not just an unexplained lack of search success. The four survivors resist an entire proved range of addition-only extensions. The current construction may escape that range, but we have neither demonstrated nor ruled out eventual completion. Support fractions such as17/21 cannot be interpreted as a percentage chance of finishing. Poetry's causal benefit and Strange Seed's broad utility remain unestablished.
+
+PAUSED HANDOFF — FOLLOW THE USER'S PROJECT SWITCH
+The user requested one final session to sharpen this signal and then a focus on other projects. That session is complete. PROJECT STATUS: PAUSED. Do not continue searches, start additional rounds, or schedule work unless the user explicitly returns to this project.
+
+Accepted restart state if the user later asks:
+- Best core is the38-set G above, q613, e_top269.
+-17 supports blocked; four surviving supports listed above, all equal weights only.
+-The37-set source core and its four matching certificates give the q<=629 extension barrier. An addition-only strategy retaining that source must get beyond it before it can eliminate the four survivors.
+-The goal of ruling out every support of size<=2 is unmet; general e-mode abundance conjecture unresolved; no priority or poetry-causality claim.
+-Any later exploration should use this proof barrier rather than extrapolating the rate of previous gains. This is a restart note, not an authorized next task.
+
+The detailed pause-state.json, exact source/data, plans, failed matching and all extension outcomes are embedded so another conversation can resume accurately without reconstructing the full chat.

@@ -1,12 +1,16 @@
 {
-  "passed": true,
-  "blocked_supports": 17,
-  "surviving_supports": 4,
-  "exact_minimum_negative_cost_for_pair_4_6": 609,
-  "extension_protection_q": 629,
-  "distinct_column_rank_counterexample": true,
-  "cloning_seed_checked": true,
-  "rejection_tests": {
+  "package_version": "0.5",
+  "date": "2026-10-23",
+  "retained_certificate_checks": {
+    "passed": true,
+    "blocked_supports": 17,
+    "surviving_supports": 4,
+    "exact_minimum_negative_cost_for_pair_4_6": 609,
+    "extension_protection_q": 629,
+    "distinct_column_rank_counterexample": true,
+    "cloning_seed_checked": true
+  },
+  "rejection_controls": {
     "passed": true,
     "rejection_checks": [
       "duplicate positive matching image",
@@ -15,6 +19,10 @@
       "out-of-range cloning seed"
     ]
   },
-  "revision": "0.4",
-  "mathematical_certificate_files_unchanged_from_v0_3": true
+  "selected_history_checks": {
+    "passed": true,
+    "check_groups": 13,
+    "details": "history-verification-result.json"
+  },
+  "limits": "VERIFICATION-SCOPE.md"
 }

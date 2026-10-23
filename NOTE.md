@@ -1,8 +1,12 @@
 # Capped fibre certificates for a union-decomposition selector
 
-Draft v0.4.1, 22 October 2026. Novelty unconfirmed. Coordinates are indexed from 0;
+Draft v0.5,23 October 2026. Novelty unconfirmed. Coordinates are indexed from 0;
 subsets are encoded by integer bit masks, with union represented by bitwise OR.
 All families below are finite and have no repeated members.
+
+This note retains the later branch's self-contained certificate arguments.
+For the earlier failed and incomplete routes, see POETRY-APPROACH-CATALOG.md.
+The existing certificate code and data are unchanged in this expansion.
 
 ## 1. Question and notation
 

@@ -1,0 +1,101 @@
+NARRATIVE EXCERPT — HISTORICAL SOURCE, NOT A NEW VERIFICATION
+Original report: Strange-Seed-Frankl-Exploration-04.txt
+Source record: E04; excerpt lines 1-94.
+This excerpt omits reproduction appendices and raw poem texts.
+Historical dates/statuses and claims below retain their original scope.
+Consult ../../SOURCE-COVERAGE.md for the current audit and verification limits.
+
+STRANGE SEED — FRANKL EXPLORATION 04: PROBABILISTIC UNION ROOTS
+Truth & Wonder | 2026-10-21
+
+OUTCOME
+The fresh seed suggested a mathematical object different from the previous triple-fibre/core-transfer branch: fractional convolution roots of the uniform random member under set union. Literature checking identified this as part of established union-infinite-divisibility theory. The underlying framework therefore does not pass the novelty gate. No specific, literature-distinct Frankl argument emerged in this bounded pass. Do not count this as a novel approach, a solution, or evidence of poetry efficacy.
+
+DRAW
+Uniform secrets.randbelow(100) draw from the frozen SS-POETRY-100-v1 collection, index21 (zero based), P022, Edgar Allan Poe, The Happiest Day,139 words. Persisted before reading; no redraw. Verified original collection SHA25648f84b7efe84de1868996c8f2a6f89d108e0a3936979614ccd5d1e59e1d8bad8. Prior collection metadata defects remain recorded; no full corpus audit was performed here. The prior P026 attribution correction is unchanged.
+
+Pre-draw goal: seek an object beyond triple fibres, omission budgets and core abundance transfer. Interpretation chosen: the poem's retrospective loss and unwillingness to relive a past moment suggested trying to reverse an irreversible union operation probabilistically. Other interpretations were possible; none is asserted to be uniquely licensed by the poem.
+
+PRE-SEARCH CANDIDATE
+Seed P022: temporal irreversibility and the hidden cost of recovering a vanished state. Translation: reverse the union operation probabilistically rather than transfer abundance between spatial fibres.
+Candidate object: fractional convolution roots of the uniform distribution on a finite union semilattice F (assume empty in F). For A in F define C(A)=#{B in F:B subset A}/|F|. For t in (0,1), Mobius-invert C(A)^t on the inclusion poset to obtain signed weights mu_t(A). Then mu_t has total mass1 and mu_t convolved with itself under union has cumulative C^(2t). Question: which F have mu_t>=0 for every t>0, and does this restricted class admit a usable abundant-element argument? More exploratory: can the first negative coefficient or negative mass provide a useful obstruction? These latter questions are not claims or established implications for Frankl.
+This is materially different from triple-fibre/core-transfer bookkeeping, but could be an existing probability-on-semilattices framework. Search before treating it as new. There is no assertion that a numerical statistic alone proves the conjecture.
+
+
+MATHEMATICAL SPECIFICATION
+Assume empty belongs to the finite union-closed family F, with m members. For A in F define
+ C(A)=#{B in F:B subset A}/m.
+For t>0 define coefficients mu_t recursively along inclusion:
+ mu_t(A)=C(A)^t-sum over B proper subset A, B in F of mu_t(B).
+This is finite-poset Mobius inversion. The coefficients sum to1. For independent unions the cumulative probabilities multiply, because a union lies inside A exactly when each operand lies inside A. Thus the formal union convolution satisfies mu_s vee mu_t=mu_(s+t).
+
+The crucial missing condition is positivity. Without mu_t(A)>=0 for every A, this is a signed measure rather than a possible random experiment. Infinite divisibility asks for probability roots of all integer orders; in this finite positive-C setting those roots, when they exist, are uniquely specified by the displayed cumulative powers. Any candidate root cannot put mass on a set outside F: repeating that same set in every independent draw would give it positive target mass, contrary to the support of the uniform law. This supports using the inclusion poset of F itself.
+
+LITERATURE CHECK
+Ilya Molchanov's lecture notes, Section5.2, Definition5.1, explicitly define a random set that can be represented as unions of iid random sets for every number of components. Theorem5.3 gives a characterization through an exponential avoidance functional, and the discussion following it gives a Poisson-process representation.
+https://www.cemmap.ac.uk/wp-content/legacy/resources/molchanov_mc/lectures_sets.pdf
+This is a direct primary-source match for the base probabilistic idea. It is not a newly introduced construction.
+
+Additional located references include Molchanov, Limit Theorems for Unions of Random Closed Sets,1993, and the2008 article Association criteria for M-infinitely-divisible and U-infinitely-divisible random sets. Only the accessible lecture-notes treatment was relied on for the characterization above; inaccessible retrievals were not treated as fully inspected papers.
+
+Searches used both available search engines, including semilattice infinitely divisible; random sets union-infinitely; uniform union-closed family convolution root; and random sets infinite divisibility Mobius. The direct union-infinite-divisibility terminology produced strong matches after broader convolution queries produced mostly unrelated additive probability literature. No exact Frankl-specific application of our proposed diagnostic was located. This is insufficient to certify novelty or usefulness of an unspecified application.
+
+GATE DECISION
+Do not launch an extended research branch on the premise that the basic construction is novel. A Frankl-specific positivity, comparison, or obstruction statement would have to be stated precisely and checked separately before it could qualify as a distinct candidate. No such proved statement is supplied here.
+
+SMALL DIAGNOSTIC: POSITIVITY IS A REAL OBSTRUCTION
+As a sanity check on the proposed object, take
+ F={empty,{a,b},{a,c},{b,c},{a,b,c}}.
+This family is union-closed and all coordinates occur in3 of5 members, so Frankl holds.
+For t=1/2 the unique signed root has masses
+ empty:1/sqrt(5),
+ each pair:(sqrt(2)-1)/sqrt(5),
+ top:1+(2-3sqrt(2))/sqrt(5)<0.
+The top coefficient is approximately -0.0029394051. Its negativity is exact:3sqrt(2)>2+sqrt(5), which follows by squaring and using81>80. Direct union convolution of these signed masses returns the uniform1/5 law to floating-point tolerance.
+
+Thus an elementary union-closed family with abundant elements can already fail to have a probabilistic square root. Negative root mass alone is not a certificate that Frankl fails. This diagnostic characterizes a potential failure of the proposed mechanism; it is not an attempt to claim an old framework as new mathematics or a full proof for the divisible subclass.
+
+{
+  "family_masks": [
+    0,
+    3,
+    5,
+    6,
+    7
+  ],
+  "CDF": {
+    "0": 0.2,
+    "3": 0.4,
+    "5": 0.4,
+    "6": 0.4,
+    "7": 1.0
+  },
+  "signed_square_root": {
+    "0": 0.4472135954999579,
+    "3": 0.18524193653371795,
+    "5": 0.18524193653371795,
+    "6": 0.18524193653371795,
+    "7": -0.0029394051011117917
+  },
+  "union_square": {
+    "0": 0.19999999999999998,
+    "3": 0.20000000000000004,
+    "5": 0.20000000000000004,
+    "6": 0.20000000000000004,
+    "7": 0.19999999999999987
+  },
+  "coordinate_frequencies": [
+    3,
+    3,
+    3
+  ],
+  "negative_mass": 0.0029394051011117917
+}
+
+PROJECT STATUS
+- Prior transfer branch remains parked, with its proofs, explicit counterexamples and unresolved survivor claim preserved in Exploration03.
+- This seed changed the mathematical object considered.
+- The literature gate rejected the base object as new.
+- No confirmed novel Frankl approach or improved frequency bound was obtained.
+- No blind workers or comparative trials were run.
+- A next fresh seed should target a specific, falsifiable mechanism rather than relabel this established framework.

@@ -24,3 +24,12 @@ Questions of particular interest:
 
 See QUESTIONS.md for additional mathematical questions. No conclusion about
 poetry's causal effectiveness follows from this package.
+
+## History-specific feedback
+
+Please report a missing branch, a mistaken seed attribution, a control result
+credited as a poem-specific discovery, a misclassified stopping point, or an
+overstated verification claim. Reference an attempt ID and source record ID.
+All29 saved report narratives are mapped, but an unrecorded conversation idea
+may still be absent. The catalog's41 entries are an editorial breakdown, not
+41 independent new methods.
