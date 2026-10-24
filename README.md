@@ -24,6 +24,8 @@ Strange Seed explores whether poetry can help a model generate useful approaches
 
 Poetry supplies a possible direction, not evidence that the direction is correct. Every proposal must face ordinary mathematical scrutiny. This repository records the resulting attempts, failures and restricted successes; it does not establish that poetry improves problem solving. Its research ledger may still help others avoid dead ends, regardless of whether the poetry hypothesis succeeds.
 
+The examples listed (repetition, reversal, perspective or tension) are illustrative, not exhaustive: a model may draw on any aspect of the poem or its interpretation to propose an approach, provided the resulting proposal can be stated clearly and subjected to mathematical scrutiny.
+
 ## Start here
 
 | Want to… | Read |
