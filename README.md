@@ -18,6 +18,12 @@ Frankl records**: the baseline, three pilots and Explorations01–25. There were
 eight poem draws, selecting seven different titles. Those counts are not counts
 of independent discoveries, and do not establish that poetry improves reasoning.
 
+## Why Poetry?
+
+Strange Seed explores whether poetry can help a model generate useful approaches when ordinary problem solving stalls. A model draws a poem and attempts to translate some feature of it, such as repetition, reversal, perspective or tension, into a concrete mathematical move. These interpretations are starting points, not a fixed menu.
+
+Poetry supplies a possible direction, not evidence that the direction is correct. Every proposal must face ordinary mathematical scrutiny. This repository records the resulting attempts, failures and restricted successes; it does not establish that poetry improves problem solving. Its research ledger may still help others avoid dead ends, regardless of whether the poetry hypothesis succeeds.
+
 ## Start here
 
 | Want to… | Read |
